@@ -1,0 +1,16 @@
+digraph "read_and_convert"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="read_and_convert",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="For UTF-8 and similar, tds_iconv() may encounter a partial sequence when the chunk boundary is not al..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_convert_stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01415.html#a9d8eb43a81ff58ab423dce0ce95b9564",tooltip="Reads and writes from a stream converting characters."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_datain_stream_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01415.html#abc3a77c8aa28842e7f28583cbabc1415",tooltip="Initialize a data input stream."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tds_datain_stream_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01415.html#a04b537d889f7d4c9b9701eb81baf7efd",tooltip="Reads data from network for input stream."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tds_staticout_stream_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01415.html#a9fe0d3799d2e3bde49b614c9d0c3785d",tooltip="Initialize an output stream for write into a static allocated buffer."];
+}

@@ -1,0 +1,224 @@
+version wa 0.000000001
+
+#
+# les rîles fonetikes èn sont nén åjheyes a comprinde!
+# mins dj' a fini pa comprinde tot l' minme ene miete.
+#
+# po on patron ki cmince pa les minmès letes, i fåt
+# mete d' aprume li patron ki cwire après l' fén do mot (eg: CE$)
+# poy li ci avou ene fortchete (eg: C(EI)- ); et do pus longou å pus court
+#
+# Eyet on n' pout nén mete des rîles ki cmincèt avou ene ôte lete
+# å etur des rîles ki cmincèt avou ene lete dinêye, ôtrumint li boket
+# k' est pus lon èn sereut måy eployî.
+#
+# cwand i gn a pus d' ene rîle pol minme patron, seulmint l' prumire
+# est eployeye.
+# po les rîles fonetikes des betchfessîs, dj' a metou les diferinnès
+# rîles possibes; i sufixh di candjî leu-z ôre (ou d' disfacer les cenes
+# ki n' siervèt a rén) po-z adapter l' fitchî a on pårler walon dné.
+#
+# Si vos vloz fé on fitchî d' fonetike po do Feller *deur* avou des
+# moyas "e" tot avå dins les mots, cweroz # après 'wa-feller-e' eyet
+# metoz en alaedje cisse roye la.
+# Mins adon tos les "e" do rfondou (ki, zels, si prononcèt) divénront "moyas"
+# pol cweraedje des suddjestions... a vos d' vey si ça vs ahesse ou nén.
+#
+# Rîles po les pårlers:
+# wa-ae-e: "ae" si prononce "è"
+# wa-ae-a: "ae" si prononce "a"
+# wa-aa-a: "å" si prononce "â"
+# wa-aa-o: "å/au" si prononce "ô"
+# wa-ea-ya: "ea" si prononce "ya"
+# wa-ea-e: "ea" si prononce "ê"
+# wa-ey-iy: "ey" si prononce "iy/îy"
+# wa-ey-ey: "ey" si prononce "èy/êy"
+# wa-oen-on: "oen" si prononce "on"
+# wa-oen-win: "oen" si prononce "win"
+# wa-oe-eu: "oe" si prononce "eû"
+# wa-oe-we: "oe" si prononce "wè"
+# wa-oi-we: "oi" si prononce "wè"
+# wa-oi-wa: "oi" si prononce "wâ"
+# wa-oi-o: "oi" si prononce "ô"
+# wa-sch-sk: "sch" si prononce "sk"
+# wa-sch-ch: "sch" si prononce "ch"
+# wa-sch-h: "sch" si prononce "h"
+# wa-sh-ch: "sh" si prononce "ch"
+# wa-sh-ss: "sh" si prononce "ss"
+# wa-h-h: "h" si prononce "h"
+# wa-h-_: "h" èn si prononce nén
+# wa-jh-j: "jh" si prononce "j"
+# wa-jh-h: "jh" si prononce "h"
+# wa-xh-ch: "xh" si prononce "ch"
+# wa-xh-h: "xh" si prononce "h"
+
+# li lete "c"
+CH		X
+CW		KW
+CE$		S
+CES$		S
+C(EÉÈÊÎ)-	S
+CI(AEOUÅÉ)-	X
+CY(AEOUÅÉ)-	X
+C$		_
+C		K
+Ç		S
+
+# li lete "g"
+GNGN		NN
+GN.GN		NN
+GN		NY
+GUE$		K
+GUES$		K
+GU(EIÉÈÊÎ)-	G
+G(EIÉÈÊÎ)-	J
+G$		K
+G		G
+
+# lete "d"
+DE$	T
+DES$	T
+#DI(AEOUÅÉ)-	DJ
+#DY(AEOUÅÉ)-	DJ
+DJN	NN
+DJV	TXV
+DJE$	TX
+DJES$	TX
+DJ$	TX
+DJ	DJ
+DM	NM
+DN	NN
+D$	_
+D	D
+
+# lete "t"
+TCHF	TXV
+TCH	TX
+TE$	T
+TES$	T
+#TI(AEOUÅÉ)-	TX
+#TY(AEOUÅÉ)-	TX
+T$	_
+T	T
+
+# voyales eyet lete "s"
+AE			E	#:wa-ae-e
+AE			A	#:wa-ae-a
+AI			E
+AS(AEIOUYÂÅÉÈÊÎÔÛ)-<	AZ
+AU			A	#:wa-aa-a
+AU			O	#:wa-aa-o
+A			A
+ÂS(AEIOUYÂÅÉÈÊÎÔÛ)-<	AZ
+Â			A
+ÅS(AEIOUYÂÅÉÈÊÎÔÛ)-<	AZ
+Å			A	#:wa-aa-a
+Å			O	#:wa-aa-o
+À			A
+EA			YA	#:wa-ea-ya	
+EA			E	#:wa-ea-e	
+ES(AEIOUYÂÅÉÈÊÎÔÛ)-<	EZ
+EY			IY	#:wa-ey-iy
+EY			EY	#:wa-ey-ey
+E$			_
+ER$			E
+ES$			_
+#E			_	#:wa-feller-e
+E			E
+ÉS(AEIOUYÂÅÉÈÊÎÔÛ)-<	EZ
+ÉN			IN
+É			E
+ÈS(AEIOUYÂÅÉÈÊÎÔÛ)-<	EZ
+È			E
+ÊS(AEIOUYÂÅÉÈÊÎÔÛ)-<	EZ
+ÊY			EY
+Ê			E
+Ë			I
+I(AEOUÅÉ)-		Y
+IS(AEIOUYÂÅÉÈÊÎÔÛ)-<	IZ
+I			I
+ÎS(AEIOUYÂÅÉÈÊÎÔÛ)-<	IZ
+Î			I
+OEN			ON	#:wa-oen-on
+OEN			WIN	#:wa-oen-win
+OE			EU	#:wa-oe-eu
+OE			WE	#:wa-oe-we
+OI			WE	#:wa-oi-we
+OI			WA	#:wa-oi-wa
+OI			O	#:wa-oi-o
+OS(AEIOUYÂÅÉÈÊÎÔÛ)-<	OZ
+O(UÛ)			O
+O			O
+ÔS(AEIOUYÂÅÉÈÊÎÔÛ)-<	OZ
+Ô			O
+Ö			O
+US(AEIOUYÂÅÉÈÊÎÔÛ)-<	UZ
+U			U
+ÛS(AEIOUYÂÅÉÈÊÎÔÛ)-<	UZ
+Û			U
+Ù			U
+SCH			SK	#:wa-sch-sk
+SCH			X	#:wa-sch-ch
+SCH			H	#:wa-sch-h
+SE$			S
+SES$			S
+SH			X	#:wa-sh-ch
+SH			S	#:wa-sh-ss
+S(IY)(AEOUÅÉ)-		X
+SSE$			S
+SSES$			S
+SS			S
+S$			_
+S			S
+
+# fellerisses
+QU(EIÈÉÊÎ)-	K
+QU(AOUÅ)-	KW
+QW		KW
+
+BE$	P
+BES$	P
+B$	P
+B	B
+FWAI	FE
+F	F
+H	H	#:wa-h-h
+H	_	#:wa-h-_
+JHE$	X	#:wa-jh-j
+JHE$	H	#:wa-jh-h
+JHES$	X	#:wa-jh-j
+JHES$	H	#:wa-jh-h
+JH$	X	#:wa-jh-j
+JH$	H	#:wa-jh-h
+JH	J	#:wa-jh-j
+JH	H	#:wa-jh-h
+JE$	X
+JES$	X
+J$	X
+J	J
+K	K
+L	L
+MWAISS	MES
+MWAIST	MEST
+M	M
+N	N
+PH	F
+P	P
+R	R
+VGN	MNY
+VN	MN
+VE$	F
+VES$	F
+V$	F
+V	V
+W	W
+XH	X	#:wa-xh-ch
+XH	H	#:wa-xh-h
+Y	Y
+ZE$	S
+ZES$	S
+#ZI(AEOUÅÉ)-	J
+#ZY(AEOUÅÉ)-	J
+Z$	S
+Z	Z
+

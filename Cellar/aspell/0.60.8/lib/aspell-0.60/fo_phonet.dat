@@ -1,0 +1,137 @@
+version 0.1-2001.04.30-5
+
+# Byggir á danska úttalufílurin.
+#
+# 2001.04.30: Jacob Sparre Andersen
+#
+# Koder:
+#  ^ = start på ord
+#  $ = slut på ord
+#  < = kør rettelsen tilbage i bufferen
+
+# fra for eksempel aftage, det udtages avtage
+AA<                  Å
+AFT^                 AT
+#AF<                  AV
+AH$<                 A
+A                    A
+
+Á                    Á
+
+B                    B
+
+# C udtales nogengange som K, andre gange som S og i få tilfælde som SJ
+# CK bruges ofte til at ændre lyden på det foregående (f.eks ren A lyd)
+#
+CC<                  KK
+CK<                  K  
+CHR^<                KR
+CH<                  SJ
+CI<                  SI
+CO<                  KO
+CY<                  SY
+C                    C
+
+# D udtales ofte blødt/stumt - regler?
+#
+# Stumt G
+
+#DIG^$                DAJ
+#DIG<                 DI
+D                    D
+
+ÐUR<                 VUR
+Ð                    _
+
+EAUX<                O
+EAU<                 O
+#EJ$<                 AJ
+EUS<                 ØVS
+E                    E
+
+É<                   E
+
+È<                   E
+
+F                    F
+
+G                    G
+
+HJ^<                 J
+HÅRD<                HÅR
+HÅND<                HÅN
+H                    H
+
+IÐ^$                 Í
+IÐ$<                 I
+IND^<                IN
+I                    I
+
+Í                    Í
+
+J                    J
+
+KE^                  TJE
+K                    K
+
+# Stumt G
+LIG<                 LI
+L                    L
+
+M                    M
+
+N                    N
+
+OCH<                 OK
+O                    O
+
+Ó                    Ó
+
+PH<                  F
+P                    P
+
+Q<                   KU
+
+#REGN<                REJN
+R                    R
+
+SH<                  SJ
+SIÓN                 SJÓN
+S'S<$                S
+S                    S
+
+TH$<                 T
+TIÓN                 SJÓN
+T                    T
+
+U                    U
+
+Ú                    Ú
+
+Ü<                   Y
+
+V                    V
+
+W<                   V
+
+X'S$<                KS
+X<                   KS
+
+Y<                   I
+
+Ý<                   Í
+
+Z'S$<                S
+Z$<                  S
+Z                    Z
+
+Æ<                   A
+
+Ä<                   Æ
+
+ØRN                  ØDN
+Ø                    Ø
+
+Ö<                   Ø
+
+Å<                   Á

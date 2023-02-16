@@ -1,0 +1,7 @@
+name hsb
+charset iso-8859-2
+affix hsb
+soundslike none
+repl-table hsb_affix.dat
+affix-compress true
+special - **-

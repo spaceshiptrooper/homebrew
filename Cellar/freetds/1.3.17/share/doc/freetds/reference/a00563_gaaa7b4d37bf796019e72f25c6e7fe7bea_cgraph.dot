@@ -1,0 +1,14 @@
+digraph "tds_count_placeholders"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds_count_placeholders",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Count the number of placeholders ('?') in a query."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_next_placeholder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga6455b2991afbf7da90270787f2059d31",tooltip="Get position of next placeholder."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_skip_comment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#gaac7347ba9380d77d726648b85e9fab8f",tooltip="Skip a comment in a query."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tds_skip_quoted",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga5dbe51ce9533218f2da23f69ff63dda4",tooltip="Skip quoting string (like 'sfsf', \"dflkdj\" or [dfkjd])"];
+}

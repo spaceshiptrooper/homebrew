@@ -1,0 +1,76 @@
+#   Copyright (C) 2000 Ramón Flores
+#
+#   This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+#    Ramón Flores may be reached by email at fa2ramon@usc.es
+#
+#    If you want to modify this file, try using grep on the list of word
+#    to see if you modification is valide
+#
+#    Se desexa modificar este ficheiro, utilize o comando grep na lista de
+#    palabras para ver se a sua modificación é válida
+
+version galega 0.1
+
+followup        0
+collapse_result 0
+
+Á                  A
+A                  A
+BEL$		   BLE
+BL		   L
+BM                 M
+BS		   S
+BT                 T
+B		   B
+C(EI)		   S
+C		   K
+D		   D
+É		   E
+EI		   EC
+EI                 EP
+E		   E
+F		   F
+G		   G
+H                  _
+Í                  I
+IT                 ICT
+I		   I
+J                  X
+K                  K
+L                  L
+M                  M
+N                  MN
+N                  NN
+N		   N
+Ó                  O
+ÓN$                IÓN
+O                  O
+PS                 S
+QU                 K
+R		   R
+S                  S
+T                  T
+Ú                  U
+UT                 UCT
+U                  U
+V                  B
+X                  S
+X                  G
+X                  J
+Y                  I
+ZA$                CIA
+ZO$                CIO
+Z                  S

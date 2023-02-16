@@ -1,0 +1,86 @@
+#   Copyright (C) 2000 Rémi Vanicat
+#
+#   This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#    Vanicat Rémi may be reached by email at vanicat@labri.u-bordeaux.fr
+#
+#    If you want to modify this file, try using grep on the list of word
+#    to see if you modification is valide
+#
+#    Si vous voulez modifier ce fichier, essayer d'utiliser grep sur la
+#    liste des mots pour voir si cette modification est valide
+
+version amharic 0.000000001
+
+# Amharic orthography does not geminate, so double is really double:
+collapse_result     0
+
+
+# remove all vowels (syllable bits):
+()	_
+
+
+# keep pseudo-vowels at the start of words:
+^()	
+^	
+^	
+# but remove pseudo-vowels from the middle words:
+()	_
+
+
+# fold phonetically redundant symbols:
+()	
+()	
+()	
+
+
+# some phonological rules: 
+	
+	
+	
+
+
+# direct mappings, no change
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

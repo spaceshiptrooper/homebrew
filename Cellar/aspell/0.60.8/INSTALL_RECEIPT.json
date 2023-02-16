@@ -1,0 +1,49 @@
+{
+  "homebrew_version": "2.5.12-286-g62df715",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "bin/pspell-config",
+    "bin/run-with-aspell",
+    "INSTALL_RECEIPT.json",
+    "README"
+  ],
+  "time": 1676426904,
+  "source_modified_time": 1570918852,
+  "stdlib": "libcxx",
+  "compiler": "clang",
+  "aliases": [
+
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "0.60.8",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/aspell.rb",
+    "tap_git_head": "f9783d649685f18ad46f4ad173b7a4309ddf9720",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 10.14.6",
+    "cpu_family": "penryn",
+    "xcode": "11.3.1",
+    "clt": "11.3.1.0.1.1576735732"
+  }
+}

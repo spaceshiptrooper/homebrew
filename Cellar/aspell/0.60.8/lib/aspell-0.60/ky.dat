@@ -1,0 +1,8 @@
+name ky
+data-encoding utf-8
+charset l-ky
+soundslike none
+affix ky
+affix-compress true
+special - -*- ' -*-
+#repl-table ky_affix.dat    # *only* if there are REPL's in affix file

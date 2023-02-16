@@ -1,0 +1,6 @@
+name la
+charset iso-8859-1
+affix la
+affix-compress true
+partially-expand true
+repl-table la_affix.dat

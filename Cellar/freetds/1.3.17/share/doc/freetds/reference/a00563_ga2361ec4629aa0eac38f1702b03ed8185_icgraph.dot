@@ -1,0 +1,12 @@
+digraph "tds_skip_quoted_ucs2le"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_skip_quoted_ucs2le",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Return pointer to end of a quoted string."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_next_placeholder\l_ucs2le",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#gaa823973b74efdf1ff00f340496bff614",tooltip="Found the next placeholder (? or @param) in a string."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_count_placeholders\l_ucs2le",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga0cd19215e9169ea299a6c9cbf5b2fb60",tooltip="Count the number of placeholders ('?') in a query."];
+}

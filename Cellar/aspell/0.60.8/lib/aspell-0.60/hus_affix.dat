@@ -1,0 +1,98 @@
+SET ISO-8859-1
+TRY aersoinltcdmubpágízfvhéjqóñxyúükCMAIESPGJBRFTDVHUOwLKNZÁYXÜÓÚÉÑQWÍ'-
+
+# -------------------------------------------------------------------------
+# The affix file below is empty on purpose.
+# It is thought to generate the Corpus of the TENEK language
+# 
+# It will be completed with Suffix rules in the final version
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details. 
+# -------------------------------------------------------------------------
+
+SFX N Y 2
+SFX N   l   chik   'l
+SFX N   0   chik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+SFX P Y 1
+SFX P   0   il   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+SFX Q Y 1
+SFX Q   0   ilchik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+SFX T Y 4
+SFX T   0   taláb   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX T   0   talab   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX T   0   talabil   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX T   0   talábil   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+# verbos transitivos
+SFX V Y 3
+SFX V   0   chik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX V   0   kchik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX V   0   akchik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+# verbos intransitivos
+SFX I Y 3
+SFX I   0   chik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX I   0   ak   ['abcdefghijklmnopqrstuwyxzáéíóú]
+SFX I   0   akchik   ['abcdefghijklmnopqrstuwyxzáéíóú]
+
+
+
+SFX C Y 16
+SFX C   l   malak   [aá]l
+SFX C   l   malakchik   [aá]l
+SFX C   l   '   [aá]l
+SFX C   al  a'chik   al
+SFX C   ál  'a   ál
+SFX C   al  'achik   al
+SFX C   ál   a'chik  ál
+SFX C   al  'a   al
+SFX C   ál   'achik   ál
+SFX C   ál   omchik   ál
+SFX C   ál   om   ál
+SFX C   ál   máts   ál
+SFX C   ál   mámadh   ál
+SFX C   ál   mámadhchik   ál
+SFX C   ál   omak   ál
+SFX C   ál   omakchik   ál
+
+REP 28
+REP b v
+REP v b
+REP á a
+REP a á
+REP é e
+REP e é
+REP í i
+REP i í
+REP ó o
+REP o ó
+REP ú u
+REP u ú
+REP ca ka
+REP ka ca
+REP je ge
+REP ge je
+REP ke que
+REP ce ze
+REP ze ce
+REP ji gi
+REP gi ji
+REP ki qui
+REP qui ki
+REP ci zi
+REP zi ci
+REP co ko
+REP cu ku
+REP ku cu
+REP ts ch
+REP ch ts

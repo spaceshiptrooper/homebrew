@@ -1,0 +1,22 @@
+digraph "tds_pool_member"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="tds_pool_member",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" current_user" ,fontname="Helvetica"];
+  Node2 [label="tds_pool_user",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00691.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" assigned_member" ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" login" ,fontname="Helvetica"];
+  Node3 [label="tds_login",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01143.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" capabilities" ,fontname="Helvetica"];
+  Node4 [label="tds_capabilities",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01139.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" app_name\ncafile\nclient_charset\nclient_host_name\ncrlfile\ndatabase\ndb_filename\ndump_file\ninstance_name\nlanguage\n..." ,fontname="Helvetica"];
+  Node6 [label="tds_dstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01283.html",tooltip="Structure to hold a string."];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sock" ,fontname="Helvetica"];
+  Node7 [label="tds_pool_socket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00687.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tds" ,fontname="Helvetica"];
+  Node8 [label="tds_socket",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01235.html",tooltip="Information for a server connection."];
+  Node3 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" login" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sock" ,fontname="Helvetica"];
+}

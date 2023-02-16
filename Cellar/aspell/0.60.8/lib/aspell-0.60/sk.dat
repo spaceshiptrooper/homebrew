@@ -1,0 +1,8 @@
+name sk
+charset iso-8859-2
+data-encoding utf-8
+#special ' -*-
+affix sk
+repl-table sk_affix.dat
+affix-compress true
+

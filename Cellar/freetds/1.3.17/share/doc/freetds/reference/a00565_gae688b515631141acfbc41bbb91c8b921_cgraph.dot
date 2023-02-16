@@ -1,0 +1,17 @@
+digraph "tds5_process_dyn_result2"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds5_process_dyn_result2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Process new TDS 5.0 token for describing output parameters."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_get_uint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#ga9ac121c269e203337a48c5bf8afc48c3",tooltip="Get an int32 from the server."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_get_n",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#gae777dd57e8d1bb40349d7d7d8434fddf",tooltip="Get N bytes from the buffer and return them in the already allocated space   given to us."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tds_read_packet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#ga410619783bdf2bb60b0f27a5578e0e07",tooltip="Read in one 'packet' from the server."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tds_get_usmallint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#gad38aa5b9547817854ccba1fcc7855861",tooltip="Get an int16 from the server."];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,10 @@
+digraph "tds_count_placeholders"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_count_placeholders",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Count the number of placeholders ('?') in a query."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_send_emulated_execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga02c6ce3ff96369603a6ee4efee64caae",tooltip="Emulate prepared execute traslating to a normal language."];
+}

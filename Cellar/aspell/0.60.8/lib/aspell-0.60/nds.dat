@@ -1,0 +1,12 @@
+name nds
+charset iso-8859-15
+data-encoding iso-8859-15
+special ' **- / -*-
+soundslike nds
+run-together true
+run-together-limit 5
+run-together-min 4
+keyboard qwertz
+store-as lower
+affix nds
+affix-compress true

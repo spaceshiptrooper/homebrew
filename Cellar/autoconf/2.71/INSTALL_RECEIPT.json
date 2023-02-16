@@ -1,0 +1,63 @@
+{
+  "homebrew_version": "3.0.9-38-g3466c2d",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "bin/autoconf",
+    "bin/autoheader",
+    "bin/autom4te",
+    "bin/autoreconf",
+    "bin/autoscan",
+    "bin/autoupdate",
+    "bin/ifnames",
+    "INSTALL_RECEIPT.json",
+    "TODO",
+    "share/autoconf/INSTALL",
+    "share/autoconf/autoconf/fortran.m4",
+    "share/autoconf/autoconf/functions.m4",
+    "share/autoconf/autoconf/general.m4",
+    "share/autoconf/autoconf/libs.m4",
+    "share/autoconf/autom4te.cfg"
+  ],
+  "time": 1676426907,
+  "source_modified_time": 1611869099,
+  "compiler": "clang",
+  "aliases": [
+    "autoconf@2.71"
+  ],
+  "runtime_dependencies": [
+    {
+      "full_name": "m4",
+      "version": "1.4.19",
+      "declared_directly": true
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2.71",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/autoconf.rb",
+    "tap_git_head": "f9783d649685f18ad46f4ad173b7a4309ddf9720",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 10.14.6",
+    "cpu_family": "penryn",
+    "xcode": "11.3.1",
+    "clt": "11.3.1.0.1.1576735732"
+  }
+}

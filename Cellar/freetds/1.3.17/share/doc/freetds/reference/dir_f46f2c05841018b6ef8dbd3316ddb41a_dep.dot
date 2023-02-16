@@ -1,0 +1,15 @@
+digraph "include/freetds" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  subgraph clusterdir_f46f2c05841018b6ef8dbd3316ddb41a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f46f2c05841018b6ef8dbd3316ddb41a.html"];
+    dir_f46f2c05841018b6ef8dbd3316ddb41a [shape=plaintext label="freetds"];
+    dir_b663d705931e630ae54c555929c6aaad [shape=box label="replacements" color="black" fillcolor="white" style="filled" URL="dir_b663d705931e630ae54c555929c6aaad.html"];
+    dir_0da4150d9fb2a5fe66d7630d7a98e2a8 [shape=box label="utils" color="black" fillcolor="white" style="filled" URL="dir_0da4150d9fb2a5fe66d7630d7a98e2a8.html"];
+  }
+  }
+  dir_f46f2c05841018b6ef8dbd3316ddb41a->dir_b663d705931e630ae54c555929c6aaad [headlabel="1", labeldistance=1.5 headhref="dir_000001_000002.html"];
+}

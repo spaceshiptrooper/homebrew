@@ -1,0 +1,9 @@
+digraph "ODBC API"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="ODBC API",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Functions callable by ODBC client programs."];
+  Node2 [label="ODBC utility",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00557.html",tooltip="Functions called within ODBC driver."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+}

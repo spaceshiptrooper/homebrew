@@ -1,0 +1,28 @@
+digraph "conv_result"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="conv_result",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dta" ,fontname="Helvetica"];
+  Node2 [label="TDS_DATETIMEALL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01119.html",tooltip="this structure is not directed connected to a TDS protocol but keeps any DATE/TIME information."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cc" ,fontname="Helvetica"];
+  Node3 [label="conv_result::cc_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00963.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cb" ,fontname="Helvetica"];
+  Node4 [label="conv_result::cb_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00967.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" u" ,fontname="Helvetica"];
+  Node5 [label="tdsunique",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01067.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt" ,fontname="Helvetica"];
+  Node6 [label="tdsdatetime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01059.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m" ,fontname="Helvetica"];
+  Node7 [label="tdsmoney",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01051.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tdsoldmoney" ,fontname="Helvetica"];
+  Node8 [label="tdsoldmoney",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01047.html",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" n" ,fontname="Helvetica"];
+  Node9 [label="tdsnumeric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01043.html",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m4" ,fontname="Helvetica"];
+  Node10 [label="tdsmoney4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01055.html",tooltip=" "];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dt4" ,fontname="Helvetica"];
+  Node11 [label="tdsdatetime4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01063.html",tooltip=" "];
+}

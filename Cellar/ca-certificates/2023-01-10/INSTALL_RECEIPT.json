@@ -1,0 +1,46 @@
+{
+  "homebrew_version": "3.6.18-12-gdbf0e28",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": false,
+  "installed_on_request": true,
+  "changed_files": [
+
+  ],
+  "time": 1676424203,
+  "source_modified_time": 1673323926,
+  "compiler": "clang",
+  "aliases": [
+
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2023-01-10",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/ca-certificates.rb",
+    "tap_git_head": "f9783d649685f18ad46f4ad173b7a4309ddf9720",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 12",
+    "cpu_family": "arm_firestorm_icestorm",
+    "xcode": "14.1",
+    "clt": "14.1.0.0.1.1665256668",
+    "preferred_perl": "5.30"
+  }
+}

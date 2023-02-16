@@ -1,0 +1,7 @@
+name mn
+charset l-mn
+data-encoding utf-8
+affix mn
+repl-table mn_affix.dat
+affix-compress true
+#special ' -*-

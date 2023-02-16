@@ -1,0 +1,7 @@
+name sr
+charset l-sr
+data-encoding utf-8
+special ' -** - -*-
+sug-split-char -
+soundslike none
+store-as stripped

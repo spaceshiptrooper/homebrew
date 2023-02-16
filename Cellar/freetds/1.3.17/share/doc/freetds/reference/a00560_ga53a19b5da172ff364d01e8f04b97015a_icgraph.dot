@@ -1,0 +1,16 @@
+digraph "parse_numeric"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="parse_numeric",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Parse a string for numbers."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="parse_int8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00560.html#gace939c1fa676d172cb0cae94848b7fac",tooltip="convert a number in string to TDS_INT8"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="string_to_int8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00560.html#ga933f87cca76156648e91f472650b98f3",tooltip="convert a number in string to TDS_INT8"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="string_to_uint8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00560.html#gae8e173a9f8d2e3f152ada9f48d3d5f28",tooltip="convert a number in string to TDS_UINT8"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="string_to_int",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00560.html#ga0176fafd412b5b8005bf1202fbc13b00",tooltip="convert a number in string to TDS_INT"];
+}

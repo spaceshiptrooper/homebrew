@@ -1,0 +1,54 @@
+digraph "tds_socket"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds_socket",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Information for a server connection."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" login" ,fontname="Helvetica"];
+  Node2 [label="tds_login",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01143.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" capabilities" ,fontname="Helvetica"];
+  Node3 [label="tds_capabilities",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01139.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" types" ,fontname="Helvetica"];
+  Node4 [label="tds_capability_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01135.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" app_name\ncafile\nclient_charset\nclient_host_name\ncrlfile\ndatabase\ndb_filename\ndump_file\ninstance_name\nlanguage\n..." ,fontname="Helvetica"];
+  Node5 [label="tds_dstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01283.html",tooltip="Structure to hold a string."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" frozen_packets\nrecv_packet\nsend_packet" ,fontname="Helvetica"];
+  Node6 [label="tds_packet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01223.html",tooltip=" "];
+  Node6 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cur_dyn" ,fontname="Helvetica"];
+  Node7 [label="tds_dynamic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01207.html",tooltip="Holds information for a dynamic (also called prepared) query."];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" params\nres_info" ,fontname="Helvetica"];
+  Node8 [label="tds_result_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01183.html",tooltip="Hold information for any results."];
+  Node1 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attached_to" ,fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" columns" ,fontname="Helvetica"];
+  Node9 [label="tds_column",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01175.html",tooltip="Metadata about columns in regular and compute rows."];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" char_conv" ,fontname="Helvetica"];
+  Node10 [label="tdsiconvinfo",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a00983.html",tooltip=" "];
+  Node5 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" column_name\ntable_column_name\ntable_name" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" comp_info\ncurrent_results\nparam_info\nres_info" ,fontname="Helvetica"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cur_cursor" ,fontname="Helvetica"];
+  Node16 [label="tds_cursor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01199.html",tooltip="Holds informations about a cursor."];
+  Node17 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" status" ,fontname="Helvetica"];
+  Node17 [label="tds_cursor_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01195.html",tooltip=" "];
+  Node8 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" res_info" ,fontname="Helvetica"];
+  Node16 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node18 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" conn" ,fontname="Helvetica"];
+  Node18 [label="tds_connection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01231.html",tooltip=" "];
+  Node3 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" capabilities" ,fontname="Helvetica"];
+  Node19 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" wakeup" ,fontname="Helvetica"];
+  Node19 [label="tds_poll_wakeup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01227.html",tooltip=" "];
+  Node20 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" env" ,fontname="Helvetica"];
+  Node20 [label="tds_env",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01203.html",tooltip="Current environment as reported by the server."];
+  Node21 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tds_ctx" ,fontname="Helvetica"];
+  Node21 [label="tds_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01215.html",tooltip=" "];
+  Node22 -> Node21 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locale" ,fontname="Helvetica"];
+  Node22 [label="tds_locale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01151.html",tooltip=" "];
+  Node23 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" authentication" ,fontname="Helvetica"];
+  Node23 [label="tds_authentication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01219.html",tooltip=" "];
+  Node6 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" packet_cache" ,fontname="Helvetica"];
+  Node7 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dyns" ,fontname="Helvetica"];
+  Node10 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" char_convs" ,fontname="Helvetica"];
+  Node16 -> Node18 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursors" ,fontname="Helvetica"];
+}

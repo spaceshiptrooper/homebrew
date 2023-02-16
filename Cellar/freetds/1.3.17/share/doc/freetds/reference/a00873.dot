@@ -1,0 +1,28 @@
+digraph "_cs_context"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_cs_context",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" clientstore" ,fontname="Helvetica"];
+  Node2 [label="cs_diag_msg_client",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00863.html",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" clientmsg" ,fontname="Helvetica"];
+  Node3 [label="_cs_clientmsg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00851.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tds_ctx" ,fontname="Helvetica"];
+  Node4 [label="tds_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01215.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locale" ,fontname="Helvetica"];
+  Node5 [label="tds_locale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01151.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" config" ,fontname="Helvetica"];
+  Node6 [label="_cs_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00859.html",tooltip=" "];
+  Node1 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _clientmsg_cb\n_cslibmsg_cb\n_servermsg_cb" ,fontname="Helvetica"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" svrstore" ,fontname="Helvetica"];
+  Node7 [label="cs_diag_msg_svr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00867.html",tooltip=" "];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" servermsg" ,fontname="Helvetica"];
+  Node8 [label="_cs_servermsg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00855.html",tooltip=" "];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" msgstore" ,fontname="Helvetica"];
+  Node9 [label="cs_diag_msg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00871.html",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" msg" ,fontname="Helvetica"];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+}

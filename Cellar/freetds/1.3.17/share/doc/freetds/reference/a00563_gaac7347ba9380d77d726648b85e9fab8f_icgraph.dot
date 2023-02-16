@@ -1,0 +1,14 @@
+digraph "tds_skip_comment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_skip_comment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Skip a comment in a query."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_next_placeholder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga6455b2991afbf7da90270787f2059d31",tooltip="Get position of next placeholder."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_count_placeholders",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#gaaa7b4d37bf796019e72f25c6e7fe7bea",tooltip="Count the number of placeholders ('?') in a query."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tds_send_emulated_execute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga02c6ce3ff96369603a6ee4efee64caae",tooltip="Emulate prepared execute traslating to a normal language."];
+}

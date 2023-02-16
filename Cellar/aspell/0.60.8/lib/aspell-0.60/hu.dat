@@ -1,0 +1,8 @@
+name hu
+charset iso-8859-2
+affix hu
+repl-table hu_affix.dat
+affix-compress true
+special - -**
+
+

@@ -1,0 +1,28 @@
+digraph "tds4_send_emulated_rpc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds4_send_emulated_rpc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Send RPC as string query."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_dstr_cstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga5f351a208e7aa13b4cc2d32cac8fc0fa",tooltip="Returns a C version (NUL terminated string) of dstr."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_dstr_isempty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga197c6af67f2e7469d06c2aa055917b1e",tooltip="test if string is empty"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tds_dstr_len",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga396f139e4f886ac1b224a735138e73dd",tooltip="Returns the length of the string in bytes."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tds_get_column_declaration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga50d62edeb2a432e2dc668263f3f958ff",tooltip="Return declaration for column (like \"varchar(20)\")."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="tds_put_param_as_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga0e2e7230c425e925402d7856ff5b4b18",tooltip="Send a parameter to server."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="tds_put_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#ga1fcaf8d488cc1390f106ce3ad0bf37b4",tooltip="Output a string to wire automatic translate string to unicode if needed."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="tds_query_flush_packet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#gada27f4cfce925240ad33b71b63ca692d",tooltip="Flush query packet."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="tds_flush_packet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#ga5feb53554e8917a81bbbc332163a61fb",tooltip="Flush packet to server."];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="tds_set_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00449.html#a16db200d2281f76fe46fc1cbe37ca9df",tooltip="Set state of TDS connection, with logging and checking."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="tdsdump_log",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00449.html#ab45c291105027e69836002e1dd586141",tooltip="Write a message to the debug log."];
+}

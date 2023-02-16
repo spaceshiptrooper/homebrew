@@ -1,0 +1,21 @@
+digraph "The db-lib API"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="The db-lib API",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Functions callable by db-lib client programs."];
+  Node3 [label="Remote Procedure functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00549.html",tooltip="Functions used with stored procedures."];
+  Node5 [label="Money functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00552.html",tooltip="Functions to manipulate the MONEY datatype."];
+  Node7 [label="Internals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00554.html",tooltip="Functions called within db-lib for self-help."];
+  Node2 [label="Primary functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00548.html",tooltip="Core functions needed by most db-lib programs."];
+  Node6 [label="Datetime functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00553.html",tooltip="Functions to manipulate DBDATETIME structures."];
+  Node8 [label="Unimplemented",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00555.html",tooltip="Functions thus far not implemented in the FreeTDS db-lib implementation."];
+  Node4 [label="Bulk copy functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00550.html",tooltip="Functions to bulk-copy (a/k/a bcp) data to/from the database."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+}

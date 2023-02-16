@@ -1,0 +1,13 @@
+prefix=/usr/local/Cellar/gd/2.3.3_4
+exec_prefix=${prefix}
+libdir=/usr/local/Cellar/gd/2.3.3_4/lib
+includedir=${prefix}/include
+
+Name: gd
+Description: GD graphics library
+Version: 2.3.3
+Requires:
+Requires.private:   zlib  libpng  freetype2 >= 9.8.3  fontconfig  libjpeg  libtiff-4  libwebp >= 0.2.0  libavif >= 0.8.2
+Cflags: -I${includedir}
+Libs.private:  -liconv
+Libs: -L${libdir} -lgd

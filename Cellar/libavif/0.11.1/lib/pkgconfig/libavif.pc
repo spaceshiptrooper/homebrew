@@ -1,0 +1,10 @@
+prefix=/usr/local/Cellar/libavif/0.11.1
+exec_prefix=/usr/local/Cellar/libavif/0.11.1
+libdir=/usr/local/Cellar/libavif/0.11.1/lib
+includedir=/usr/local/Cellar/libavif/0.11.1/include
+
+Name: libavif
+Description: Library for encoding and decoding .avif files
+Version: 0.11.1
+Libs: -L${libdir} -lavif
+Cflags: -I${includedir} -DAVIF_DLL

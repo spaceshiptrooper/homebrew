@@ -1,0 +1,12 @@
+digraph "tds_ntlm_get_auth"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds_ntlm_get_auth",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Build a NTLMSPP packet to send to server."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_dstr_cstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga5f351a208e7aa13b4cc2d32cac8fc0fa",tooltip="Returns a C version (NUL terminated string) of dstr."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_dstr_len",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga396f139e4f886ac1b224a735138e73dd",tooltip="Returns the length of the string in bytes."];
+}

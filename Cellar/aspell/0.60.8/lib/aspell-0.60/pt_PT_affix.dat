@@ -1,0 +1,30 @@
+ispellaff2myspell: A program to convert ispell affix tables to myspell format
+(C) 2002-2013 Agustin Martin Domingo <agustin.martin@hispalinux.es>         License: GPL2+
+
+Usage:
+	ispellaff2myspell [options] <affixfile>
+
+      Options:
+	--affixfile=s      Affix file
+	--bylocale         Use current locale setup for upper/lowercase
+                           conversion
+	--charset=s        Use specified charset for upper/lowercase
+                           conversion (defaults to latin1)
+ 	--debug            Print debugging info
+ 	--extraflags       Allow some non alphabetic flags
+	--lowercase=s      Lowercase string
+        --myheader=s       Header file
+	--printcomments    Print commented lines in output
+        --replacements=s   Replacements file
+        --split=i          Split flags with more that i entries
+	--uppercase=s      Uppercase string
+	--wordlist=s       Still unused
+
+  Currently allowed valued for charset are: latin1, latin2, latin3
+
+This script does not create the dict file. Something like
+
+( echo `cat mydict.words+ | wc -l`; cat mydict.words+ ) > mydict.dict
+
+should do the work, with mydict.words+ being the ispell munched wordlist
+

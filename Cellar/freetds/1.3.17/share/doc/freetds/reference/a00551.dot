@@ -1,0 +1,9 @@
+digraph "Internal bcp functions"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="Internal bcp functions",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Static functions internal to the bcp library."];
+  Node2 [label="Bulk copy functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00550.html",tooltip="Functions to bulk-copy (a/k/a bcp) data to/from the database."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

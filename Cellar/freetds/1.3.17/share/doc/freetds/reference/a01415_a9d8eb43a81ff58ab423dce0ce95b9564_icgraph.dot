@@ -1,0 +1,10 @@
+digraph "tds_convert_stream"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_convert_stream",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Reads and writes from a stream converting characters."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="read_and_convert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html#ga676c4dee6522815b16fdc8e448e43590",tooltip="For UTF-8 and similar, tds_iconv() may encounter a partial sequence when the chunk boundary is not al..."];
+}

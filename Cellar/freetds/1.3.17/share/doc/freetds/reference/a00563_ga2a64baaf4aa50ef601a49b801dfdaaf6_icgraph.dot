@@ -1,0 +1,10 @@
+digraph "tds_cursor_check_allocated"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_cursor_check_allocated",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Check if a cursor is allocated into the server."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_deferred_cursor\l_dealloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga57bd0fabe5bcdeb3ef091259b3a7c1fc",tooltip="Deallocate cursor on idle."];
+}

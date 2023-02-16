@@ -1,0 +1,46 @@
+{
+  "homebrew_version": "2.7.7-40-g24bbfff",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": false,
+  "installed_on_request": true,
+  "changed_files": [
+    "INSTALL_RECEIPT.json"
+  ],
+  "time": 1676427410,
+  "source_modified_time": 1611151651,
+  "stdlib": "libcxx",
+  "compiler": "clang",
+  "aliases": [
+    "libmpdec"
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2.5.1",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/mpdecimal.rb",
+    "tap_git_head": "f87ecca05cfcff82802815abef7b132c1e2f7389",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 10.14.6",
+    "cpu_family": "penryn",
+    "xcode": "11.3.1",
+    "clt": "11.3.1.0.1.1576735732"
+  }
+}

@@ -1,0 +1,126 @@
+###### Prefixen
+#
+#	an		A
+#	af		Q
+#	be		B
+#	dör+dörch	R
+#	daal		L
+#	her		S
+#	hen		E
+#	hooch		H
+#	in		J
+#	över		K
+#	op		P
+#	to		T
+#	torüch		G
+#	ünner		N
+#	ut		U
+#	ver		V
+#	vör		F
+#	weg		X
+#	üm		Ü
+#	-e		C
+#	-en		Z
+
+PFX A Y 1
+PFX A 0 an .
+
+PFX Q Y 1
+PFX Q 0 af .
+
+PFX B Y 1
+PFX B 0 be .
+
+PFX R Y 2
+PFX R 0 dör .
+PFX R 0 dörch .
+
+PFX L Y 1
+PFX L 0 daal .
+
+PFX H Y 1
+PFX H 0 hooch .
+
+PFX J Y 1
+PFX J 0 in .
+
+PFX K Y 1
+PFX K 0 över .
+
+PFX P Y 1
+PFX P 0 op .
+
+PFX T Y 1
+PFX T 0 to .
+
+PFX G Y 1
+PFX G 0 torüch .
+
+PFX S Y 1
+PFX S 0 her .
+
+PFX E Y 1
+PFX E 0 hen .
+
+PFX N Y 1
+PFX N 0 ünner .
+
+PFX U Y 1
+PFX U 0 ut .
+
+PFX V Y 1
+PFX V 0 ver .
+
+PFX F Y 1
+PFX F 0 vör .
+
+PFX X Y 1
+PFX X 0 weg .
+
+PFX Ü Y 1
+PFX Ü 0 üm .
+
+SFX C Y 1
+SFX C 0 e [^e]
+
+SFX Z Y 1
+SFX Z 0 en [^e]
+
+###### Suffixen för Verben
+# I=ik, Ennen för 1.Persoon
+# D=du
+# W=wi
+# M=Mehrtall vun't Part.Perf. ("leeste Böker")
+# O=Part.Perf.Eentall in'n Objektiv ("den fohrten Mann")
+# 1.  Reeg: Verben op -en (schicken, mellen)
+# 2.  Reeg: Verben op -rn un -ln (ännern, sekern, hanneln, stapeln)
+# 3.  Reeg: Verben mit Vokaalverdubbeln, Formen warrn vun de 1.Pers. afleddt; maken-(ik) maak/DWMO, lesen-(ik) lees/WMO)
+# 4.Reeg: Verben op -sen/-ten (passen, setten, stütten))
+
+SFX I Y 2
+SFX I en 0 en
+SFX I n 0 [lr]n
+
+SFX D Y 4
+SFX D en st [^s]en
+SFX D n st [lr]n
+SFX D 0 st [^n]
+SFX D en t sen
+
+SFX W Y 4
+SFX W en t [^t]en
+SFX W n t [lr]n
+SFX W 0 t [^n]
+SFX W en 0 ten
+
+SFX M Y 4
+SFX M en te [^t]en
+SFX M n te e[lr]n
+SFX M 0 te [^n]
+SFX M en e ten
+
+SFX O Y 4
+SFX O en ten [^t]en
+SFX O n ten e[lr]n
+SFX O 0 ten [^n]
+SFX O en en ten

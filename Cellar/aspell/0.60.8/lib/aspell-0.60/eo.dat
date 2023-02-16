@@ -1,0 +1,6 @@
+name eo
+charset iso8859-3
+soundslike none
+special ' --* - -*-
+affix eo
+affix-compress true

@@ -1,0 +1,27 @@
+digraph "END_LOGIN_EVENT"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="END_LOGIN_EVENT",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pool" ,fontname="Helvetica"];
+  Node2 [label="tds_pool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00699.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ctx" ,fontname="Helvetica"];
+  Node3 [label="tds_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01215.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locale" ,fontname="Helvetica"];
+  Node4 [label="tds_locale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01151.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" events" ,fontname="Helvetica"];
+  Node5 [label="tds_pool_event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00683.html",tooltip=" "];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" execute\nnext" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" puser" ,fontname="Helvetica"];
+  Node6 [label="tds_pool_user",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00691.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" assigned_member" ,fontname="Helvetica"];
+  Node7 [label="tds_pool_member",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00695.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" current_user" ,fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sock" ,fontname="Helvetica"];
+  Node8 [label="tds_pool_socket",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a00687.html",tooltip=" "];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" login" ,fontname="Helvetica"];
+  Node10 [label="tds_login",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01143.html",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sock" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" common" ,fontname="Helvetica"];
+}

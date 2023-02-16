@@ -1,0 +1,6 @@
+name hy
+data-encoding UTF-8
+charset u-armn
+special ' -** " -*-
+affix hy
+affix-compress true

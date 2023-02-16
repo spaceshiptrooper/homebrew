@@ -1,0 +1,7 @@
+name           hus
+charset        iso8859-1
+special ' *** 
+affix-compress true
+soundslike     generic
+affix          hus
+repl-table     hus_affix.dat

@@ -1,0 +1,7 @@
+name ca
+charset iso8859-1
+affix ca_affix
+affix-compress true
+special ' -*- - -*- · -*- . -**
+rem-sug-split-char -
+store-as lower

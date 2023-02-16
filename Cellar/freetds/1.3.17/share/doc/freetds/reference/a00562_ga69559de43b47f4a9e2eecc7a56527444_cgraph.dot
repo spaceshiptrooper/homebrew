@@ -1,0 +1,12 @@
+digraph "tds_alloc_dynamic"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds_alloc_dynamic",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Allocate a dynamic statement."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_get_dynid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00562.html#ga501af7e6186e59c257729599a044a30b",tooltip="Get an id for dynamic query based on TDS information."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_lookup_dynamic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00565.html#ga595fe391e60a71bd98ffd53b4c015e44",tooltip="Finds a dynamic given string id."];
+}

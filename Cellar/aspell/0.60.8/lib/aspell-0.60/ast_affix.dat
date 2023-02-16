@@ -1,0 +1,2036 @@
+# =======================================================================================
+#                         Correutor normativu d'ortografía asturiana
+#                                      Ficheru d'afixos
+# =======================================================================================
+# Copyright (C) 2010 Softastur <alministradores@softastur.org>, <esbardu@softastur.org>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+# =======================================================================================
+# Fontes: Diccionariu de l'Academia de la Llingua Asturiana (2000), 1ª Ed.
+#         Normes ortográfiques de l'Academia de la Llingua Asturiana (2005), 6ª Ed.
+#         Gramática de la Llingua Asturiana (2001), 3ª Ed.
+# =======================================================================================
+
+  # trY  
+TRY easirtocnñlumdpgvfbqjwxyzháéíóúüḥḷ-'EASIRTOCNÑLUMDPGVFBQJWXYZHÁÉÍÓÚÜḤḶ
+
+# Regles
+#     A  Apostrofaciones al entamu de pallabra (provisional)
+#     B  Apostrofaciones a lo cabero de pallabra (provisional)
+#     C  (contraiciones)
+#     D  Pronomes personales enclíticos en verbos (de momentu solo infinitivos)
+#     E  Pallabres variables namái en númberu (regla xeneral)
+#     e  Pallabres variables namái en númberu (regles especiales)
+#     F  Pallabres variables en xéneru y númberu
+#     f  Pallabres variables en xéneru y númberu que nun almiten neutru (xeneralmente profesiones)
+#     G  Verbos regulares y con variantes ortográfiques menores
+#     H  Verbos irregulares
+#     I  
+#     J  
+#     K  
+#     L  
+#     M  
+#     N  
+#     O  
+#     P  
+#     Q  
+#     R  
+#     S  
+#     T  
+#     U  
+#     V  
+#     W  
+#     Y  
+#     Z  
+
+# Apostrofaciones al entamu de pallabra (provisional)
+PFX A Y 9
+PFX A   0      l'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # l'arca, l'historial
+PFX A   0      n'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # n'arca, n'historial
+PFX A   0      d'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # d'arca, d'historial
+PFX A   0      p'          a                       # p'arriba
+PFX A   0      p'          ha                      # p'haza
+PFX A   0      qu'         [AÁEÉIÍOÓUÚaáeéiíoóuúh] # qu'ellí, qu'haza
+PFX A   0      m'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # m'abulta
+PFX A   0      t'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # t'abulta
+PFX A   0      s'          [AÁEÉIÍOÓUÚaáeéiíoóuúh] # s'abulta
+
+# Apostrofaciones a lo cabero de pallabra (provisional)
+SFX B Y 1
+SFX B   0      'l          [aáeéiíoóuú]     # que'l
+
+# (Contraiciones)
+
+# Pronomes personales enclíticos en verbos (de momentu solo infinitivos)
+SFX D Y 117
+SFX D   r      me          [aei]r           # apartame, faceme, abrime
+SFX D   r      te          [aei]r           # apartate, facete, abrite
+SFX D   r      -y          [aei]r           # aparta-y, face-y, abri-y
+SFX D   r      lu          [aei]r           # apartalu, facelu, abrilu
+SFX D   r      la          [aei]r           # apartala, facela, abrila
+SFX D   r      lo          [aei]r           # apartalo, facelo, abrilo
+SFX D   r      los         [aei]r           # apartalos, facelos, abrilos
+SFX D   r      les         [aei]r           # apartales, faceles, abriles
+SFX D   r      nos         [aei]r           # apartanos, facenos, abrinos
+SFX D   r      mos         [aei]r           # apartamos, facemos, abrimos
+SFX D   r      vos         [aei]r           # apartavos, facevos, abrivos
+SFX D   r      -yos        [aei]r           # aparta-yos, face-yos, abri-yos
+SFX D   ar     ámelu       ar               # apartámelu
+SFX D   ar     ámela       ar               # apartámela
+SFX D   ar     ámelo       ar               # apartámelo
+SFX D   ar     ámelos      ar               # apartámelos
+SFX D   ar     ámeles      ar               # apartámeles
+SFX D   er     émelu       er               # facémelu
+SFX D   er     émela       er               # facémela
+SFX D   er     émelo       er               # facémelo
+SFX D   er     émelos      er               # facémelos
+SFX D   er     émeles      er               # facémeles
+SFX D   ir     ímelu       ir               # abrímelu
+SFX D   ir     ímela       ir               # abrímela
+SFX D   ir     ímelo       ir               # abrímelo
+SFX D   ir     ímelos      ir               # abrímelos
+SFX D   ir     ímeles      ir               # abrímeles
+SFX D   ar     átelu       ar               # apartátelu
+SFX D   ar     átela       ar               # apartátela
+SFX D   ar     átelo       ar               # apartátelo
+SFX D   ar     átelos      ar               # apartátelos
+SFX D   ar     áteles      ar               # apartáteles
+SFX D   er     ételu       er               # facételu
+SFX D   er     étela       er               # facétela
+SFX D   er     ételo       er               # facételo
+SFX D   er     ételos      er               # facételos
+SFX D   er     ételes      er               # facételes
+SFX D   ir     ítelu       ir               # abrítelu
+SFX D   ir     ítela       ir               # abrítela
+SFX D   ir     ítelo       ir               # abrítelo
+SFX D   ir     ítelos      ir               # abrítelos
+SFX D   ir     íteles      ir               # abríteles
+SFX D   ar     á-ylu       ar               # apartá-ylu
+SFX D   ar     á-yla       ar               # apartá-yla
+SFX D   ar     á-ylo       ar               # apartá-ylo
+SFX D   ar     á-ylos      ar               # apartá-ylos
+SFX D   ar     á-yles      ar               # apartá-yles
+SFX D   er     é-ylu       er               # facé-ylu
+SFX D   er     é-yla       er               # facé-yla
+SFX D   er     é-ylo       er               # facé-ylo
+SFX D   er     é-ylos      er               # facé-ylos
+SFX D   er     é-yles      er               # facé-yles
+SFX D   ir     í-ylu       ir               # abrí-ylu
+SFX D   ir     í-yla       ir               # abrí-yla
+SFX D   ir     í-ylo       ir               # abrí-ylo
+SFX D   ir     í-ylos      ir               # abrí-ylos
+SFX D   ir     í-yles      ir               # abrí-yles
+SFX D   ar     ánoslu       ar               # apartánoslu
+SFX D   ar     ánosla       ar               # apartánosla
+SFX D   ar     ánoslo       ar               # apartánoslo
+SFX D   ar     ánoslos      ar               # apartánoslos
+SFX D   ar     ánosles      ar               # apartánosles
+SFX D   er     énoslu       er               # facénoslu
+SFX D   er     énosla       er               # facénosla
+SFX D   er     énoslo       er               # facénoslo
+SFX D   er     énoslos      er               # facénoslos
+SFX D   er     énosles      er               # facénosles
+SFX D   ir     ínoslu       ir               # abrínoslu
+SFX D   ir     ínosla       ir               # abrínosla
+SFX D   ir     ínoslo       ir               # abrínoslo
+SFX D   ir     ínoslos      ir               # abrínoslos
+SFX D   ir     ínosles      ir               # abrínosles
+SFX D   ar     ámoslu       ar               # apartámoslu
+SFX D   ar     ámosla       ar               # apartámosla
+SFX D   ar     ámoslo       ar               # apartámoslo
+SFX D   ar     ámoslos      ar               # apartámoslos
+SFX D   ar     ámosles      ar               # apartámosles
+SFX D   er     émoslu       er               # facémoslu
+SFX D   er     émosla       er               # facémosla
+SFX D   er     émoslo       er               # facémoslo
+SFX D   er     émoslos      er               # facémoslos
+SFX D   er     émosles      er               # facémosles
+SFX D   ir     ímoslu       ir               # abrímoslu
+SFX D   ir     ímosla       ir               # abrímosla
+SFX D   ir     ímoslo       ir               # abrímoslo
+SFX D   ir     ímoslos      ir               # abrímoslos
+SFX D   ir     ímosles      ir               # abrímosles
+SFX D   ar     ávoslu       ar               # apartávoslu
+SFX D   ar     ávosla       ar               # apartávosla
+SFX D   ar     ávoslo       ar               # apartávoslo
+SFX D   ar     ávoslos      ar               # apartávoslos
+SFX D   ar     ávosles      ar               # apartávosles
+SFX D   er     évoslu       er               # facévoslu
+SFX D   er     évosla       er               # facévosla
+SFX D   er     évoslo       er               # facévoslo
+SFX D   er     évoslos      er               # facévoslos
+SFX D   er     évosles      er               # facévosles
+SFX D   ir     ívoslu       ir               # abrívoslu
+SFX D   ir     ívosla       ir               # abrívosla
+SFX D   ir     ívoslo       ir               # abrívoslo
+SFX D   ir     ívoslos      ir               # abrívoslos
+SFX D   ir     ívosles      ir               # abrívosles
+SFX D   ar     á-yoslu       ar               # apartá-yoslu
+SFX D   ar     á-yosla       ar               # apartá-yosla
+SFX D   ar     á-yoslo       ar               # apartá-yoslo
+SFX D   ar     á-yoslos      ar               # apartá-yoslos
+SFX D   ar     á-yosles      ar               # apartá-yosles
+SFX D   er     é-yoslu       er               # facé-yoslu
+SFX D   er     é-yosla       er               # facé-yosla
+SFX D   er     é-yoslo       er               # facé-yoslo
+SFX D   er     é-yoslos      er               # facé-yoslos
+SFX D   er     é-yosles      er               # facé-yosles
+SFX D   ir     í-yoslu       ir               # abrí-yoslu
+SFX D   ir     í-yosla       ir               # abrí-yosla
+SFX D   ir     í-yoslo       ir               # abrí-yoslo
+SFX D   ir     í-yoslos      ir               # abrí-yoslos
+SFX D   ir     í-yosles      ir               # abrí-yosles
+
+# pallabres variables namái en númberu (regla xeneral)
+SFX E Y 15
+SFX E   0     s           [eioáéíóú]          # bates, hipis, pelos, tabús...
+SFX E   u     os          [^áé]u              # canciu, cancios
+SFX E   a     es          [^zcgu]a            # casa, cases
+SFX E   0     es          [dlnrx]             # llaúdes, abaciales, cien, glaciares, paisaxes
+SFX E   z     ces         z                   # cruz, cruces
+SFX E   za    ces         za                  # asemeyanza, asemeyances
+SFX E   ca    ques        ca                  # albarca, albarques
+SFX E   ga    gues        ga                  # abeluga, abelugues
+SFX E   a     es          [^g]ua              # ascua, ascues
+SFX E   ua    ües         gua                 # agua, agües
+SFX E   áu    aos         áu                  # llancaráu, llancaraos
+SFX E   éu    eos         éu                  # carbayéu, carbayeos
+SFX E   ús    uses        ús                  # microbús, microbuses
+SFX E   és    eses        és                  # luxemburgués, luxemburgueses
+SFX E   ós    oses        ós                  # adiós, adioses
+
+# pallabres variables namái en númberu (regles especiales)
+SFX e Y 20
+SFX e   ome   ómenes      ome                 # abdome, abdómenes
+SFX e   ame   ámenes      ame                 # velame, velámenes
+SFX e   amen  ámenes      amen                # llamen, llámenes
+SFX e   á     aes         á                   # comunidá, comunidaes
+SFX e   a     as          a                   # la, las (nota musical)
+SFX e   0     es          ú                   # llatitú, llatitúes
+SFX e   án    anes        án                  # fontán, fontanes
+SFX e   én    enes        én                  # llantén, llantenes
+SFX e   ín    inos        ín                  # camín, caminos
+SFX e   in    inos        in                  # llin, llinos
+SFX e   ón    ones        ón                  # camión, camiones
+SFX e   ás    ases        ás                  # aguarrás, aguarrases
+SFX e   ís    ises        ís                  # malvís, malvises
+SFX e   ada   aes         ada                 # babayada, babayaes
+SFX e   eda   ees         eda                 # llamareda, llamarees
+SFX e   ida   íes         ida                 # llambida, llambíes
+SFX e   ucleu úcleos      ucleu               # nucleu, núcleos
+SFX e   oleu  óleos       oleu                # llinoleu, llinóleos
+SFX e   ixe   íxenes      ixe                 # aborixe, aboríxenes
+SFX e   arxe  árxenes     arxe                # marxe, márxenes
+
+# pallabres variables en xéneru y númberu
+SFX F Y 109
+SFX F   u     a           [^áeícz]u           # estraña
+SFX F   u     o           [^áeícz]u           # estraño
+SFX F   u     es          [^áeícz]u           # estrañes
+SFX F   u     os          [^áeícz]u           # estraños
+SFX F   íu    ida         íu                  # aburrida
+SFX F   íu    ío          íu                  # aburrío
+SFX F   íu    íes         íu                  # aburríes
+SFX F   íu    íos         íu                  # aburríos
+SFX F   cu    ca          cu                  # babieca
+SFX F   cu    co          cu                  # babieco
+SFX F   cu    ques        cu                  # babieques
+SFX F   cu    cos         cu                  # babiecos
+SFX F   zu    za          zu                  # moza
+SFX F   zu    zo          zu                  # mozo
+SFX F   zu    ces         zu                  # moces
+SFX F   zu    zos         zu                  # mozos
+SFX F   u     da          [^cdnprx]eu         # lleu, lleda
+SFX F   u     do          [^cdnprx]eu         # lleu, lledo
+SFX F   u     es          [^cdnprx]eu         # lleu, llees
+SFX F   u     os          [^cdnprx]eu         # lleu, lleos
+SFX F   éu    eda         [^n]xéu             # abixéu, abixeda
+SFX F   éu    eo          [^n]xéu             # abixéu, abixeo
+SFX F   éu    ees         [^n]xéu             # abixéu, abixees
+SFX F   éu    eos         [^n]xéu             # abixéu, abixeos
+SFX F   inxeu ínxea       inxeu               # larínxea
+SFX F   inxeu ínxeo       inxeu               # larínxeo
+SFX F   inxeu ínxees      inxeu               # larínxees
+SFX F   inxeu ínxeos      inxeu               # larínxeos
+SFX F   aceu  ácea        aceu                # sebaceu, sebácea
+SFX F   aceu  áceo        aceu                # sebaceu, sebáceo
+SFX F   aceu  ácees       aceu                # sebaceu, sebácees
+SFX F   aceu  áceos       aceu                # sebaceu, sebáceos
+SFX F   ideu  ídea        ideu                # raquideu, raquídea
+SFX F   ideu  ídeo        ideu                # raquideu, raquídeo
+SFX F   ideu  ídees       ideu                # raquideu, raquídees
+SFX F   ideu  ídeos       ideu                # raquideu, raquídeos
+SFX F   aneu  ánea        aneu                # cutaneu, cutánea
+SFX F   aneu  áneo        aneu                # cutaneu, cutáneo
+SFX F   aneu  ánees       aneu                # cutaneu, cutánees
+SFX F   aneu  áneos       aneu                # cutaneu, cutáneos
+SFX F   ineu  ínea        ineu                # sanguineu, sanguínea
+SFX F   ineu  íneo        ineu                # sanguineu, sanguíneo
+SFX F   ineu  ínees       ineu                # sanguineu, sanguínees
+SFX F   ineu  íneos       ineu                # sanguineu, sanguíneos
+SFX F   orneu órnea       orneu               # corneu, córnea
+SFX F   orneu órneo       orneu               # corneu, córneo
+SFX F   orneu órnees      orneu               # corneu, córnees
+SFX F   orneu órneos      orneu               # corneu, córneos
+SFX F   opeu  ópea        opeu                # ciclopeu, ciclópea
+SFX F   opeu  ópeo        opeu                # ciclopeu, ciclópeo
+SFX F   opeu  ópees       opeu                # ciclopeu, ciclópees
+SFX F   opeu  ópeos       opeu                # ciclopeu, ciclópeos
+SFX F   areu  área        areu                # calcareu, calcárea
+SFX F   areu  áreo        areu                # calcareu, calcáreo
+SFX F   areu  árees       areu                # calcareu, calcárees
+SFX F   areu  áreos       areu                # calcareu, calcáreos
+SFX F   ereu  érea        ereu                # aereu, aérea
+SFX F   ereu  éreo        ereu                # aereu, aéreo
+SFX F   ereu  érees       ereu                # aereu, aérees
+SFX F   ereu  éreos       ereu                # aereu, aéreos
+SFX F   oreu  órea        oreu                # corporeu, corpórea
+SFX F   oreu  óreo        oreu                # corporeu, corpóreo
+SFX F   oreu  órees       oreu                # corporeu, corpórees
+SFX F   oreu  óreos       oreu                # corporeu, corpóreos
+SFX F   ureu  úrea        [^a]ureu            # epicureu, epicúrea
+SFX F   ureu  úreo        [^a]ureu            # epicureu, epicúreo
+SFX F   ureu  úrees       [^a]ureu            # epicureu, epicúrees
+SFX F   ureu  úreos       [^a]ureu            # epicureu, epicúreos
+SFX F   aureu áurea       aureu               # aureu, áurea
+SFX F   aureu áureo       aureu               # aureu, áureo
+SFX F   aureu áurees      aureu               # aureu, áurees
+SFX F   aureu áureos      aureu               # aureu, áureos
+SFX F   0     a           [dts]or             # llamador -ora, llocomotor -ora
+SFX F   0     o           [dts]or             # llamador -oro, llocomotor -oro
+SFX F   0     es          [dts]or             # llamador -ores, llocomotor -ores
+SFX F   e     a           ete                 # rapacete
+SFX F   e     o           ete                 # rapaceto
+SFX F   e     es          ete                 # rapacetes
+SFX F   áu    ada         áu                  # baldáu, baldada
+SFX F   áu    ao          áu                  # baldáu, baldaos
+SFX F   áu    aes         áu                  # baldáu, baldaes
+SFX F   áu    aos         áu                  # baldáu, baldaos
+SFX F   án    ana         án                  # llacazán, llacazana
+SFX F   án    ano         án                  # llacazán, llacazano
+SFX F   án    anes        án                  # llacazán, llacazanes
+SFX F   án    anos        án                  # llacazán, llacazanos
+SFX F   én    ena         én                  # estén, estena
+SFX F   én    eno         én                  # estén, esteno
+SFX F   én    enes        én                  # estén, estenes
+SFX F   én    enos        én                  # estén, estenos
+SFX F   ín    ina         ín                  # vecín, vecina
+SFX F   ín    ino         ín                  # vecín, vecino
+SFX F   ín    ines        ín                  # vecín, vecines
+SFX F   ín    inos        ín                  # vecín, vecinos
+SFX F   ón    ona         ón                  # babarón, babarona
+SFX F   ón    ono         ón                  # babarón, babarono
+SFX F   ón    ones        ón                  # babarón, babarones
+SFX F   ón    onos        ón                  # babarón, babaronos
+SFX F   ún    una         ún                  # montún, montuna
+SFX F   ún    uno         ún                  # montún, montuno
+SFX F   ún    unes        ún                  # montún, montunes
+SFX F   ún    unos        ún                  # montún, montunos
+SFX F   ás    asa         ás                  # candás, candasa
+SFX F   ás    aso         ás                  # candás, candaso
+SFX F   ás    ases        ás                  # candás, candases
+SFX F   ás    asos        ás                  # candás, candasos
+SFX F   és    esa         és                  # libanés, libanesa
+SFX F   és    eso         és                  # libanés, libaneso
+SFX F   és    eses        és                  # libanés, libaneses (m/f)
+
+# pallabres variables en xéneru y númberu que nun almiten neutru (xeneralmente profesiones)
+SFX f Y 22
+SFX f   z     za          z                   # andaluza
+SFX f   z     ces         z                   # andaluces
+SFX f   u     a           [^g]u               # lexicógrafa
+SFX f   u     es          [^g]u               # lexicógrafes
+SFX f   u     os          [^g]u               # lexicógrafos
+SFX f   u     a           gu                  # laringóloga
+SFX f   gu    gues        gu                  # laringólogues
+SFX f   u     os          gu                  # laringólogos
+SFX f   e     a           e                   # comerciante, comercianta
+SFX f   e     es          e                   # comerciante, comerciantes (m/f)
+SFX f   0     a           [tds]or             # llector -a, trabayador -a
+SFX f   0     es          [tds]or             # llector -res, trabayador -es (m/f)
+SFX f   er    era         er                  # bachiller, bachillera
+SFX f   er    eres        er                  # bachiller, bachilleres (m/f)
+SFX f   án    ana         án                  # llapacán, llapacana
+SFX f   án    anes        án                  # llapazán, llapacanes
+SFX f   án    anos        án                  # llapacán, llacacanos
+SFX f   ín    ina         ín                  # llenderín, llenderina
+SFX f   ín    ines        ín                  # llenderín, llenderines
+SFX f   ín    inos        ín                  # llenderín, llenderinos
+SFX f   ón    ona         ón                  # lleón, lleona
+SFX f   ón    ones        ón                  # lleón, lleones (m/f)
+
+# Verbos regulares y con variantes ortográfiques menores
+SFX G Y 227
+SFX G   ar    o           ar                  # aparto
+SFX G   ar    es          [^czgu]ar           # apartes
+SFX G   car   ques        car                 # manques
+SFX G   zar   ces         zar                 # taraces
+SFX G   gar   gues        gar                 # torgues
+SFX G   guar  gües        guar                # nagües
+SFX G   ar    a           ar                  # aparta
+SFX G   ar    amos        ar                  # apartamos
+SFX G   ar    áis         ar                  # apartáis
+SFX G   ar    en          [^czgu]ar           # aparten
+SFX G   car   quen        car                 # manquen
+SFX G   zar   cen         zar                 # taracen
+SFX G   gar   guen        gar                 # torguen
+SFX G   guar  güen        guar                # nagüen
+SFX G   ar    aba         ar                  # apartaba
+SFX G   ar    abes        ar                  # apartabes
+SFX G   ar    ábamos      ar                  # apartábamos
+SFX G   ar    ábemos      ar                  # apartábemos
+SFX G   ar    abais       ar                  # apartabais
+SFX G   ar    abeis       ar                  # apartabeis
+SFX G   ar    aben        ar                  # apartaben
+SFX G   ar    é           [^czgu]ar           # aparté
+SFX G   car   qué         car                 # manqué
+SFX G   zar   cé          zar                 # taracé
+SFX G   gar   gué         gar                 # torgué
+SFX G   guar  güé         guar                # nagüé
+SFX G   ar    asti        ar                  # apartasti
+SFX G   ar    esti        [^czgu]ar           # apartesti
+SFX G   car   questi      car                 # manquesti
+SFX G   zar   cesti       zar                 # taracesti
+SFX G   gar   guesti      gar                 # torguesti
+SFX G   guar  güesti      guar                # nagüesti
+SFX G   ar    ó           ar                  # apartó
+SFX G   ar    emos        [^czgu]ar           # apartemos
+SFX G   car   quemos      car                 # manquemos
+SFX G   zar   cemos       zar                 # taracemos
+SFX G   gar   guemos      gar                 # torguemos
+SFX G   guar  güemos      guar                # nagüemos
+SFX G   ar    astis       ar                  # apartastis
+SFX G   ar    estis       [^czgu]ar           # apartestis
+SFX G   car   questis     car                 # manquestis
+SFX G   zar   cestis      zar                 # taracestis
+SFX G   gar   guestis     gar                 # torguestis
+SFX G   guar  güestis     guar                # nagüestis
+SFX G   ar    aron        ar                  # apartaron
+SFX G   ar    e           [^czgu]ar           # aparte
+SFX G   car   que         car                 # manque
+SFX G   zar   ce          zar                 # tarace
+SFX G   gar   gue         gar                 # torgue
+SFX G   guar  güe         guar                # nagüe
+SFX G   ar    as          ar                  # apartas
+SFX G   ar    éis         [^czgu]ar           # apartéis
+SFX G   car   quéis       car                 # manquéis
+SFX G   zar   céis        zar                 # taracéis
+SFX G   gar   guéis       gar                 # torguéis
+SFX G   guar  güéis       guar                # nagüéis
+SFX G   ar    an          ar                  # apartan
+SFX G   0     a           ar                  # apartara
+SFX G   0     e           ar                  # apartare
+SFX G   0     as          ar                  # apartaras
+SFX G   0     es          ar                  # apartares
+SFX G   ar    áramos      ar                  # apartáramos
+SFX G   ar    áremos      ar                  # apartáremos
+SFX G   0     ais         ar                  # apartarais
+SFX G   0     eis         ar                  # apartareis
+SFX G   0     an          ar                  # apartaran
+SFX G   0     en          ar                  # apartaren
+SFX G   ar    ái          ar                  # apartái
+SFX G   ar    ando        ar                  # apartando
+SFX G   ar    ao          ar                  # apartao
+SFX G   ar    ada         ar                  # apartada
+SFX G   ar    áu          ar                  # apartáu
+SFX G   ar    aos         ar                  # apartaos
+SFX G   ar    aes         ar                  # apartaes
+SFX G   er    o           [^c]er              # llambo
+SFX G   cer   zo          cer                 # tarrezo, conozo
+SFX G   er    es          er                  # llambes
+SFX G   er    e           [^c]er              # llambe
+SFX G   cer   z           [^n]cer             # tarrez, conoz
+SFX G   cer   ce          ncer                # france
+SFX G   er    emos        er                  # llambemos
+SFX G   er    éis         er                  # llambéis
+SFX G   er    en          er                  # llamben
+SFX G   er    ía          er                  # llambía
+SFX G   er    íes         er                  # llambíes
+SFX G   er    íamos       er                  # llambíamos
+SFX G   er    íemos       er                  # llambíemos
+SFX G   er    íais        er                  # llambíais
+SFX G   er    íeis        er                  # llambíeis
+SFX G   er    íen         er                  # llambíen
+SFX G   er    í           er                  # llambí
+SFX G   er    isti        [^e]er              # llambisti
+SFX G   er    ísti        eer                 # lleísti
+SFX G   er    iesti       [^eñ]er             # llambiesti
+SFX G   er    esti        [eñ]er              # frañesti, lleesti
+SFX G   er    ió          [^eñ]er             # llambió
+SFX G   er    ó           [eñ]er              # frañó, lleó
+SFX G   er    imos        [^e]er              # llambimos
+SFX G   er    ímos        eer                 # lleímos
+SFX G   er    iemos       [^e]er              # llambiemos
+SFX G   er    istis       [^e]er              # llambistis
+SFX G   er    ístis       eer                 # lleístis
+SFX G   er    iestis      [^eñ]er             # llambiestis
+SFX G   er    estis       [eñ]er              # frañestis, lleestis
+SFX G   er    ieron       [^eñ]er             # llambieron
+SFX G   er    eron        [eñ]er              # frañeron, lleeron
+SFX G   er    a           [^c]er              # llamba
+SFX G   cer   za          cer                 # tarreza, conoza
+SFX G   er    as          [^c]er              # llambas
+SFX G   cer   zas         cer                 # tarrezas, conozas
+SFX G   er    amos        [^c]er              # llambamos
+SFX G   cer   zamos       cer                 # tarrezamos, conozamos
+SFX G   er    áis         [^c]er              # llambáis
+SFX G   cer   záis        cer                 # tarrezáis, conozáis
+SFX G   er    an          [^c]er              # llamban
+SFX G   cer   zan         cer                 # tarrezan, conozan
+SFX G   er    iera        [^eñ]er             # llambiera
+SFX G   er    era         [eñ]er              # frañera, lleera
+SFX G   er    iere        [^eñ]er             # llambiere
+SFX G   er    ere         [eñ]er              # frañere, lleere
+SFX G   er    ieras       [^eñ]er             # llambieras
+SFX G   er    eras        [eñ]er              # frañeras, lleeras
+SFX G   er    ieres       [^eñ]er             # llambieres
+SFX G   er    eres        [eñ]er              # frañeres, lleeres
+SFX G   er    iéramos     [^eñ]er             # llambiéramos
+SFX G   er    éramos      [eñ]er              # frañéramos, lleéramos
+SFX G   er    iéremos     [^eñ]er             # llambiéremos
+SFX G   er    éremos      [eñ]er              # frañéremos, lleéremos
+SFX G   er    ierais      [^eñ]er             # llambierais
+SFX G   er    erais       [eñ]er              # frañerais, lleerais
+SFX G   er    iereis      [^eñ]er             # llambiereis
+SFX G   er    ereis       [eñ]er              # frañereis, lleereis
+SFX G   er    ieran       [^eñ]er             # llambieran
+SFX G   er    eran        [eñ]er              # frañeran, lleeran
+SFX G   er    ieren       [^eñ]er             # llambieren
+SFX G   er    eren        [eñ]er              # frañeren, lleeren
+SFX G   0     é           [aei]r              # apartaré, llamberé, apurriré
+SFX G   0     ás          [aei]r              # apartarás, llamberás, apurrirás
+SFX G   0     á           [aei]r              # apartará, llamberá, apurrirá
+SFX G   0     emos        [aei]r              # apartaremos, llamberemos, apurriremos
+SFX G   0     éis         [aei]r              # apartaréis, llamberéis, apurriréis
+SFX G   0     án          [aei]r              # apartarán, llamberán, apurrirán
+SFX G   0     ía          [aei]r              # apartaría, llambería, apurriría
+SFX G   0     íes         [aei]r              # apartaríes, llamberíes, apurriríes
+SFX G   0     íamos       [aei]r              # apartaríamos, llamberíamos, apurriríamos
+SFX G   0     íemos       [aei]r              # apartaríemos, llamberíemos, apurriríemos
+SFX G   0     íais        [aei]r              # apartaríais, llamberíais, apurriríais
+SFX G   0     íeis        [aei]r              # apartaríeis, llamberíeis, apurriríeis
+SFX G   0     íen         [aei]r              # apartaríen, llamberíen, apurriríen
+SFX G   er    i           [^c]er              # llambi
+SFX G   er    éi          er                  # llambéi
+SFX G   er    iendo       [^eñ]er             # llambiendo
+SFX G   er    endo        [eñ]er              # frañendo, lleendo
+SFX G   er    ío          er                  # llambío
+SFX G   er    ida         er                  # llambida
+SFX G   er    íu          er                  # llambíu
+SFX G   er    íos         er                  # llambíos
+SFX G   er    íes         er                  # llambíes
+SFX G   ir    o           [^c]ir              # apurro
+SFX G   cir   zo          cir                 # lluzo
+SFX G   ir    es          ir                  # apurres
+SFX G   ir    e           [^c]ir              # apurre, fuxe
+SFX G   cir   z           [^n]cir             # lluz
+SFX G   cir   ce          ncir                # xunce
+SFX G   xir   x           [iu]xir             # elix, fux
+SFX G   ir    imos        ir                  # apurrimos
+SFX G   ir    ís          ir                  # apurrís
+SFX G   ir    en          ir                  # apurren
+SFX G   ir    ía          ir                  # apurría
+SFX G   ir    íes         ir                  # apurríes
+SFX G   ir    íamos       ir                  # apurríamos
+SFX G   ir    íemos       ir                  # apurríemos
+SFX G   ir    íais        ir                  # apurríais
+SFX G   ir    íeis        ir                  # apurríeis
+SFX G   ir    íen         ir                  # apurríen
+SFX G   ir    í           ir                  # apurrí
+SFX G   ir    isti        ir                  # apurristi
+SFX G   ir    iesti       [^ñx]ir             # apurriesti
+SFX G   ir    esti        [ñx]ir              # muñesti, finxesti
+SFX G   ir    ió          [^ñx]ir             # apurrió
+SFX G   ir    ó           [ñx]ir              # muñó, finxó
+SFX G   ir    iemos       [^ñx]ir             # apurriemos
+SFX G   ir    emos        [ñx]ir              # muñemos, finxemos
+SFX G   ir    istis       ir                  # apurristis
+SFX G   ir    iestis      [^ñx]ir             # apurriestis
+SFX G   ir    estis       [ñx]ir              # muñestis, finxestis
+SFX G   ir    ieron       [^ñx]ir             # apurrieron
+SFX G   ir    eron        [ñx]ir              # muñeron, finxeron
+SFX G   ir    a           [^c]ir              # apurra
+SFX G   cir   za          cir                 # lluza
+SFX G   ir    as          [^c]ir              # apurras
+SFX G   cir   zas         cir                 # lluzas
+SFX G   ir    amos        [^c]ir              # apurramos
+SFX G   cir   zamos       cir                 # lluzamos
+SFX G   ir    áis         [^c]ir              # apurráis
+SFX G   cir   záis        cir                 # lluzáis
+SFX G   ir    an          [^c]ir              # apurran
+SFX G   cir   zan         cir                 # lluzan
+SFX G   ir    iera        [^ñx]ir             # apurriera
+SFX G   ir    era         [ñx]ir              # muñera, finxera
+SFX G   ir    iere        [^ñx]ir             # apurriere
+SFX G   ir    ere         [ñx]ir              # muñere, finxere
+SFX G   ir    ieras       [^ñx]ir             # apurrieras
+SFX G   ir    eras        [ñx]ir              # muñeras, finxeras
+SFX G   ir    ieres       [^ñx]ir             # apurrieres
+SFX G   ir    eres        [ñx]ir              # muñeres, finxeres
+SFX G   ir    iéramos     [^ñx]ir             # apurriéramos
+SFX G   ir    éramos      [ñx]ir              # muñéramos, finxéramos
+SFX G   ir    iéremos     [^ñx]ir             # apurriéremos
+SFX G   ir    éremos      [ñx]ir              # muñéremos, finxéremos
+SFX G   ir    ierais      [^ñx]ir             # apurrierais
+SFX G   ir    erais       [ñx]ir              # muñerais, finxerais
+SFX G   ir    iereis      [^ñx]ir             # apurriereis
+SFX G   ir    ereis       [ñx]ir              # muñereis, finxereis
+SFX G   ir    ieran       [^ñx]ir             # apurrieran
+SFX G   ir    eran        [ñx]ir              # muñeran, finxeran
+SFX G   ir    ieren       [^ñx]ir             # apurrieren
+SFX G   ir    eren        [ñx]ir              # muñeren, finxeren
+SFX G   ir    i           [^c]ir              # apurri
+SFX G   ir    íi          ir                  # apurríi
+SFX G   ir    iendo       [^ñx]ir             # apurriendo
+SFX G   ir    endo        [ñx]ir              # muñendo, finxendo
+SFX G   ir    ío          ir                  # apurrío
+SFX G   ir    ida         ir                  # apurrida
+SFX G   ir    íu          ir                  # apurríu
+SFX G   ir    íos         ir                  # apurríos
+SFX G   ir    íes         ir                  # apurríes
+
+SFX H Y 1365
+SFX H   egar  iego        egar                # riego
+SFX H   egar  iegues      egar                # riegues
+SFX H   egar  iega        egar                # riega
+SFX H   egar  egamos      egar                # regamos
+SFX H   egar  egáis       egar                # regáis
+SFX H   egar  ieguen      egar                # rieguen
+SFX H   egar  egaba       egar                # regaba
+SFX H   egar  egabes      egar                # regabes
+SFX H   egar  egábamos    egar                # regábamos
+SFX H   egar  egábemos    egar                # regábemos
+SFX H   egar  egabais     egar                # regabais
+SFX H   egar  egabeis     egar                # regabeis
+SFX H   egar  egaben      egar                # regaben
+SFX H   egar  egué        egar                # regué
+SFX H   egar  egasti      egar                # regasti
+SFX H   egar  eguesti     egar                # reguesti
+SFX H   egar  egó         egar                # regó
+SFX H   egar  eguemos     egar                # reguemos
+SFX H   egar  egastis     egar                # regastis
+SFX H   egar  eguestis    egar                # reguestis
+SFX H   egar  egaron      egar                # regaron
+SFX H   egar  iegue       egar                # riegue
+SFX H   egar  iegas       egar                # riegas
+SFX H   egar  eguéis      egar                # reguéis
+SFX H   egar  iegan       egar                # riegan
+SFX H   0     a           egar                # regara
+SFX H   0     e           egar                # regare
+SFX H   0     as          egar                # regaras
+SFX H   0     es          egar                # regares
+SFX H   ar    áramos      egar                # regáramos
+SFX H   ar    áremos      egar                # regáremos
+SFX H   0     ais         egar                # regarais
+SFX H   0     eis         egar                # regareis
+SFX H   0     an          egar                # regaran
+SFX H   0     en          egar                # regaren
+SFX H   ar    ái          egar                # regái
+SFX H   ar    ando        egar                # regando
+SFX H   ar    ao          egar                # regao
+SFX H   ar    ada         egar                # regada
+SFX H   ar    áu          egar                # regáu
+SFX H   ar    aos         egar                # regaos
+SFX H   ar    aes         egar                # regaes
+SFX H   0     é           egar                # regaré
+SFX H   0     ás          egar                # regarás
+SFX H   0     á           egar                # regará
+SFX H   0     emos        egar                # regaremos
+SFX H   0     éis         egar                # regaréis
+SFX H   0     án          egar                # regarán
+SFX H   0     ía          egar                # regaría
+SFX H   0     íes         egar                # regaríes
+SFX H   0     íamos       egar                # regaríamos
+SFX H   0     íemos       egar                # regaríemos
+SFX H   0     íais        egar                # regaríais
+SFX H   0     íeis        egar                # regaríeis
+SFX H   0     íen         egar                # regaríen
+SFX H   ogar  uego        ogar                # afuego
+SFX H   ogar  uegues      ogar                # afuegues
+SFX H   ogar  uega        ogar                # afuega
+SFX H   ogar  ogamos      ogar                # afogamos
+SFX H   ogar  ogáis       ogar                # afogáis
+SFX H   ogar  ueguen      ogar                # afueguen
+SFX H   ogar  ogaba       ogar                # afogaba
+SFX H   ogar  ogabes      ogar                # afogabes
+SFX H   ogar  ogábamos    ogar                # afogábamos
+SFX H   ogar  ogábemos    ogar                # afogábemos
+SFX H   ogar  ogabais     ogar                # afogabais
+SFX H   ogar  ogabeis     ogar                # afogabeis
+SFX H   ogar  ogaben      ogar                # afogaben
+SFX H   ogar  ogué        ogar                # afogué
+SFX H   ogar  ogasti      ogar                # afogasti
+SFX H   ogar  oguesti     ogar                # afoguesti
+SFX H   ogar  ogó         ogar                # afogó
+SFX H   ogar  oguemos     ogar                # afoguemos
+SFX H   ogar  ogastis     ogar                # afogastis
+SFX H   ogar  oguestis    ogar                # afoguestis
+SFX H   ogar  ogaron      ogar                # afogaron
+SFX H   ogar  uegue       ogar                # afuegue
+SFX H   ogar  uegas       ogar                # afuegas
+SFX H   ogar  oguéis      ogar                # afoguéis
+SFX H   ogar  uegan       ogar                # afuegan
+SFX H   0     a           ogar                # afogara
+SFX H   0     e           ogar                # afogare
+SFX H   0     as          ogar                # afogaras
+SFX H   0     es          ogar                # afogares
+SFX H   ar    áramos      ogar                # afogáramos
+SFX H   ar    áremos      ogar                # afogáremos
+SFX H   0     ais         ogar                # afogarais
+SFX H   0     eis         ogar                # afogareis
+SFX H   0     an          ogar                # afogaran
+SFX H   0     en          ogar                # afogaren
+SFX H   ar    ái          ogar                # afogái
+SFX H   ar    ando        ogar                # afogando
+SFX H   ar    ao          ogar                # afogao
+SFX H   ar    ada         ogar                # afogada
+SFX H   ar    áu          ogar                # afogáu
+SFX H   ar    aos         ogar                # afogaos
+SFX H   ar    aes         ogar                # afogaes
+SFX H   0     é           ogar                # afogaré
+SFX H   0     ás          ogar                # afogarás
+SFX H   0     á           ogar                # afogará
+SFX H   0     emos        ogar                # afogaremos
+SFX H   0     éis         ogar                # afogaréis
+SFX H   0     án          ogar                # afogarán
+SFX H   0     ía          ogar                # afogaría
+SFX H   0     íes         ogar                # afogaríes
+SFX H   0     íamos       ogar                # afogaríamos
+SFX H   0     íemos       ogar                # afogaríemos
+SFX H   0     íais        ogar                # afogaríais
+SFX H   0     íeis        ogar                # afogaríeis
+SFX H   0     íen         ogar                # afogaríen
+SFX H   oyar  ueyo        oyar                # mueyo
+SFX H   oyar  ueyes       oyar                # mueyes
+SFX H   oyar  ueya        oyar                # mueya
+SFX H   oyar  oyamos      oyar                # moyamos
+SFX H   oyar  oyáis       oyar                # moyáis
+SFX H   oyar  ueyen       oyar                # mueyen
+SFX H   oyar  oyaba       oyar                # moyaba
+SFX H   oyar  oyabes      oyar                # moyabes
+SFX H   oyar  oyábamos    oyar                # moyábamos
+SFX H   oyar  oyábemos    oyar                # moyábemos
+SFX H   oyar  oyabais     oyar                # moyabais
+SFX H   oyar  oyabeis     oyar                # moyabeis
+SFX H   oyar  oyaben      oyar                # moyaben
+SFX H   oyar  oyé         oyar                # moyé
+SFX H   oyar  oyasti      oyar                # moyasti
+SFX H   oyar  oyesti      oyar                # moyesti
+SFX H   oyar  oyó         oyar                # moyó
+SFX H   oyar  oyemos      oyar                # moyemos
+SFX H   oyar  oyastis     oyar                # moyastis
+SFX H   oyar  oyestis     oyar                # moyestis
+SFX H   oyar  oyaron      oyar                # moyaron
+SFX H   oyar  ueye        oyar                # mueye
+SFX H   oyar  ueyas       oyar                # mueyas
+SFX H   oyar  oyéis       oyar                # moyéis
+SFX H   oyar  ueyan       oyar                # mueyan
+SFX H   0     a           oyar                # moyara
+SFX H   0     e           oyar                # moyare
+SFX H   0     as          oyar                # moyaras
+SFX H   0     es          oyar                # moyares
+SFX H   ar    áramos      oyar                # moyáramos
+SFX H   ar    áremos      oyar                # moyáremos
+SFX H   0     ais         oyar                # moyarais
+SFX H   0     eis         oyar                # moyareis
+SFX H   0     an          oyar                # moyaran
+SFX H   0     en          oyar                # moyaren
+SFX H   ar    ái          oyar                # moyái
+SFX H   ar    ando        oyar                # moyando
+SFX H   ar    ao          oyar                # moyao
+SFX H   ar    ada         oyar                # moyada
+SFX H   ar    áu          oyar                # moyáu
+SFX H   ar    aos         oyar                # moyaos
+SFX H   ar    aes         oyar                # moyaes
+SFX H   0     é           oyar                # moyaré
+SFX H   0     ás          oyar                # moyarás
+SFX H   0     á           oyar                # moyará
+SFX H   0     emos        oyar                # moyaremos
+SFX H   0     éis         oyar                # moyaréis
+SFX H   0     án          oyar                # moyarán
+SFX H   0     ía          oyar                # moyaría
+SFX H   0     íes         oyar                # moyaríes
+SFX H   0     íamos       oyar                # moyaríamos
+SFX H   0     íemos       oyar                # moyaríemos
+SFX H   0     íais        oyar                # moyaríais
+SFX H   0     íeis        oyar                # moyaríeis
+SFX H   0     íen         oyar                # moyaríen
+SFX H   ugar  uego        ugar                # xuego
+SFX H   ugar  uegues      ugar                # xuegues
+SFX H   ugar  uega        ugar                # xuega
+SFX H   ugar  ugamos      ugar                # xugamos
+SFX H   ugar  ugáis       ugar                # xugáis
+SFX H   ugar  ueguen      ugar                # xueguen
+SFX H   ugar  ugaba       ugar                # xugaba
+SFX H   ugar  ugabes      ugar                # xugabes
+SFX H   ugar  ugábamos    ugar                # xugábamos
+SFX H   ugar  ugábemos    ugar                # xugábemos
+SFX H   ugar  ugabais     ugar                # xugabais
+SFX H   ugar  ugabeis     ugar                # xugabeis
+SFX H   ugar  ugaben      ugar                # xugaben
+SFX H   ugar  ugué        ugar                # xugué
+SFX H   ugar  ugasti      ugar                # xugasti
+SFX H   ugar  uguesti     ugar                # xuguesti
+SFX H   ugar  ugó         ugar                # xugó
+SFX H   ugar  uguemos     ugar                # xuguemos
+SFX H   ugar  ugastis     ugar                # xugastis
+SFX H   ugar  uguestis    ugar                # xuguestis
+SFX H   ugar  ugaron      ugar                # xugaron
+SFX H   ugar  uegue       ugar                # xuegue
+SFX H   ugar  uegas       ugar                # xuegas
+SFX H   ugar  uguéis      ugar                # xuguéis
+SFX H   ugar  uegan       ugar                # xuegan
+SFX H   0     a           ugar                # xugara
+SFX H   0     e           ugar                # xugare
+SFX H   0     as          ugar                # xugaras
+SFX H   0     es          ugar                # xugares
+SFX H   ar    áramos      ugar                # xugáramos
+SFX H   ar    áremos      ugar                # xugáremos
+SFX H   0     ais         ugar                # xugarais
+SFX H   0     eis         ugar                # xugareis
+SFX H   0     an          ugar                # xugaran
+SFX H   0     en          ugar                # xugaren
+SFX H   ar    ái          ugar                # xugái
+SFX H   ar    ando        ugar                # xugando
+SFX H   ar    ao          ugar                # xugao
+SFX H   ar    ada         ugar                # xugada
+SFX H   ar    áu          ugar                # xugáu
+SFX H   ar    aos         ugar                # xugaos
+SFX H   ar    aes         ugar                # xugaes
+SFX H   0     é           ugar                # xugaré
+SFX H   0     ás          ugar                # xugarás
+SFX H   0     á           ugar                # xugará
+SFX H   0     emos        ugar                # xugaremos
+SFX H   0     éis         ugar                # xugaréis
+SFX H   0     án          ugar                # xugarán
+SFX H   0     ía          ugar                # xugaría
+SFX H   0     íes         ugar                # xugaríes
+SFX H   0     íamos       ugar                # xugaríamos
+SFX H   0     íemos       ugar                # xugaríemos
+SFX H   0     íais        ugar                # xugaríais
+SFX H   0     íeis        ugar                # xugaríeis
+SFX H   0     íen         ugar                # xugaríen
+SFX H   orcar uerco       orcar               # empuerco
+SFX H   orcar uerques     orcar               # empuerques
+SFX H   orcar uerca       orcar               # empuerca
+SFX H   orcar orcamos     orcar               # emporcamos
+SFX H   orcar orcáis      orcar               # emporcáis
+SFX H   orcar uerquen     orcar               # empuerquen
+SFX H   orcar orcaba      orcar               # emporcaba
+SFX H   orcar orcabes     orcar               # emporcabes
+SFX H   orcar orcábamos   orcar               # emporcábamos
+SFX H   orcar orcábemos   orcar               # emporcábemos
+SFX H   orcar orcabais    orcar               # emporcabais
+SFX H   orcar orcabeis    orcar               # emporcabeis
+SFX H   orcar orcaben     orcar               # emporcaben
+SFX H   orcar orqué       orcar               # emporqué
+SFX H   orcar orcasti     orcar               # emporcasti
+SFX H   orcar orquesti    orcar               # emporquesti
+SFX H   orcar orcó        orcar               # emporcó
+SFX H   orcar orquemos    orcar               # emporquemos
+SFX H   orcar orcastis    orcar               # emporcastis
+SFX H   orcar orquestis   orcar               # emporquestis
+SFX H   orcar orcaron     orcar               # emporcaron
+SFX H   orcar uerque      orcar               # empuerque
+SFX H   orcar uercas      orcar               # empuercas
+SFX H   orcar orquéis     orcar               # emporquéis
+SFX H   orcar uercan      orcar               # empuercan
+SFX H   0     a           orcar               # emporcara
+SFX H   0     e           orcar               # emporcare
+SFX H   0     as          orcar               # emporcaras
+SFX H   0     es          orcar               # emporcares
+SFX H   ar    áramos      orcar               # emporcáramos
+SFX H   ar    áremos      orcar               # emporcáremos
+SFX H   0     ais         orcar               # emporcarais
+SFX H   0     eis         orcar               # emporcareis
+SFX H   0     an          orcar               # emporcaran
+SFX H   0     en          orcar               # emporcaren
+SFX H   ar    ái          orcar               # emporcái
+SFX H   ar    ando        orcar               # emporcando
+SFX H   ar    ao          orcar               # emporcao
+SFX H   ar    ada         orcar               # emporcada
+SFX H   ar    áu          orcar               # emporcáu
+SFX H   ar    aos         orcar               # emporcaos
+SFX H   ar    aes         orcar               # emporcaes
+SFX H   0     é           orcar               # emporcaré
+SFX H   0     ás          orcar               # emporcarás
+SFX H   0     á           orcar               # emporcará
+SFX H   0     emos        orcar               # emporcaremos
+SFX H   0     éis         orcar               # emporcaréis
+SFX H   0     án          orcar               # emporcarán
+SFX H   0     ía          orcar               # emporcaría
+SFX H   0     íes         orcar               # emporcaríes
+SFX H   0     íamos       orcar               # emporcaríamos
+SFX H   0     íemos       orcar               # emporcaríemos
+SFX H   0     íais        orcar               # emporcaríais
+SFX H   0     íeis        orcar               # emporcaríeis
+SFX H   0     íen         orcar               # emporcaríen
+SFX H   orzar uerzo       orzar               # almuerzo
+SFX H   orzar uerces      orzar               # almuerces
+SFX H   orzar uerza       orzar               # almuerza
+SFX H   orzar orzamos     orzar               # almorzamos
+SFX H   orzar orzáis      orzar               # almorzáis
+SFX H   orzar uercen      orzar               # almuercen
+SFX H   orzar orzaba      orzar               # almorzaba
+SFX H   orzar orzabes     orzar               # almorzabes
+SFX H   orzar orzábamos   orzar               # almorzábamos
+SFX H   orzar orzábemos   orzar               # almorzábemos
+SFX H   orzar orzabais    orzar               # almorzabais
+SFX H   orzar orzabeis    orzar               # almorzabeis
+SFX H   orzar orzaben     orzar               # almorzaben
+SFX H   orzar orcé        orzar               # almorcé
+SFX H   orzar orzasti     orzar               # almorzasti
+SFX H   orzar orcesti     orzar               # almorcesti
+SFX H   orzar orzó        orzar               # almorzó
+SFX H   orzar orcemos     orzar               # almorcemos
+SFX H   orzar orzastis    orzar               # almorzastis
+SFX H   orzar orcestis    orzar               # almorcestis
+SFX H   orzar orzaron     orzar               # almorzaron
+SFX H   orzar uerce       orzar               # almuerce
+SFX H   orzar uerzas      orzar               # almuerzas
+SFX H   orzar orcéis      orzar               # almorcéis
+SFX H   orzar uerzan      orzar               # almuerzan
+SFX H   0     a           orzar               # almorzara
+SFX H   0     e           orzar               # almorzare
+SFX H   0     as          orzar               # almorzaras
+SFX H   0     es          orzar               # almorzares
+SFX H   ar    áramos      orzar               # almorzáramos
+SFX H   ar    áremos      orzar               # almorzáremos
+SFX H   0     ais         orzar               # almorzarais
+SFX H   0     eis         orzar               # almorzareis
+SFX H   0     an          orzar               # almorzaran
+SFX H   0     en          orzar               # almorzaren
+SFX H   ar    ái          orzar               # almorzái
+SFX H   ar    ando        orzar               # almorzando
+SFX H   ar    ao          orzar               # almorzao
+SFX H   ar    ada         orzar               # almorzada
+SFX H   ar    áu          orzar               # almorzáu
+SFX H   ar    aos         orzar               # almorzaos
+SFX H   ar    aes         orzar               # almorzaes
+SFX H   0     é           orzar               # almorzaré
+SFX H   0     ás          orzar               # almorzarás
+SFX H   0     á           orzar               # almorzará
+SFX H   0     emos        orzar               # almorzaremos
+SFX H   0     éis         orzar               # almorzaréis
+SFX H   0     án          orzar               # almorzarán
+SFX H   0     ía          orzar               # almorzaría
+SFX H   0     íes         orzar               # almorzaríes
+SFX H   0     íamos       orzar               # almorzaríamos
+SFX H   0     íemos       orzar               # almorzaríemos
+SFX H   0     íais        orzar               # almorzaríais
+SFX H   0     íeis        orzar               # almorzaríeis
+SFX H   0     íen         orzar               # almorzaríen
+SFX H   ostar uesto       [^g]ostar           # cuesto
+SFX H   ostar üesto       gostar              # amagüesto
+SFX H   ostar uestes      [^g]ostar           # cuestes
+SFX H   ostar üestes      gostar              # amagüestes
+SFX H   ostar uesta       [^g]ostar           # cuesta
+SFX H   ostar üesta       gostar              # amagüesta
+SFX H   ostar ostamos     ostar               # costamos
+SFX H   ostar ostáis      ostar               # costáis
+SFX H   ostar uesten      [^g]ostar           # cuesten
+SFX H   ostar üesten      gostar              # amagüesten
+SFX H   ostar ostaba      ostar               # costaba
+SFX H   ostar ostabes     ostar               # costabes
+SFX H   ostar ostábamos   ostar               # costábamos
+SFX H   ostar ostábemos   ostar               # costábemos
+SFX H   ostar ostabais    ostar               # costabais
+SFX H   ostar ostabeis    ostar               # costabeis
+SFX H   ostar ostaben     ostar               # costaben
+SFX H   ostar osté        ostar               # costé
+SFX H   ostar ostasti     ostar               # costasti
+SFX H   ostar ostesti     ostar               # costesti
+SFX H   ostar ostó        ostar               # costó
+SFX H   ostar ostemos     ostar               # costemos
+SFX H   ostar ostastis    ostar               # costastis
+SFX H   ostar ostestis    ostar               # costestis
+SFX H   ostar ostaron     ostar               # costaron
+SFX H   ostar ueste       [^g]ostar           # cueste
+SFX H   ostar üeste       gostar              # amagüeste
+SFX H   ostar uestas      [^g]ostar           # cuestas
+SFX H   ostar üestas      gostar              # amagüestas
+SFX H   ostar ostéis      ostar               # costéis
+SFX H   ostar uestan      [^g]ostar           # cuestan
+SFX H   ostar üestan      gostar              # amagüestan
+SFX H   0     a           ostar               # costara
+SFX H   0     e           ostar               # costare
+SFX H   0     as          ostar               # costaras
+SFX H   0     es          ostar               # costares
+SFX H   ar    áramos      ostar               # costáramos
+SFX H   ar    áremos      ostar               # costáremos
+SFX H   0     ais         ostar               # costarais
+SFX H   0     eis         ostar               # costareis
+SFX H   0     an          ostar               # costaran
+SFX H   0     en          ostar               # costaren
+SFX H   ar    ái          ostar               # costái
+SFX H   ar    ando        ostar               # costando
+SFX H   ar    ao          ostar               # costao
+SFX H   ar    ada         ostar               # costada
+SFX H   ar    áu          ostar               # costáu
+SFX H   ar    aos         ostar               # costaos
+SFX H   ar    aes         ostar               # costaes
+SFX H   0     é           ostar               # costaré
+SFX H   0     ás          ostar               # costarás
+SFX H   0     á           ostar               # costará
+SFX H   0     emos        ostar               # costaremos
+SFX H   0     éis         ostar               # costaréis
+SFX H   0     án          ostar               # costarán
+SFX H   0     ía          ostar               # costaría
+SFX H   0     íes         ostar               # costaríes
+SFX H   0     íamos       ostar               # costaríamos
+SFX H   0     íemos       ostar               # costaríemos
+SFX H   0     íais        ostar               # costaríais
+SFX H   0     íeis        ostar               # costaríeis
+SFX H   0     íen         ostar               # costaríen
+SFX H   escar iesco       escar               # engriesco
+SFX H   escar iesques     escar               # engriesques
+SFX H   escar iesca       escar               # engriesca
+SFX H   escar escamos     escar               # engrescamos
+SFX H   escar escáis      escar               # engrescáis
+SFX H   escar iesquen     escar               # engriesquen
+SFX H   escar escaba      escar               # engrescaba
+SFX H   escar escabes     escar               # engrescabes
+SFX H   escar escábamos   escar               # engrescábamos
+SFX H   escar escábemos   escar               # engrescábemos
+SFX H   escar escabais    escar               # engrescabais
+SFX H   escar escabeis    escar               # engrescabeis
+SFX H   escar escaben     escar               # engrescaben
+SFX H   escar esqué       escar               # engresqué
+SFX H   escar escasti     escar               # engrescasti
+SFX H   escar esquesti    escar               # engresquesti
+SFX H   escar escó        escar               # engrescó
+SFX H   escar esquemos    escar               # engresquemos
+SFX H   escar escastis    escar               # engrescastis
+SFX H   escar esquestis   escar               # engresquestis
+SFX H   escar escaron     escar               # engrescaron
+SFX H   escar iesque      escar               # engriesque
+SFX H   escar iescas      escar               # engriescas
+SFX H   escar esquéis     escar               # engresquéis
+SFX H   escar iescan      escar               # engriescan
+SFX H   0     a           escar               # engrescara
+SFX H   0     e           escar               # engrescare
+SFX H   0     as          escar               # engrescaras
+SFX H   0     es          escar               # engrescares
+SFX H   ar    áramos      escar               # engrescáramos
+SFX H   ar    áremos      escar               # engrescáremos
+SFX H   0     ais         escar               # engrescarais
+SFX H   0     eis         escar               # engrescareis
+SFX H   0     an          escar               # engrescaran
+SFX H   0     en          escar               # engrescaren
+SFX H   ar    ái          escar               # engrescái
+SFX H   ar    ando        escar               # engrescando
+SFX H   ar    ao          escar               # engrescao
+SFX H   ar    ada         escar               # engrescada
+SFX H   ar    áu          escar               # engrescáu
+SFX H   ar    aos         escar               # engrescaos
+SFX H   ar    aes         escar               # engrescaes
+SFX H   0     é           escar               # engrescaré
+SFX H   0     ás          escar               # engrescarás
+SFX H   0     á           escar               # engrescará
+SFX H   0     emos        escar               # engrescaremos
+SFX H   0     éis         escar               # engrescaréis
+SFX H   0     án          escar               # engrescarán
+SFX H   0     ía          escar               # engrescaría
+SFX H   0     íes         escar               # engrescaríes
+SFX H   0     íamos       escar               # engrescaríamos
+SFX H   0     íemos       escar               # engrescaríemos
+SFX H   0     íais        escar               # engrescaríais
+SFX H   0     íeis        escar               # engrescaríeis
+SFX H   0     íen         escar               # engrescaríen
+SFX H   estar iesto       estar               # amiesto
+SFX H   estar iestes      estar               # amiestes
+SFX H   estar iesta       estar               # amiesta
+SFX H   estar estamos     estar               # amestamos
+SFX H   estar estáis      estar               # amestáis
+SFX H   estar iesten      estar               # amiesten
+SFX H   estar estaba      estar               # amestaba
+SFX H   estar estabes     estar               # amestabes
+SFX H   estar estábamos   estar               # amestábamos
+SFX H   estar estábemos   estar               # amestábemos
+SFX H   estar estabais    estar               # amestabais
+SFX H   estar estabeis    estar               # amestabeis
+SFX H   estar estaben     estar               # amestaben
+SFX H   estar esté        estar               # amesté
+SFX H   estar estasti     estar               # amestasti
+SFX H   estar estesti     estar               # amestesti
+SFX H   estar estó        estar               # amestó
+SFX H   estar estemos     estar               # amestemos
+SFX H   estar estastis    estar               # amestastis
+SFX H   estar estestis    estar               # amestestis
+SFX H   estar estaron     estar               # amestaron
+SFX H   estar ieste       estar               # amieste
+SFX H   estar iestas      estar               # amiestas
+SFX H   estar estéis      estar               # amestéis
+SFX H   estar iestan      estar               # amiestan
+SFX H   0     a           estar               # amestara
+SFX H   0     e           estar               # amestare
+SFX H   0     as          estar               # amestaras
+SFX H   0     es          estar               # amestares
+SFX H   ar    áramos      estar               # amestáramos
+SFX H   ar    áremos      estar               # amestáremos
+SFX H   0     ais         estar               # amestarais
+SFX H   0     eis         estar               # amestareis
+SFX H   0     an          estar               # amestaran
+SFX H   0     en          estar               # amestaren
+SFX H   ar    ái          estar               # amestái
+SFX H   ar    ando        estar               # amestando
+SFX H   ar    ao          estar               # amestao
+SFX H   ar    ada         estar               # amestada
+SFX H   ar    áu          estar               # amestáu
+SFX H   ar    aos         estar               # amestaos
+SFX H   ar    aes         estar               # amestaes
+SFX H   0     é           estar               # amestaré
+SFX H   0     ás          estar               # amestarás
+SFX H   0     á           estar               # amestará
+SFX H   0     emos        estar               # amestaremos
+SFX H   0     éis         estar               # amestaréis
+SFX H   0     án          estar               # amestarán
+SFX H   0     ía          estar               # amestaría
+SFX H   0     íes         estar               # amestaríes
+SFX H   0     íamos       estar               # amestaríamos
+SFX H   0     íemos       estar               # amestaríemos
+SFX H   0     íais        estar               # amestaríais
+SFX H   0     íeis        estar               # amestaríeis
+SFX H   0     íen         estar               # amestaríen
+SFX H   enzar ienzo       enzar               # apienzo
+SFX H   enzar iences      enzar               # apiences
+SFX H   enzar ienza       enzar               # apienza
+SFX H   enzar enzamos     enzar               # apenzamos
+SFX H   enzar enzáis      enzar               # apenzáis
+SFX H   enzar iencen      enzar               # apiencen
+SFX H   enzar enzaba      enzar               # apenzaba
+SFX H   enzar enzabes     enzar               # apenzabes
+SFX H   enzar enzábamos   enzar               # apenzábamos
+SFX H   enzar enzábemos   enzar               # apenzábemos
+SFX H   enzar enzabais    enzar               # apenzabais
+SFX H   enzar enzabeis    enzar               # apenzabeis
+SFX H   enzar enzaben     enzar               # apenzaben
+SFX H   enzar encé        enzar               # apencé
+SFX H   enzar enzasti     enzar               # apenzasti
+SFX H   enzar encesti     enzar               # apencesti
+SFX H   enzar enzó        enzar               # apenzó
+SFX H   enzar encemos     enzar               # apencemos
+SFX H   enzar enzastis    enzar               # apenzastis
+SFX H   enzar encestis    enzar               # apencestis
+SFX H   enzar enzaron     enzar               # apenzaron
+SFX H   enzar ience       enzar               # apience
+SFX H   enzar ienzas      enzar               # apienzas
+SFX H   enzar encéis      enzar               # apencéis
+SFX H   enzar ienzan      enzar               # apienzan
+SFX H   0     a           enzar               # apenzara
+SFX H   0     e           enzar               # apenzare
+SFX H   0     as          enzar               # apenzaras
+SFX H   0     es          enzar               # apenzares
+SFX H   ar    áramos      enzar               # apenzáramos
+SFX H   ar    áremos      enzar               # apenzáremos
+SFX H   0     ais         enzar               # apenzarais
+SFX H   0     eis         enzar               # apenzareis
+SFX H   0     an          enzar               # apenzaran
+SFX H   0     en          enzar               # apenzaren
+SFX H   ar    ái          enzar               # apenzái
+SFX H   ar    ando        enzar               # apenzando
+SFX H   ar    ao          enzar               # apenzao
+SFX H   ar    ada         enzar               # apenzada
+SFX H   ar    áu          enzar               # apenzáu
+SFX H   ar    aos         enzar               # apenzaos
+SFX H   ar    aes         enzar               # apenzaes
+SFX H   0     é           enzar               # apenzaré
+SFX H   0     ás          enzar               # apenzarás
+SFX H   0     á           enzar               # apenzará
+SFX H   0     emos        enzar               # apenzaremos
+SFX H   0     éis         enzar               # apenzaréis
+SFX H   0     án          enzar               # apenzarán
+SFX H   0     ía          enzar               # apenzaría
+SFX H   0     íes         enzar               # apenzaríes
+SFX H   0     íamos       enzar               # apenzaríamos
+SFX H   0     íemos       enzar               # apenzaríemos
+SFX H   0     íais        enzar               # apenzaríais
+SFX H   0     íeis        enzar               # apenzaríeis
+SFX H   0     íen         enzar               # apenzaríen
+SFX H   ainar aíno        ainar                # entaíno
+SFX H   ainar aínes       ainar                # entaínes
+SFX H   ainar aína        ainar                # entaína
+SFX H   ainar ainamos     ainar                # entainamos
+SFX H   ainar aináis      ainar                # entaináis
+SFX H   ainar aínen       ainar                # entaínen
+SFX H   ainar ainaba      ainar                # entainaba
+SFX H   ainar ainabes     ainar                # entainabes
+SFX H   ainar ainábamos   ainar                # entainábamos
+SFX H   ainar ainábemos   ainar                # entainábemos
+SFX H   ainar ainabais    ainar                # entainabais
+SFX H   ainar ainabeis    ainar                # entainabeis
+SFX H   ainar ainaben     ainar                # entainaben
+SFX H   ainar ainé        ainar                # entainé
+SFX H   ainar ainasti     ainar                # entainasti
+SFX H   ainar ainesti     ainar                # entainesti
+SFX H   ainar ainó        ainar                # entainó
+SFX H   ainar ainemos     ainar                # entainemos
+SFX H   ainar ainastis    ainar                # entainastis
+SFX H   ainar ainestis    ainar                # entainestis
+SFX H   ainar ainaron     ainar                # entainaron
+SFX H   ainar aíne        ainar                # entaíne
+SFX H   ainar aínas       ainar                # entaínas
+SFX H   ainar ainéis      ainar                # entainéis
+SFX H   ainar aínan       ainar                # entaínan
+SFX H   0     a           ainar                # entainara
+SFX H   0     e           ainar                # entainare
+SFX H   0     as          ainar                # entainaras
+SFX H   0     es          ainar                # entainares
+SFX H   ar    áramos      ainar                # entaináramos
+SFX H   ar    áremos      ainar                # entaináremos
+SFX H   0     ais         ainar                # entainarais
+SFX H   0     eis         ainar                # entainareis
+SFX H   0     an          ainar                # entainaran
+SFX H   0     en          ainar                # entainaren
+SFX H   ar    ái          ainar                # entainái
+SFX H   ar    ando        ainar                # entainando
+SFX H   ar    ao          ainar                # entainao
+SFX H   ar    ada         ainar                # entainada
+SFX H   ar    áu          ainar                # entaináu
+SFX H   ar    aos         ainar                # entainaos
+SFX H   ar    aes         ainar                # entainaes
+SFX H   0     é           ainar                # entainaré
+SFX H   0     ás          ainar                # entainarás
+SFX H   0     á           ainar                # entainará
+SFX H   0     emos        ainar                # entainaremos
+SFX H   0     éis         ainar                # entainaréis
+SFX H   0     án          ainar                # entainarán
+SFX H   0     ía          ainar                # entainaría
+SFX H   0     íes         ainar                # entainaríes
+SFX H   0     íamos       ainar                # entainaríamos
+SFX H   0     íemos       ainar                # entainaríemos
+SFX H   0     íais        ainar                # entainaríais
+SFX H   0     íeis        ainar                # entainaríeis
+SFX H   0     íen         ainar                # entainaríen
+SFX H   iar   ío          iar                 # trío
+SFX H   iar   íes         iar                 # tríes
+SFX H   iar   ía          iar                 # tría
+SFX H   iar   iamos       iar                 # triamos
+SFX H   iar   iáis        iar                 # triáis
+SFX H   iar   íen         iar                 # tríen
+SFX H   iar   iaba        iar                 # triaba
+SFX H   iar   iabes       iar                 # triabes
+SFX H   iar   iábamos     iar                 # triábamos
+SFX H   iar   iábemos     iar                 # triábemos
+SFX H   iar   iabais      iar                 # triabais
+SFX H   iar   iabeis      iar                 # triabeis
+SFX H   iar   iaben       iar                 # triaben
+SFX H   iar   ié          iar                 # trié
+SFX H   iar   iasti       iar                 # triasti
+SFX H   iar   iesti       iar                 # triesti
+SFX H   iar   ió          iar                 # trió
+SFX H   iar   iemos       iar                 # triemos
+SFX H   iar   iastis      iar                 # triastis
+SFX H   iar   iestis      iar                 # triestis
+SFX H   iar   iaron       iar                 # triaron
+SFX H   iar   íe          iar                 # tríe
+SFX H   iar   ías         iar                 # trías
+SFX H   iar   iéis        iar                 # tríéis
+SFX H   iar   ían         iar                 # trían
+SFX H   0     a           iar                 # triara
+SFX H   0     e           iar                 # triare
+SFX H   0     as          iar                 # triaras
+SFX H   0     es          iar                 # triares
+SFX H   ar    áramos      iar                 # triáramos
+SFX H   ar    áremos      iar                 # triáremos
+SFX H   0     ais         iar                 # triarais
+SFX H   0     eis         iar                 # triareis
+SFX H   0     an          iar                 # triaran
+SFX H   0     en          iar                 # triaren
+SFX H   ar    ái          iar                 # triái
+SFX H   ar    ando        iar                 # triando
+SFX H   ar    ao          iar                 # triao
+SFX H   ar    ada         iar                 # triada
+SFX H   ar    áu          iar                 # triáu
+SFX H   ar    aos         iar                 # triaos
+SFX H   ar    aes         iar                 # triaes
+SFX H   0     é           iar                 # triaré
+SFX H   0     ás          iar                 # triarás
+SFX H   0     á           iar                 # triará
+SFX H   0     emos        iar                 # triaremos
+SFX H   0     éis         iar                 # triaréis
+SFX H   0     án          iar                 # triarán
+SFX H   0     ía          iar                 # triaría
+SFX H   0     íes         iar                 # triaríes
+SFX H   0     íamos       iar                 # triaríamos
+SFX H   0     íemos       iar                 # triaríemos
+SFX H   0     íais        iar                 # triaríais
+SFX H   0     íeis        iar                 # triaríeis
+SFX H   0     íen         iar                 # triaríen
+SFX H   uar   úo          uar                 # rúo
+SFX H   uar   úes         uar                 # rúes
+SFX H   uar   úa          uar                 # rúa
+SFX H   uar   uamos       uar                 # ruamos
+SFX H   uar   uáis        uar                 # ruáis
+SFX H   uar   úen         uar                 # rúen
+SFX H   uar   uaba        uar                 # ruaba
+SFX H   uar   uabes       uar                 # ruabes
+SFX H   uar   uábamos     uar                 # ruábamos
+SFX H   uar   uábemos     uar                 # ruábemos
+SFX H   uar   uabais      uar                 # ruabais
+SFX H   uar   uabeis      uar                 # ruabeis
+SFX H   uar   uaben       uar                 # ruaben
+SFX H   uar   ué          uar                 # rué
+SFX H   uar   uasti       uar                 # ruasti
+SFX H   uar   uesti       uar                 # ruesti
+SFX H   uar   uó          uar                 # ruó
+SFX H   uar   uemos       uar                 # ruemos
+SFX H   uar   uastis      uar                 # ruastis
+SFX H   uar   uestis      uar                 # ruestis
+SFX H   uar   uaron       uar                 # ruaron
+SFX H   uar   úe          uar                 # rúe
+SFX H   uar   úas         uar                 # rúas
+SFX H   uar   uéis        uar                 # rúéis
+SFX H   uar   úan         uar                 # rúan
+SFX H   0     a           uar                 # ruara
+SFX H   0     e           uar                 # ruare
+SFX H   0     as          uar                 # ruaras
+SFX H   0     es          uar                 # ruares
+SFX H   ar    áramos      uar                 # ruáramos
+SFX H   ar    áremos      uar                 # ruáremos
+SFX H   0     ais         uar                 # ruarais
+SFX H   0     eis         uar                 # ruareis
+SFX H   0     an          uar                 # ruaran
+SFX H   0     en          uar                 # ruaren
+SFX H   ar    ái          uar                 # ruái
+SFX H   ar    ando        uar                 # ruando
+SFX H   ar    ao          uar                 # ruao
+SFX H   ar    ada         uar                 # ruada
+SFX H   ar    áu          uar                 # ruáu
+SFX H   ar    aos         uar                 # ruaos
+SFX H   ar    aes         uar                 # ruaes
+SFX H   0     é           uar                 # ruaré
+SFX H   0     ás          uar                 # ruarás
+SFX H   0     á           uar                 # ruará
+SFX H   0     emos        uar                 # ruaremos
+SFX H   0     éis         uar                 # ruaréis
+SFX H   0     án          uar                 # ruarán
+SFX H   0     ía          uar                 # ruaría
+SFX H   0     íes         uar                 # ruaríes
+SFX H   0     íamos       uar                 # ruaríamos
+SFX H   0     íemos       uar                 # ruaríemos
+SFX H   0     íais        uar                 # ruaríais
+SFX H   0     íeis        uar                 # ruaríeis
+SFX H   0     íen         uar                 # ruaríen
+SFX H   ender iendo       ender               # enciendo
+SFX H   ender iendes      ender               # enciendes
+SFX H   ender iende       ender               # enciende
+SFX H   ender endemos     ender               # encendemos
+SFX H   ender endéis      ender               # encendéis
+SFX H   ender ienden      ender               # encienden
+SFX H   ender endía       ender               # encendía
+SFX H   ender endíes      ender               # encendíes
+SFX H   ender endíamos    ender               # encendíamos
+SFX H   ender endíemos    ender               # encendíemos
+SFX H   ender endíais     ender               # encendíais
+SFX H   ender endíeis     ender               # encendíeis
+SFX H   ender endíen      ender               # encendíen
+SFX H   ender endí        ender               # encendí
+SFX H   ender endisti     ender               # encendisti
+SFX H   ender endiesti    ender               # encendiesti
+SFX H   ender endió       ender               # encendió
+SFX H   ender endimos     ender               # encendimos
+SFX H   ender endiemos    ender               # encendiemos
+SFX H   ender endistis    ender               # encendistis
+SFX H   ender endiestis   ender               # encendiestis
+SFX H   ender endieron    ender               # encendieron
+SFX H   ender ienda       ender               # encienda
+SFX H   ender iendas      ender               # enciendas
+SFX H   ender endamos     ender               # encedamos
+SFX H   ender endáis      ender               # encendáis
+SFX H   ender iendan      ender               # enciendan
+SFX H   ender endiera     ender               # encendiera
+SFX H   ender endiere     ender               # encendiere
+SFX H   ender endieras    ender               # encendieras
+SFX H   ender endieres    ender               # encendieres
+SFX H   ender endiéramos  ender               # encendiéramos
+SFX H   ender endiéremos  ender               # encendiéremos
+SFX H   ender endierais   ender               # encendierais
+SFX H   ender endiereis   ender               # encendiereis
+SFX H   ender endieran    ender               # encendieran
+SFX H   ender endieren    ender               # encendieren
+SFX H   0     é           ender               # encenderé
+SFX H   0     ás          ender               # encenderás
+SFX H   0     á           ender               # encenderá
+SFX H   0     emos        ender               # encenderemos
+SFX H   0     éis         ender               # encenderéis
+SFX H   0     án          ender               # encenderán
+SFX H   0     ía          ender               # encendería
+SFX H   0     íes         ender               # encenderíes
+SFX H   0     íamos       ender               # encenderíamos
+SFX H   0     íemos       ender               # encenderíemos
+SFX H   0     íais        ender               # encenderíais
+SFX H   0     íeis        ender               # encenderíeis
+SFX H   0     íen         ender               # encenderíen
+SFX H   ender iendi       ender               # enciendi
+SFX H   er    i           ender               # encendi
+SFX H   er    éi          ender               # encendéi
+SFX H   er    iendo       ender               # encendiendo
+SFX H   er    ío          ender               # encendío
+SFX H   er    ida         ender               # encendida
+SFX H   er    íu          ender               # encendíu
+SFX H   er    íos         ender               # encendíos
+SFX H   er    íes         ender               # encendíes
+SFX H   ener  engo        ener                # tengo
+SFX H   ener  ienes       ener                # tienes
+SFX H   ener  ien         ener                # tien
+SFX H   ener  enemos      ener                # tenemos
+SFX H   ener  enéis       ener                # tenéis
+SFX H   ener  ienen       ener                # tienen
+SFX H   ener  enía        ener                # tenía
+SFX H   ener  eníes       ener                # teníes
+SFX H   ener  eníamos     ener                # teníamos
+SFX H   ener  eníemos     ener                # teníemos
+SFX H   ener  eníais      ener                # teníais
+SFX H   ener  eníeis      ener                # teníeis
+SFX H   ener  eníen       ener                # teníen
+SFX H   ener  uvi         ener                # tuvi
+SFX H   ener  evi         ener                # tevi
+SFX H   ener  uvisti      ener                # tuvisti
+SFX H   ener  uviesti     ener                # tuviesti
+SFX H   ener  uvo         ener                # tuvo
+SFX H   ener  evo         ener                # tevo
+SFX H   ener  uvimos      ener                # tuvimos
+SFX H   ener  uviemos     ener                # tuviemos
+SFX H   ener  uvistis     ener                # tuvistis
+SFX H   ener  uviestis    ener                # tuviestis
+SFX H   ener  uvieron     ener                # tuvieron
+SFX H   ener  enga        ener                # tenga
+SFX H   ener  engas       ener                # tengas
+SFX H   ener  engamos     ener                # tengamos
+SFX H   ener  engáis      ener                # tengáis
+SFX H   ener  engan       ener                # tengan
+SFX H   ener  uviera      ener                # tuviera
+SFX H   ener  uviere      ener                # tuviere
+SFX H   ener  uvieras     ener                # tuvieras
+SFX H   ener  uvieres     ener                # tuvieres
+SFX H   ener  uviéramos   ener                # tuviéramos
+SFX H   ener  uviéremos   ener                # tuviéremos
+SFX H   ener  uvierais    ener                # tuvierais
+SFX H   ener  uviereis    ener                # tuviereis
+SFX H   ener  uvieran     ener                # tuvieran
+SFX H   ener  uvieren     ener                # tuvieren
+SFX H   ener  endré       ener                # tendré
+SFX H   ener  endrás      ener                # tendrás
+SFX H   ener  endrá       ener                # tendrá
+SFX H   ener  endremos    ener                # tendremos
+SFX H   ener  endréis     ener                # tendréis
+SFX H   ener  endrán      ener                # tendrán
+SFX H   ener  endría      ener                # tendría
+SFX H   ener  endríes     ener                # tendríes
+SFX H   ener  endríamos   ener                # tendríamos
+SFX H   ener  endríemos   ener                # tendríemos
+SFX H   ener  endríais    ener                # tendríais
+SFX H   ener  endríeis    ener                # tendríeis
+SFX H   ener  endríen     ener                # tendríen
+SFX H   ener  en          ener                # ten
+SFX H   er    éi          ener                # tenéi
+SFX H   ener  eniendo     ener                # teniendo
+SFX H   er    ío          ener                # tenío
+SFX H   er    ida         ener                # tenida
+SFX H   er    íu          ener                # teníu
+SFX H   er    íos         ener                # teníos
+SFX H   er    íes         ener                # teníes
+SFX H   erver iervo       erver               # fiervo
+SFX H   erver ierves      erver               # fierves
+SFX H   erver ierve       erver               # fierve
+SFX H   erver ervemos     erver               # fervemos
+SFX H   erver ervéis      erver               # fervéis
+SFX H   erver ierven      erver               # fierven
+SFX H   erver ervía       erver               # fervía
+SFX H   erver ervíes      erver               # fervíes
+SFX H   erver ervíamos    erver               # fervíamos
+SFX H   erver ervíemos    erver               # fervíemos
+SFX H   erver ervíais     erver               # fervíais
+SFX H   erver ervíeis     erver               # fervíeis
+SFX H   erver ervíen      erver               # fervíen
+SFX H   erver erví        erver               # ferví
+SFX H   erver ervisti     erver               # fervisti
+SFX H   erver erviesti    erver               # ferviesti
+SFX H   erver ervió       erver               # fervió
+SFX H   erver ervimos     erver               # fervimos
+SFX H   erver erviemos    erver               # ferviemos
+SFX H   erver ervistis    erver               # fervistis
+SFX H   erver erviestis   erver               # ferviestis
+SFX H   erver ervieron    erver               # fervieron
+SFX H   erver ierva       erver               # fierva
+SFX H   erver iervas      erver               # fiervas
+SFX H   erver ervamos     erver               # fervamos
+SFX H   erver erváis      erver               # ferváis
+SFX H   erver iervan      erver               # fiervan
+SFX H   erver erviera     erver               # ferviera
+SFX H   erver erviere     erver               # ferviere
+SFX H   erver ervieras    erver               # fervieras
+SFX H   erver ervieres    erver               # fervieres
+SFX H   erver erviéramos  erver               # ferviéramos
+SFX H   erver erviéremos  erver               # ferviéremos
+SFX H   erver ervierais   erver               # fervierais
+SFX H   erver erviereis   erver               # ferviereis
+SFX H   erver ervieran    erver               # fervieran
+SFX H   erver ervieren    erver               # fervieren
+SFX H   0     é           erver               # ferveré
+SFX H   0     ás          erver               # ferverás
+SFX H   0     á           erver               # ferverá
+SFX H   0     emos        erver               # ferveremos
+SFX H   0     éis         erver               # ferveréis
+SFX H   0     án          erver               # ferverán
+SFX H   0     ía          erver               # fervería
+SFX H   0     íes         erver               # ferveríes
+SFX H   0     íamos       erver               # ferveríamos
+SFX H   0     íemos       erver               # ferveríemos
+SFX H   0     íais        erver               # ferveríais
+SFX H   0     íeis        erver               # ferveríeis
+SFX H   0     íen         erver               # ferveríen
+SFX H   erver iervi       erver               # fiervi
+SFX H   er    i           erver               # fervi
+SFX H   er    éi          erver               # fervéi
+SFX H   er    iervo       erver               # ferviervo
+SFX H   er    ío          erver               # fervío
+SFX H   er    ida         erver               # fervida
+SFX H   er    íu          erver               # fervíu
+SFX H   er    íos         erver               # fervíos
+SFX H   er    íes         erver               # fervíes
+SFX H   ocer  uezo        ocer                # cuezo
+SFX H   ocer  ueces       ocer                # cueces
+SFX H   ocer  uez         ocer                # cuez
+SFX H   ocer  ocemos      ocer                # cocemos
+SFX H   ocer  océis       ocer                # cocéis
+SFX H   ocer  uecen       ocer                # cuecen
+SFX H   ocer  ocía        ocer                # cocía
+SFX H   ocer  ocíes       ocer                # cocíes
+SFX H   ocer  ocíamos     ocer                # cocíamos
+SFX H   ocer  ocíemos     ocer                # cocíemos
+SFX H   ocer  ocíais      ocer                # cocíais
+SFX H   ocer  ocíeis      ocer                # cocíeis
+SFX H   ocer  ocíen       ocer                # cocíen
+SFX H   ocer  ocí         ocer                # cocí
+SFX H   ocer  ocisti      ocer                # cocisti
+SFX H   ocer  ociesti     ocer                # cociesti
+SFX H   ocer  oció        ocer                # coció
+SFX H   ocer  ocimos      ocer                # cocimos
+SFX H   ocer  ociemos     ocer                # cociemos
+SFX H   ocer  ocistis     ocer                # cocistis
+SFX H   ocer  ociestis    ocer                # cociestis
+SFX H   ocer  ocieron     ocer                # cocieron
+SFX H   ocer  ueza        ocer                # cueza
+SFX H   ocer  uezas       ocer                # cuezas
+SFX H   ocer  ozamos      ocer                # cozamos
+SFX H   ocer  ozáis       ocer                # cozáis
+SFX H   ocer  uezan       ocer                # cuezan
+SFX H   ocer  ociera      ocer                # cociera
+SFX H   ocer  ociere      ocer                # cociere
+SFX H   ocer  ocieras     ocer                # cocieras
+SFX H   ocer  ocieres     ocer                # cocieres
+SFX H   ocer  ociéramos   ocer                # cociéramos
+SFX H   ocer  ociéremos   ocer                # cociéremos
+SFX H   ocer  ocierais    ocer                # cocierais
+SFX H   ocer  ociereis    ocer                # cociereis
+SFX H   ocer  ocieran     ocer                # cocieran
+SFX H   ocer  ocieren     ocer                # cocieren
+SFX H   0     é           ocer                # coceré
+SFX H   0     ás          ocer                # cocerás
+SFX H   0     á           ocer                # cocerá
+SFX H   0     emos        ocer                # coceremos
+SFX H   0     éis         ocer                # coceréis
+SFX H   0     án          ocer                # cocerán
+SFX H   0     ía          ocer                # cocería
+SFX H   0     íes         ocer                # coceríes
+SFX H   0     íamos       ocer                # coceríamos
+SFX H   0     íemos       ocer                # coceríemos
+SFX H   0     íais        ocer                # coceríais
+SFX H   0     íeis        ocer                # coceríeis
+SFX H   0     íen         ocer                # coceríen
+SFX H   er    éi          ocer                # cocéi
+SFX H   er    iendo       ocer                # cociendo
+SFX H   er    ío          ocer                # cocío
+SFX H   er    ida         ocer                # cocida
+SFX H   er    íu          ocer                # cocíu
+SFX H   er    íos         ocer                # cocíos
+SFX H   er    íes         ocer                # cocíes
+SFX H   alir  algo        alir                # valgo
+SFX H   alir  ales        alir                # vales
+SFX H   alir  al          alir                # val
+SFX H   alir  alimos      alir                # valimos
+SFX H   alir  alís        alir                # valís
+SFX H   alir  alen        alir                # valen
+SFX H   alir  alía        alir                # valía
+SFX H   alir  alíes       alir                # valíes
+SFX H   alir  alíamos     alir                # valíamos
+SFX H   alir  alíemos     alir                # valíemos
+SFX H   alir  alíais      alir                # valíais
+SFX H   alir  alíeis      alir                # valíeis
+SFX H   alir  alíen       alir                # valíen
+SFX H   alir  alí         alir                # valí
+SFX H   alir  alisti      alir                # valisti
+SFX H   alir  aliesti     alir                # valiesti
+SFX H   alir  alió        alir                # valió
+SFX H   alir  aliemos     alir                # valiemos
+SFX H   alir  alistis     alir                # valistis
+SFX H   alir  aliestis    alir                # valiestis
+SFX H   alir  alieron     alir                # valieron
+SFX H   alir  alga        alir                # valga
+SFX H   alir  algas       alir                # valgas
+SFX H   alir  algamos     alir                # valgamos
+SFX H   alir  algáis      alir                # valgáis
+SFX H   alir  algan       alir                # valgan
+SFX H   alir  aliera      alir                # valiera
+SFX H   alir  aliere      alir                # valiere
+SFX H   alir  alieras     alir                # valieras
+SFX H   alir  alieres     alir                # valieres
+SFX H   alir  aliéramos   alir                # valiéramos
+SFX H   alir  aliéremos   alir                # valiéremos
+SFX H   alir  alierais    alir                # valierais
+SFX H   alir  aliereis    alir                # valiereis
+SFX H   alir  alieran     alir                # valieran
+SFX H   alir  alieren     alir                # valieren
+SFX H   alir  aldré       alir                # valdré
+SFX H   alir  aldrás      alir                # valdrás
+SFX H   alir  aldrá       alir                # valdrá
+SFX H   alir  aldremos    alir                # valdremos
+SFX H   alir  aldréis     alir                # valdréis
+SFX H   alir  aldrán      alir                # valdrán
+SFX H   alir  aldría      alir                # valdría
+SFX H   alir  aldríes     alir                # valdríes
+SFX H   alir  aldríamos   alir                # valdríamos
+SFX H   alir  aldríemos   alir                # valdríemos
+SFX H   alir  aldríais    alir                # valdríais
+SFX H   alir  aldríeis    alir                # valdríeis
+SFX H   alir  aldríen     alir                # valdríen
+SFX H   ir    íi          alir                # valíi
+SFX H   ir    iendo       alir                # valiendo
+SFX H   ir    ío          alir                # valío
+SFX H   ir    ida         alir                # valida
+SFX H   ir    íu          alir                # valíu
+SFX H   ir    íos         alir                # valíos
+SFX H   ir    íes         alir                # valíes
+SFX H   enir  engo        enir                # vengo
+SFX H   enir  ienes       enir                # vienes
+SFX H   enir  ien         enir                # vien
+SFX H   enir  enimos      enir                # venimos
+SFX H   enir  enís        enir                # venís
+SFX H   enir  ienen       enir                # vienen
+SFX H   enir  enía        enir                # venía
+SFX H   enir  eníes       enir                # víes
+SFX H   enir  eníamos     enir                # veníamos
+SFX H   enir  eníemos     enir                # veníemos
+SFX H   enir  eníais      enir                # veníais
+SFX H   enir  eníeis      enir                # veníeis
+SFX H   enir  eníen       enir                # veníen
+SFX H   enir  ini         enir                # vini
+SFX H   enir  inisti      enir                # vinisti
+SFX H   enir  iniesti     enir                # viniesti
+SFX H   enir  ieno        enir                # vino
+SFX H   enir  inimos      enir                # vinimos
+SFX H   enir  iniemos     enir                # viniemos
+SFX H   enir  inistis     enir                # vinistis
+SFX H   enir  iniestis    enir                # viniestis
+SFX H   enir  inieron     enir                # vinieron
+SFX H   enir  enga        enir                # venga
+SFX H   enir  engas       enir                # vengas
+SFX H   enir  engamos     enir                # vengamos
+SFX H   enir  engáis      enir                # vengáis
+SFX H   enir  engan       enir                # vengan
+SFX H   enir  iniera      enir                # viniera
+SFX H   enir  iniere      enir                # viniere
+SFX H   enir  inieras     enir                # vinieras
+SFX H   enir  inieres     enir                # vinieres
+SFX H   enir  iniéramos   enir                # viniéramos
+SFX H   enir  iniéremos   enir                # viniéremos
+SFX H   enir  inierais    enir                # vinierais
+SFX H   enir  iniereis    enir                # viniereis
+SFX H   enir  inieran     enir                # vinieran
+SFX H   enir  inieren     enir                # vinieren
+SFX H   enir  endré       enir                # vendré
+SFX H   enir  endrás      enir                # vendrás
+SFX H   enir  endrá       enir                # vendrá
+SFX H   enir  endremos    enir                # vendremos
+SFX H   enir  endréis     enir                # vendréis
+SFX H   enir  endrán      enir                # vendrán
+SFX H   enir  endría      enir                # vendría
+SFX H   enir  endríes     enir                # vendríes
+SFX H   enir  endríamos   enir                # vendríamos
+SFX H   enir  endríemos   enir                # vendríemos
+SFX H   enir  endríais    enir                # vendríais
+SFX H   enir  endríeis    enir                # vendríeis
+SFX H   enir  endríen     enir                # vendríen
+SFX H   enir  en          enir                # ven
+SFX H   ir    íi          enir                # veníi
+SFX H   enir  iniendo     enir                # viniendo
+SFX H   ir    ío          enir                # venío
+SFX H   ir    ida         enir                # venida
+SFX H   ir    íu          enir                # veníu
+SFX H   ir    íos         enir                # veníos
+SFX H   ir    íes         enir                # veníes
+SFX H   erir  iero        [^x]erir            # prefiero
+SFX H   erir  ero         xerir               # inxero
+SFX H   erir  ieres       [^x]erir            # prefieres
+SFX H   erir  eres        xerir               # inxeres
+SFX H   erir  ier         [^x]erir            # prefier
+SFX H   erir  er          xerir               # inxer
+SFX H   erir  erimos      erir                # preferimos
+SFX H   erir  erís        erir                # preferís
+SFX H   erir  ieren       [^x]erir            # prefieren
+SFX H   erir  eren        xerir               # inxeren
+SFX H   erir  ería        erir                # prefería
+SFX H   erir  eríes       erir                # preferíes
+SFX H   erir  eríamos     erir                # preferíamos
+SFX H   erir  eríemos     erir                # preferíemos
+SFX H   erir  eríais      erir                # preferíais
+SFX H   erir  eríeis      erir                # preferíeis
+SFX H   erir  eríen       erir                # preferíen
+SFX H   erir  erí         erir                # preferí
+SFX H   erir  eristi      erir                # preferisti
+SFX H   erir  eriesti     erir                # preferiesti
+SFX H   erir  irió        erir                # prefirió
+SFX H   erir  eriemos     erir                # prefiriemos
+SFX H   erir  eristis     erir                # prefiristis
+SFX H   erir  eriestis    erir                # prefiriestis
+SFX H   erir  irieron     erir                # prefirieron
+SFX H   erir  iera        [^x]erir            # prefiera
+SFX H   erir  era         xerir               # inxera
+SFX H   erir  ieras       [^x]erir            # prefieras
+SFX H   erir  eras        xerir               # inxeras
+SFX H   erir  iramos      erir                # prefiramos
+SFX H   erir  iráis       erir                # prefiráis
+SFX H   erir  ieran       [^x]erir            # prefieran
+SFX H   erir  eran        xerir               # inxeran
+SFX H   erir  iriera      erir                # prefiriera
+SFX H   erir  iriere      erir                # prefiriere
+SFX H   erir  irieras     erir                # prefirieras
+SFX H   erir  irieres     erir                # prefirieres
+SFX H   erir  iriéramos   erir                # viniéramos
+SFX H   erir  iriéremos   erir                # viniéremos
+SFX H   erir  irierais    erir                # prefirierais
+SFX H   erir  iriereis    erir                # prefiriereis
+SFX H   erir  irieran     erir                # prefirieran
+SFX H   erir  irieren     erir                # prefirieren
+SFX H   0     é           erir                # prefereré
+SFX H   0     ás          erir                # prefererás
+SFX H   0     á           erir                # prefererá
+SFX H   0     emos        erir                # prefereremos
+SFX H   0     éis         erir                # prefereréis
+SFX H   0     án          erir                # prefererán
+SFX H   0     ía          erir                # preferiría
+SFX H   0     íes         erir                # preferiríes
+SFX H   0     íamos       erir                # preferiríamos
+SFX H   0     íemos       erir                # preferiríemos
+SFX H   0     íais        erir                # preferiríais
+SFX H   0     íeis        erir                # preferiríeis
+SFX H   0     íen         erir                # preferiríen
+SFX H   ir    íi          erir                # preferíi
+SFX H   erir  iriendo     erir                # prefiriendo
+SFX H   ir    ío          erir                # preferío
+SFX H   ir    ida         erir                # preferida
+SFX H   ir    íu          erir                # preferíu
+SFX H   ir    íos         erir                # preferíos
+SFX H   ir    íes         erir                # preferíes
+SFX H   ertir ierto       ertir               # vierto
+SFX H   ertir iertes      ertir               # viertes
+SFX H   ertir ierte       ertir               # vierte
+SFX H   ertir ertimos     ertir               # vertemos
+SFX H   ertir ertís       ertir               # vertéis
+SFX H   ertir ierten      ertir               # vierten
+SFX H   ertir ertía       ertir               # vertía
+SFX H   ertir ertíes      ertir               # vertíes
+SFX H   ertir ertíamos    ertir               # vertíamos
+SFX H   ertir ertíemos    ertir               # vertíemos
+SFX H   ertir ertíais     ertir               # vertíais
+SFX H   ertir ertíeis     ertir               # vertíeis
+SFX H   ertir ertíen      ertir               # vertíen
+SFX H   ertir ertí        ertir               # vertí
+SFX H   ertir ertisti     ertir               # vertisti
+SFX H   ertir ertiesti    ertir               # vertiesti
+SFX H   ertir ertió       ertir               # vertió
+SFX H   ertir ertimos     ertir               # vertimos
+SFX H   ertir ertiemos    ertir               # vertiemos
+SFX H   ertir ertistis    ertir               # vertistis
+SFX H   ertir ertiestis   ertir               # vertiestis
+SFX H   ertir ertieron    ertir               # vertieron
+SFX H   ertir ierta       ertir               # vierta
+SFX H   ertir iertas      ertir               # viertas
+SFX H   ertir ertamos     ertir               # vertamos
+SFX H   ertir ertáis      ertir               # vertáis
+SFX H   ertir iertan      ertir               # viertan
+SFX H   ertir ertiera     ertir               # vertiera
+SFX H   ertir ertiere     ertir               # vertiere
+SFX H   ertir ertieras    ertir               # vertieras
+SFX H   ertir ertieres    ertir               # vertieres
+SFX H   ertir ertiéramos  ertir               # vertiéramos
+SFX H   ertir ertiéremos  ertir               # vertiéremos
+SFX H   ertir ertierais   ertir               # vertierais
+SFX H   ertir ertiereis   ertir               # vertiereis
+SFX H   ertir ertieran    ertir               # vertieran
+SFX H   ertir ertieren    ertir               # vertieren
+SFX H   0     é           ertir               # verteré
+SFX H   0     ás          ertir               # verterás
+SFX H   0     á           ertir               # verterá
+SFX H   0     emos        ertir               # verteremos
+SFX H   0     éis         ertir               # verteréis
+SFX H   0     án          ertir               # verterán
+SFX H   0     ía          ertir               # vertería
+SFX H   0     íes         ertir               # verteríes
+SFX H   0     íamos       ertir               # verteríamos
+SFX H   0     íemos       ertir               # verteríemos
+SFX H   0     íais        ertir               # verteríais
+SFX H   0     íeis        ertir               # verteríeis
+SFX H   0     íen         ertir               # verteríen
+SFX H   ertir ierti       ertir               # vierti
+SFX H   ir    i           ertir               # verti
+SFX H   ir    íi          ertir               # vertíi
+SFX H   ir    iendo       ertir               # vertiendo
+SFX H   ir    ío          ertir               # vertío
+SFX H   ir    ida         ertir               # vertida
+SFX H   ir    íu          ertir               # vertíu
+SFX H   ir    íos         ertir               # vertíos
+SFX H   ir    íes         ertir               # vertíes
+SFX H   exir  ixo         exir                # corrixo
+SFX H   exir  ixes        exir                # corrixes
+SFX H   exir  ixe         exir                # corrixe
+SFX H   exir  ix          exir                # corrix
+SFX H   exir  eximos      exir                # correximos
+SFX H   exir  exís        exir                # correxís
+SFX H   exir  ixen        exir                # corrixen
+SFX H   exir  exía        exir                # correxía
+SFX H   exir  exíes       exir                # correxíes
+SFX H   exir  exíamos     exir                # correxíamos
+SFX H   exir  exíemos     exir                # correxíemos
+SFX H   exir  exíais      exir                # correxíais
+SFX H   exir  exíeis      exir                # correxíeis
+SFX H   exir  exíen       exir                # correxíen
+SFX H   exir  exí         exir                # correxí
+SFX H   exir  existi      exir                # correxisti
+SFX H   exir  exesti      exir                # correxesti
+SFX H   exir  ixó         exir                # corrixó
+SFX H   exir  exemos      exir                # correxiemos
+SFX H   exir  existis     exir                # correxistis
+SFX H   exir  exestis     exir                # correxestis
+SFX H   exir  ixeron      exir                # corrixeron
+SFX H   exir  ixa         exir                # corrixa
+SFX H   exir  ixas        exir                # corrixas
+SFX H   exir  ixamos      exir                # corrixamos
+SFX H   exir  ixáis       exir                # corrixáis
+SFX H   exir  ixan        exir                # corrixan
+SFX H   exir  ixera       exir                # corrixera
+SFX H   exir  ixere       exir                # corrixere
+SFX H   exir  ixeras      exir                # corrixeras
+SFX H   exir  ixeres      exir                # corrixeres
+SFX H   exir  ixéramos    exir                # corrixéramos
+SFX H   exir  ixéremos    exir                # corrixéremos
+SFX H   exir  ixerais     exir                # corrixerais
+SFX H   exir  ixereis     exir                # corrixereis
+SFX H   exir  ixeran      exir                # corrixeran
+SFX H   exir  ixeren      exir                # corrixeren
+SFX H   0     é           exir                # correxiré
+SFX H   0     ás          exir                # correxirás
+SFX H   0     á           exir                # correxirá
+SFX H   0     emos        exir                # correxiremos
+SFX H   0     éis         exir                # correxiréis
+SFX H   0     án          exir                # correxirán
+SFX H   0     ía          exir                # correxiría
+SFX H   0     íes         exir                # correxiríes
+SFX H   0     íamos       exir                # correxiríamos
+SFX H   0     íemos       exir                # correxiríemos
+SFX H   0     íais        exir                # correxiríais
+SFX H   0     íeis        exir                # correxiríeis
+SFX H   0     íen         exir                # correxiríen
+SFX H   exir  ixi         exir                # corrixi
+SFX H   ir    íi          exir                # correxíi
+SFX H   exir  ixendo      exir                # corrixendo
+SFX H   ir    ío          exir                # correxío
+SFX H   ir    ida         exir                # correxida
+SFX H   ir    íu          exir                # correxíu
+SFX H   ir    íos         exir                # correxíos
+SFX H   ir    íes         exir                # correxíes
+SFX H   iguir igo         iguir               # sigo
+SFX H   iguir igues       iguir               # sigues
+SFX H   iguir igue        iguir               # sigue
+SFX H   iguir iguimos     iguir               # siguimos
+SFX H   iguir iguís       iguir               # siguís
+SFX H   iguir iguen       iguir               # siguen
+SFX H   iguir iguía       iguir               # siguía
+SFX H   iguir iguíes      iguir               # siguíes
+SFX H   iguir iguíamos    iguir               # siguíamos
+SFX H   iguir iguíemos    iguir               # siguíemos
+SFX H   iguir iguíais     iguir               # siguíais
+SFX H   iguir iguíeis     iguir               # siguíeis
+SFX H   iguir iguíen      iguir               # siguíen
+SFX H   iguir iguí        iguir               # siguí
+SFX H   iguir iguisti     iguir               # siguisti
+SFX H   iguir iguiesti    iguir               # siguiesti
+SFX H   iguir iguió       iguir               # siguió
+SFX H   iguir iguiemos    iguir               # siguiemos
+SFX H   iguir iguistis    iguir               # siguistis
+SFX H   iguir iguiestis   iguir               # siguiestis
+SFX H   iguir iguieron    iguir               # siguieron
+SFX H   iguir iga         iguir               # siga
+SFX H   iguir igas        iguir               # sigas
+SFX H   iguir igamos      iguir               # sigamos
+SFX H   iguir igáis       iguir               # sigáis
+SFX H   iguir igan        iguir               # sigan
+SFX H   iguir iguiera     iguir               # siguiera
+SFX H   iguir iguiere     iguir               # siguiere
+SFX H   iguir iguieras    iguir               # siguieras
+SFX H   iguir iguieres    iguir               # siguieres
+SFX H   iguir iguiéramos  iguir               # siguiéramos
+SFX H   iguir iguiéremos  iguir               # siguiéremos
+SFX H   iguir iguierais   iguir               # siguierais
+SFX H   iguir iguiereis   iguir               # siguiereis
+SFX H   iguir iguieran    iguir               # siguieran
+SFX H   iguir iguieren    iguir               # siguieren
+SFX H   0     é           iguir               # siguiré
+SFX H   0     ás          iguir               # siguirás
+SFX H   0     á           iguir               # siguirá
+SFX H   0     emos        iguir               # siguiremos
+SFX H   0     éis         iguir               # siguiréis
+SFX H   0     án          iguir               # siguirán
+SFX H   0     ía          iguir               # siguiría
+SFX H   0     íes         iguir               # siguiríes
+SFX H   0     íamos       iguir               # siguiríamos
+SFX H   0     íemos       iguir               # siguiríemos
+SFX H   0     íais        iguir               # siguiríais
+SFX H   0     íeis        iguir               # siguiríeis
+SFX H   0     íen         iguir               # siguiríen
+SFX H   iguir igui        iguir               # sigui
+SFX H   iguir iguíi       iguir               # siguíi
+SFX H   iguir iguiendo    iguir               # siguiendo
+SFX H   iguir iguío       iguir               # siguío
+SFX H   iguir iguida      iguir               # siguida
+SFX H   iguir iguíu       iguir               # siguíu
+SFX H   iguir iguíos      iguir               # siguíos
+SFX H   iguir iguíes      iguir               # siguíes
+SFX H   ucir  uzo         ucir                # conduzo
+SFX H   ucir  uces        ucir                # conduces
+SFX H   ucir  uz          ucir                # conduz
+SFX H   ucir  ucimos      ucir                # conducimos
+SFX H   ucir  ucís        ucir                # conducís
+SFX H   ucir  ucen        ucir                # conducen
+SFX H   ucir  ucía        ucir                # conducía
+SFX H   ucir  ucíes       ucir                # conducíes
+SFX H   ucir  ucíamos     ucir                # conducíamos
+SFX H   ucir  ucíemos     ucir                # conducíemos
+SFX H   ucir  ucíais      ucir                # conducíais
+SFX H   ucir  ucíeis      ucir                # conducíeis
+SFX H   ucir  ucíen       ucir                # conducíen
+SFX H   ucir  uxi         ucir                # conduxi
+SFX H   ucir  uxisti      ucir                # conduxisti
+SFX H   ucir  uxesti      ucir                # conduxesti
+SFX H   ucir  uxo         ucir                # conduxo
+SFX H   ucir  uximos      ucir                # conduximos
+SFX H   ucir  uxemos      ucir                # conduxemos
+SFX H   ucir  uxistis     ucir                # conduxistis
+SFX H   ucir  uxestis     ucir                # conduxestis
+SFX H   ucir  uxeron      ucir                # conduxeron
+SFX H   ucir  uza         ucir                # conduza
+SFX H   ucir  uzas        ucir                # conduzas
+SFX H   ucir  uzamos      ucir                # conduzamos
+SFX H   ucir  uzáis       ucir                # conduzáis
+SFX H   ucir  uzan        ucir                # conduzan
+SFX H   ucir  uxera       ucir                # conduxera
+SFX H   ucir  uxere       ucir                # conduxere
+SFX H   ucir  uxeras      ucir                # conduxeras
+SFX H   ucir  uxeres      ucir                # conduxeres
+SFX H   ucir  uxéramos    ucir                # conduxéramos
+SFX H   ucir  uxéremos    ucir                # conduxéremos
+SFX H   ucir  uxerais     ucir                # conduxerais
+SFX H   ucir  uxereis     ucir                # conduxereis
+SFX H   ucir  uxeran      ucir                # conduxeran
+SFX H   ucir  uxeren      ucir                # conduxeren
+SFX H   0     é           ucir                # conduciré
+SFX H   0     ás          ucir                # conducirás
+SFX H   0     á           ucir                # conducirá
+SFX H   0     emos        ucir                # conduciremos
+SFX H   0     éis         ucir                # conduciréis
+SFX H   0     án          ucir                # conducirán
+SFX H   0     ía          ucir                # conduciría
+SFX H   0     íes         ucir                # conduciríes
+SFX H   0     íamos       ucir                # conduciríamos
+SFX H   0     íemos       ucir                # conduciríemos
+SFX H   0     íais        ucir                # conduciríais
+SFX H   0     íeis        ucir                # conduciríeis
+SFX H   0     íen         ucir                # conduciríen
+SFX H   ir    íi          ucir                # conducíi
+SFX H   ucir  uciendo     ucir                # conduciendo
+SFX H   ir    ío          ucir                # conducío
+SFX H   ir    ida         ucir                # conducida
+SFX H   ir    íu          ucir                # conducíu
+SFX H   ir    íos         ucir                # conducíos
+SFX H   ir    íes         ucir                # conducíes
+
+REP 64
+REP a á
+REP á a
+REP e é
+REP é e
+REP i í
+REP í i
+REP o ó
+REP ó o
+REP u ú
+REP u ü
+REP ú u
+REP ú ü
+REP ü u
+REP ü ú
+REP ll ḷḷ
+REP ḷḷ ll
+REP h ḥ
+REP ḥ h
+REP n ñ
+REP ñ n
+REP c qu
+REP qu c
+REP e E
+REP a A
+REP s S
+REP i I
+REP r R
+REP t T
+REP o O
+REP c C
+REP n N
+REP ñ Ñ
+REP l L
+REP u U
+REP m M
+REP d D
+REP p P
+REP g G
+REP v V
+REP f F
+REP b B
+REP q Q
+REP j J
+REP w W
+REP x X
+REP y Y
+REP z Z
+REP h H
+REP á Á
+REP é É
+REP í Í
+REP ó Ó
+REP ú Ú
+REP ü Ü
+REP ḥ Ḥ
+REP ḷ Ḷ
+REP o ue
+REP ue o
+REP e ie
+REP ie e
+REP c x
+REP x c
+REP ce z
+REP z ce

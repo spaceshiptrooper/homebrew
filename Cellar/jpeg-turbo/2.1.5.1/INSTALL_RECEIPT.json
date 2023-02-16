@@ -1,0 +1,44 @@
+{
+  "homebrew_version": "3.6.21",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": false,
+  "poured_from_bottle": false,
+  "loaded_from_api": false,
+  "installed_as_dependency": true,
+  "installed_on_request": false,
+  "changed_files": null,
+  "time": 1676507503,
+  "source_modified_time": 1675870161,
+  "compiler": "clang",
+  "aliases": [
+    "libjpeg-turbo"
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/jpeg-turbo.rb",
+    "tap": "homebrew/core",
+    "tap_git_head": "9a6a815e5ea0169b46e10f411ac3237740a6bbdf",
+    "spec": "stable",
+    "versions": {
+      "stable": "2.1.5.1",
+      "head": "HEAD",
+      "version_scheme": 0
+    }
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 10.14.6",
+    "cpu_family": "broadwell",
+    "xcode": "11.3.1",
+    "clt": "10.3.0.0.1.1562985497",
+    "preferred_perl": "5.18"
+  }
+}

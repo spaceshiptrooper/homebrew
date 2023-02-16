@@ -1,0 +1,7 @@
+sphinx>=4.2
+Jinja2>=2.10
+
+[testing]
+pytest
+pytest-cov
+matplotlib

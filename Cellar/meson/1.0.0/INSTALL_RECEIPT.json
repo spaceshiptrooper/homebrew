@@ -1,0 +1,97 @@
+{
+  "homebrew_version": "3.6.16-8-g895d322",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": false,
+  "installed_on_request": true,
+  "changed_files": [
+    "bin/meson",
+    "etc/bash_completion.d/meson",
+    "lib/python3.11/site-packages/mesonbuild/coredata.py",
+    "lib/python3.11/site-packages/mesonbuild/dependencies/boost.py",
+    "lib/python3.11/site-packages/mesonbuild/dependencies/cuda.py",
+    "lib/python3.11/site-packages/mesonbuild/dependencies/qt.py",
+    "lib/python3.11/site-packages/mesonbuild/modules/python.py",
+    "lib/python3.11/site-packages/mesonbuild/utils/universal.py"
+  ],
+  "time": 1676432266,
+  "source_modified_time": 1671812163,
+  "compiler": "clang",
+  "aliases": [
+
+  ],
+  "runtime_dependencies": [
+    {
+      "full_name": "ninja",
+      "version": "1.11.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "mpdecimal",
+      "version": "2.5.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "ca-certificates",
+      "version": "2023-01-10",
+      "declared_directly": false
+    },
+    {
+      "full_name": "openssl@1.1",
+      "version": "1.1.1t",
+      "declared_directly": false
+    },
+    {
+      "full_name": "readline",
+      "version": "8.2.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "sqlite",
+      "version": "3.40.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "xz",
+      "version": "5.4.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libffi",
+      "version": "3.4.4",
+      "declared_directly": false
+    },
+    {
+      "full_name": "python@3.11",
+      "version": "3.11.2",
+      "declared_directly": true
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "1.0.0",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/meson.rb",
+    "tap_git_head": "75ca7c1af9325f25253fbe2d9cab0a3449e6cd36",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 12",
+    "cpu_family": "arm_firestorm_icestorm",
+    "xcode": "14.1",
+    "clt": "14.1.0.0.1.1665256668",
+    "preferred_perl": "5.30"
+  }
+}

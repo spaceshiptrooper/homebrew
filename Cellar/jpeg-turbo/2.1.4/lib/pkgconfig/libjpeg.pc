@@ -1,0 +1,10 @@
+prefix=/usr/local/Cellar/jpeg-turbo/2.1.4
+exec_prefix=/usr/local/Cellar/jpeg-turbo/2.1.4
+libdir=/usr/local/Cellar/jpeg-turbo/2.1.4/lib
+includedir=/usr/local/Cellar/jpeg-turbo/2.1.4/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 2.1.4
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

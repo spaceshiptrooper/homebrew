@@ -1,0 +1,12 @@
+digraph "tds_put_string"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_put_string",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Output a string to wire automatic translate string to unicode if needed."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds4_send_emulated_rpc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga2d0a06c1a30dd2470dc7a788de21b080",tooltip="Send RPC as string query."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_quote_and_put",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html#ga26b26296d060dca75f6a43e9ac41e58d",tooltip="Send a string to server while quoting it."];
+}

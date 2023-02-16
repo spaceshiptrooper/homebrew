@@ -1,0 +1,7 @@
+name am
+charset s-ethi
+data-encoding utf-8
+normalize true
+soundslike am
+affix am
+affix-compress true

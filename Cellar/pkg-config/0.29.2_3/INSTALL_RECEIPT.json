@@ -1,0 +1,40 @@
+{
+  "homebrew_version": "2.2.12-18-g740e024",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": true,
+  "installed_on_request": false,
+  "changed_files": [
+    "INSTALL_RECEIPT.json",
+    "share/man/man1/pkg-config.1"
+  ],
+  "time": 1676424331,
+  "source_modified_time": 1490029698,
+  "compiler": "clang",
+  "aliases": [
+    "pkgconfig"
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "0.29.2",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/pkg-config.rb",
+    "tap_git_head": "f9783d649685f18ad46f4ad173b7a4309ddf9720",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": null
+}

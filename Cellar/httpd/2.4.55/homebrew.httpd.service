@@ -1,0 +1,10 @@
+[Unit]
+Description=Homebrew generated unit for httpd
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/opt/httpd/bin/httpd -D FOREGROUND
+Environment="PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"

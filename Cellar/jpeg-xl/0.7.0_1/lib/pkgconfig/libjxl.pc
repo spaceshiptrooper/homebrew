@@ -1,0 +1,13 @@
+prefix=/usr/local/Cellar/jpeg-xl/0.7.0_1
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libjxl
+Description: Loads and saves JPEG XL files
+Version: 0.7.0
+Requires.private: libhwy libbrotlicommon libbrotlienc libbrotlidec
+Libs: -L${libdir} -ljxl
+Libs.private: -lm
+Cflags: -I${includedir}
+Cflags.private: -DJXL_STATIC_DEFINE

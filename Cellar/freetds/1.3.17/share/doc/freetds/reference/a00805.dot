@@ -1,0 +1,46 @@
+digraph "_cs_objdata"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_cs_objdata",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" command" ,fontname="Helvetica"];
+  Node2 [label="_cs_command",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00899.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" iodesc" ,fontname="Helvetica"];
+  Node3 [label="_cs_iodesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00823.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locale" ,fontname="Helvetica"];
+  Node4 [label="_cs_locale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00907.html",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input_params" ,fontname="Helvetica"];
+  Node5 [label="_cs_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00887.html",tooltip=" "];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dyn" ,fontname="Helvetica"];
+  Node6 [label="_cs_dynamic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00895.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tdsdyn" ,fontname="Helvetica"];
+  Node7 [label="tds_dynamic",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01207.html",tooltip="Holds information for a dynamic (also called prepared) query."];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" param_list" ,fontname="Helvetica"];
+  Node6 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cursor" ,fontname="Helvetica"];
+  Node15 [label="tds_cursor",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01199.html",tooltip="Holds informations about a cursor."];
+  Node15 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node30 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" con" ,fontname="Helvetica"];
+  Node30 [label="_cs_connection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00883.html",tooltip=" "];
+  Node4 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" locale" ,fontname="Helvetica"];
+  Node9 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tds_socket" ,fontname="Helvetica"];
+  Node9 [label="tds_socket",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01235.html",tooltip="Information for a server connection."];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" login" ,fontname="Helvetica"];
+  Node10 [label="tds_login",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01143.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cur_dyn" ,fontname="Helvetica"];
+  Node15 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cur_cursor" ,fontname="Helvetica"];
+  Node10 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tds_login" ,fontname="Helvetica"];
+  Node2 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cmds" ,fontname="Helvetica"];
+  Node31 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _clientmsg_cb\n_servermsg_cb\nctx" ,fontname="Helvetica"];
+  Node31 [label="_cs_context",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a00875.html",tooltip=" "];
+  Node31 -> Node31 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _clientmsg_cb\n_cslibmsg_cb\n_servermsg_cb" ,fontname="Helvetica"];
+  Node6 -> Node30 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dynlist" ,fontname="Helvetica"];
+  Node38 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rpc" ,fontname="Helvetica"];
+  Node38 [label="_csremote_proc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00891.html",tooltip=" "];
+  Node5 -> Node38 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" param_list" ,fontname="Helvetica"];
+  Node30 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" connection" ,fontname="Helvetica"];
+}

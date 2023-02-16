@@ -1,0 +1,12 @@
+digraph "tds_dstr_set"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tds_dstr_set",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="set a string from another buffer."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_dstr_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#gad96366d9fa93bfc283cef1299fbe97ab",tooltip="copy a string from another"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tds_dstr_copyn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html#ga656718f240d7403f986ae887d84a6ca1",tooltip="Set string to a given buffer of characters."];
+}

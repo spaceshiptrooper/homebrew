@@ -1,0 +1,51 @@
+SET UTF-8
+TRY анелкыртиуодбмгүсжзөйшчпэКБАяюңМЭвОЖУСТц-ӨПИНДхфШьЧЫФЛГРВЕҮЮёХЗЯ
+WORDCHARS -'
+
+# кеме
+SFX A Y 5
+SFX A 0 нин .
+SFX A 0 ге .
+SFX A 0 ни .
+SFX A 0 де .
+SFX A 0 ден .
+
+# аба
+SFX B Y 5
+SFX B 0 нын .
+SFX B 0 га .
+SFX B 0 ны .
+SFX B 0 да .
+SFX B 0 дан .
+
+# plural forms
+SFX P Y 12
+SFX P 0 лар [аур]
+SFX P 0 лер [еи]
+SFX P 0 лор о
+SFX P 0 лөр [өү]
+SFX P 0	дар [^өү][мнңрйл]
+SFX P 0 дер [и][лм]
+SFX P 0	дор [о][бвджзг]
+SFX P 0 дөр [өү][лн]
+SFX P 0 тар [^ө][тк]
+SFX P 0 тер [пшс]
+SFX P 0 тор [о][стк]
+SFX P 0 төр [ө][тк]
+
+# numbers
+SFX N Y 14
+SFX N 0 инчи [ие][ршз]
+SFX N 0 нчи [^ое][ин]
+SFX N 0 үнчү [ү][чз] 
+SFX N 0 үнчү т
+SFX N 0 нчы ы
+SFX N 0 унчу [у]з
+SFX N 0 унчу он
+SFX N 0 нчы [м]а
+SFX N 0 ынчы [ы][кш]
+SFX N 0 ынчы к
+SFX N 0 нчү ү
+SFX N 0 чи [и]н
+SFX N 0 инчи [и]ң
+SFX N 0 инчи [^к]н

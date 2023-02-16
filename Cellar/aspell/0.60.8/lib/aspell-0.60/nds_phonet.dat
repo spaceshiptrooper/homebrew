@@ -1,0 +1,119 @@
+# Reihenfolge -> Ausnahme vor die Regel, weiter vorn = höhere Priorität
+# ab(lmgo) -> abl, abm, abg, abo
+# tch- a -> ah
+# tch-- a -> ach
+# tch5 setzt priorität auf 5
+# ph< f -> ersetzt durch f und startet suche neu
+# rh^ findet rhesus, aber nich erhesus
+# rh$ findet suerh, aber nicht suerhe
+# över^^ -> Vorsilbe
+# Reihenfolge: < - 5 ^ $
+
+version         0.10
+followup        0
+collapse_result 0
+remove_accents	0
+
+ÄÄ	EE
+ÄR	Ä
+Ä	E
+AAR	O
+AA	O
+AF^^	AF
+AH	O
+ALL^^	AL
+AL$	OL
+AI	EI
+AN^^	AN
+ARR	O
+AR	O
+A	O
+BBT	FFT
+BEN<$	VEN
+BT$	MM$
+B	B
+CH(EI)-^	CH
+CH(AOUÄÖÜ)-^	G
+CH	J
+CK	G
+C<	K
+DÖR^^	DÖ
+DÖRCH^^	DÖ
+D	D
+DAAL^^	DOL
+EE	E
+EH	E
+EI	EI
+EN$	N
+ER	E
+E	E
+FF	F
+F	F
+G^	G
+G(AEIOUÄÖÜ)-	G
+GG	J
+G	J
+H^	H
+HOOCH^^	HOJ
+H1	_
+IE	I
+IN^^	IN
+IR	I
+I	I
+J	J
+KK	G
+K	G
+LD	LL
+LL	L
+LT	LD
+L	L
+M	M
+NG	NG
+N	N
+ÖÖ	Ö
+ÖR	Ö
+ÖVER^^	ÖWE
+Ö	Ö
+OE	Ö
+OH	O
+OO	O
+OP^^	OB
+OR	O
+OU	O
+O	O
+PP	B
+P	B
+QU<^	KW
+QU<	K
+Q	K
+R^	R
+RR	R
+R	R
+SCH(AEIOUÄÖÜ)-	SCH
+SCH(BCDFGHIJKLMNPQSTVWXZ)-	S
+SSCH	SCH
+SCH$	SCH
+SCH	SCH
+SS	S
+S	S
+TT	D
+T	D
+ÜNNER^^	ÜNE
+ÜR	Ü
+ÜÜ	Ü
+Ü	Ü
+UR	U
+UU	U
+UT^^	UD
+U	U
+VER^^	FE
+V$	F
+V^	F
+V(DT)-	F
+V	W
+WW<	W
+W$	F
+W	W
+X	X
+Y	Ü
+Z	S

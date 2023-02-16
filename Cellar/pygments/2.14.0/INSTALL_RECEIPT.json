@@ -1,0 +1,49 @@
+{
+  "homebrew_version": "3.6.16-97-ge76c55e",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": null,
+  "installed_as_dependency": false,
+  "installed_on_request": true,
+  "changed_files": [
+    "bin/pygmentize-3.10",
+    "bin/pygmentize-3.11",
+    "lib/python3.10/site-packages/homebrew-pygments.pth",
+    "lib/python3.11/site-packages/homebrew-pygments.pth"
+  ],
+  "time": 1676431247,
+  "source_modified_time": 1672562103,
+  "compiler": "clang",
+  "aliases": [
+
+  ],
+  "runtime_dependencies": [
+
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "2.14.0",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/pygments.rb",
+    "tap_git_head": "bfef5b9561cf294608bb78855efdac5f5f7fd540",
+    "tap": "homebrew/core"
+  },
+  "arch": "x86_64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 12.6",
+    "cpu_family": "penryn",
+    "xcode": "14.1",
+    "clt": "14.1.0.0.1.1666437224",
+    "preferred_perl": "5.30"
+  }
+}

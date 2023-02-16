@@ -1,0 +1,5 @@
+name fi
+charset iso-8859-1
+affix fi
+affix-compress true
+special - -** ' -*- : -*-

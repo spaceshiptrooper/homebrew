@@ -1,0 +1,10 @@
+digraph "tdsdbopen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tdsdbopen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Form a connection with the server."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dbopen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00506.html#ae408d8e1c2ab0767d8bfd26d00d1ff6a",tooltip="Normally not used."];
+}

@@ -1,0 +1,1274 @@
+# Latvieðu valodas affix fails lietoðanai ar OpenOffice 1.0 un augstâk
+# Latvian affix table for OpenOffice 1.0 and higher
+#
+# Copyright (C) 2002 Janis Eisaks, jancs@dv.lv
+#
+# Version info: 0.5.5
+# Izmainîta pieeja darbîbas vârdu locîðanai - no dalîtas pa konjugâcijâm 
+# uz dalîtâm pa laikiem un tipiem (tag, pak, nak, izt formas, ciesh k, divd.)
+# lai gan, iespçjams, arî tas nav îsti pareizi. Laiks râdîs.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+# 
+# Faila radîðanai izmantotâ literatûra  
+#  1. B.Ceplîte, L.Ceplîtis
+#     Latvieðu valodas praktiskâ gramatika
+#
+# Pateicos Dr. Andrejam Spektoram un LU Mâkslîgâ Intelekta laboratorijai
+# par iespçju izmantot apkopoto vârdu krâjumu; Edvînam Malnaèam, 
+# Egonam Spalânam, kâ arî citiem brîvprâtîgajiem par nesavtîgu atbalstu 
+# projekta realizâcijâ
+#
+# Faila formâts: myspell
+#
+# Here's a record of flags used, in case you want to add new ones.
+#
+#        !@#$%^&*()_+-=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
+# Used:  -+------------------------+++-++++++-+++++++++++++
+#                                abcdefghijklmnopqrstuvwxyz
+# Used:                          --+++-++------+++++++---+-
+#
+
+SET ISO8859-13
+TRY esianrtolcdugmphbfvkzâçîûðìíïòèþ
+
+#priedçkïi darbîbas vârdu atvasinâðanai
+#ar jâ sâkas cieðamâs kârtas priedçkïi
+PFX U Y 8
+PFX U   0  aiz  .
+PFX U   0  ap   .
+PFX U   0  at   .
+PFX U   0  ie   .
+PFX U   0  neaiz  .
+PFX U   0  neap   .
+PFX U   0  neat   .
+PFX U   0  neie   .
+
+PFX V Y 7
+PFX V   0  iz   .
+PFX V   0  ne   .
+PFX V   0  no   .
+PFX V   0  pa   .
+PFX V   0  neiz   .
+PFX V   0  neno   .
+PFX V   0  nepa   .
+
+PFX W Y 8
+PFX W   0  pâr  .
+PFX W   0  pie  .
+PFX W   0  sa   .
+PFX W   0  uz   .
+PFX W   0  nepâr  .
+PFX W   0  nepie  .
+PFX W   0  nesa   .
+PFX W   0  neuz   .
+
+PFX X Y 11
+PFX X   0  jâaiz  .
+PFX X   0  jâap   .
+PFX X   0  jâat   .
+PFX X   0  jâie   .
+PFX X   0  jâiz   .
+PFX X   0  jâno   .
+PFX X   0  jâpa   .
+PFX X   0  jâpâr  .
+PFX X   0  jâpie  .
+PFX X   0  jâsa   .
+PFX X   0  jâuz   .
+
+#priedçkïi îpaðîbas vârdu atvasinâðanai 
+PFX Y Y 10
+PFX Y   0  at    .
+PFX Y   0  bez   .
+PFX Y   0  caur  .
+PFX Y   0  ie    .
+PFX Y   0  lîdz  .
+PFX Y   0  ne    .
+PFX Y   0  pa    .
+PFX Y   0  pâr   .
+PFX Y   0  pret  .
+PFX Y   0  starp .
+
+PFX y Y 1
+PFX y   0  vis   .
+
+#priedçkïi îpaðîbas vârdu atvasinâðanai, sveðie vârdi
+PFX N Y 9
+PFX N   0  a     .
+PFX N   0  anti  .
+PFX N   0  inter .
+PFX N   0  kontra .
+PFX N   0  super  .
+PFX N   0  ultra  .
+PFX N   0  hiper  .
+PFX N   0  kvazi  .
+PFX N   0  pseido .
+
+#lietvârdu priedçkïi un puspriedçkïi
+PFX Z Y 24
+PFX Z   0     aiz        .
+PFX Z   0     ap         .
+PFX Z   0     apakð      .
+PFX Z   0     âr         .
+PFX Z   0     at         .
+PFX Z   0     bez        .
+PFX Z   0     caur       .
+PFX Z   0     ie         .
+PFX Z   0     iekð       .
+PFX Z   0     lîdz       .
+PFX Z   0     ne         .
+PFX Z   0     no         .
+PFX Z   0     pa         .
+PFX Z   0     pakaï      .
+PFX Z   0     pâr        .
+PFX Z   0     pçc        .
+PFX Z   0     pie        .
+PFX Z   0     pirms      .
+PFX Z   0     pret       .
+PFX Z   0     priekð     .
+PFX Z   0     starp      .
+PFX Z   0     uz         .
+PFX Z   0     virs       .
+PFX Z   0     zem        .
+
+#################################################################
+#################################################################								#
+#			Darbîbas vârdi				#
+#################################################################								#
+#################################################################
+
+#################################################################
+#                                                               #
+#                            NÂKOTNE                            #
+#                            Future                             #
+#                                                               #
+#################################################################
+
+#Visa nâkotne, ieskaitot I konjugâcijas I-III grupas
+#Sakarâ ar paaugstinâtu zarainumu no Ik IIIgr. nâkotnes ir izmests
+#vârds RAST, jo tâ nâkotnes formas ir identiskas vârdam RADÎT
+#lietotâjs to gan nemanîs, cerams.
+#UZSKATÂMS PAR PABEIGTU
+
+SFX D Y 30
+SFX D   t   ðu     [^sz]t
+SFX D   t   si     [^sz]t
+SFX D   t   s      [^sz]t
+SFX D   t   sim    [^sz]t
+SFX D   t   siet   [^sz]t
+SFX D   t   sit    [^sz]t
+SFX D   t   îðu    [^u][sz]t
+SFX D   t   îsi    [^u][sz]t
+SFX D   t   îs     [^u][sz]t
+SFX D   t   îsim   [^u][sz]t
+SFX D   t   îsiet  [^u][sz]t
+SFX D   t   îsit   [^u][sz]t
+SFX D   st  tîðu   [^ìz][aeiurm]st
+SFX D   st  tîsi   [^ìz][aeiurm]st
+SFX D   st  tîs    [^ìz][aeiurm]st
+SFX D   st  tîsim  [^ìz][aeiurm]st
+SFX D   st  tîsiet [^ìz][aeiurm]st
+SFX D   st  tîsit  [^ìz][aeiurm]st
+SFX D   st  dîðu   [alrìvz][eiîu]st
+SFX D   st  dîsi   [alrìvz][eiîu]st
+SFX D   st  dîs    [alrìvz][eiîu]st
+SFX D   st  dîsim  [alrìvz][eiîu]st
+SFX D   st  dîsiet [alrìvz][eiîu]st
+SFX D   st  dîsit  [alrìvz][eiîu]st
+SFX D   st  dîðu   [ç]st             #tipiskâkais piemçrs - çst
+SFX D   st  dîsi   [ç]st
+SFX D   st  dîs    [ç]st
+SFX D   st  dîsim  [ç]st
+SFX D   st  dîsiet [ç]st
+SFX D   st  dîsit  [ç]st
+
+
+#Visa nâkotne refleksîvajiem
+#
+#refleksîvie... TE VÇL JÂPIESTRÂDÂ, konkr. - I konj. I-III gr.
+SFX d Y 15
+SFX d   t   ðos      [^sz]t
+SFX d   t   sies     [^sz]t         #2, 3 p.
+SFX d   t   simies   [^sz]t
+SFX d   t   sieties  [^sz]t
+SFX d   t   sities   [^sz]t
+SFX d   t   îðos     [z]t
+SFX d   t   îsies    [z]t
+SFX d   t   îsimies  [z]t
+SFX d   t   îsieties [z]t
+SFX d   t   îsities  [z]t
+SFX d   st  tîðos     [s]t         #domâjams, ka atbilst Ik st 
+SFX d   st  tîsies    [s]t         #galotòu îpaðnieku vçlmçm
+SFX d   st  tîsimies  [s]t
+SFX d   st  tîsieties [s]t
+SFX d   st  tîsities  [s]t
+            
+
+#################################################################
+#                                                               #
+#                            PAGÂTNE                            #
+#                             Past                              #
+#                                                               #
+#################################################################
+
+#îpatnîbas - ar est - v-d/m-t
+#paaugstinâtâ zarainuma dçï sekojoðu vârdu pagâtnes locîjumi
+#ir iekïauti pamatvârdnîcâ
+#vît, mît (zirgu), rît, òemt, prast, rast, krist, çst
+#UZSKATÂMS PAR PABEIGTU
+
+SFX E Y 40
+SFX E   t   ju     [âçîo]t
+SFX E   t   ji     [âçîo]t
+SFX E   t   ja     [âçîo]t
+SFX E   t   jâm    [âçîo]t
+SFX E   t   jât    [âçîo]t
+SFX E   t   u      [bglprszm]t
+SFX E   t   i      [bglprszm]t
+SFX E   t   a      [bglprszm]t
+SFX E   t   âm     [bglprszm]t
+SFX E   t   ât     [bglprszm]t
+SFX E   st  tu     [^lzrìv][aieurm]st    #I konjugâcija
+SFX E   st  ti     [^lzrìv][aieurm]st
+SFX E   st  ta     [^lzrìv][aieurm]st
+SFX E   st  tâm    [^lzrìv][aieurm]st
+SFX E   st  tât    [^lzrìv][aieurm]st
+SFX E   st  du     [lzrìv][aeiîurm]st    #I konjugâcija
+SFX E   st  di     [lzrìv][aeiîurm]st
+SFX E   st  da     [lzrìv][aeiîurm]st
+SFX E   st  dâm    [lzrìv][aeiîurm]st
+SFX E   st  dât    [lzrìv][aeiîurm]st
+SFX E   kt  cu     [âû]kt    #I konjugâcija
+SFX E   kt  ci     [âû]kt
+SFX E   kt  ca     [âû]kt
+SFX E   kt  câm    [âû]kt
+SFX E   kt  cât    [âû]kt
+SFX E   t   u      [^û]kt    #I konjugâcija
+SFX E   t   i      [^û]kt
+SFX E   t   a      [^û]kt
+SFX E   t   âm     [^û]kt
+SFX E   t   ât     [^û]kt
+SFX E   ît  inu    [^v]ît  #I konjugâcijam, paliek izòçmumi
+SFX E   ît  ini    [^v]ît  # 
+SFX E   ît  ina    [^v]ît
+SFX E   ît  inâm   [^v]ît
+SFX E   ît  inât   [^v]ît
+SFX E   iet çju    [i]et    #I konjugâcija
+SFX E   iet çji    [i]et
+SFX E   iet çja    [i]et
+SFX E   iet çjâm   [i]et
+SFX E   iet çjât   [i]et
+
+
+#Pagâtne, refleksîvie
+#refleksîvie... TE VÇL JÂPIESTRÂDÂ, konkr. - I konj. I-III gr.
+#nav parakstîti gadîjumi ar burtu maiòu
+SFX e Y 10
+SFX e   t   jos    [âçîo]t
+SFX e   t   jies   [âçîo]t
+SFX e   t   jâs    [âçîo]t
+SFX e   t   jâmies [âçîo]t
+SFX e   t   jâties [âçîo]t
+SFX e   t   os     [bpz]t
+SFX e   t   ies    [bpz]t
+SFX e   t   âs     [bpz]t
+SFX e   t   âmies  [bpz]t
+SFX e   t   âties  [bpz]t
+
+
+#################################################################
+#                                                               #
+#                            TAGADNE                            #
+#                                                               #
+#                                                               #
+#################################################################
+#tagadne, IIk, pavçle, atst. izt. 
+#UZSKATÂMS PAR PABEIGTU
+SFX G Y 9
+SFX G   t   ju    [âçîoubpm]t    #tag, Ip
+SFX G   t   0     [âçîo]t    #tag, IIp  IIIp
+SFX G   t   j     [bpmu]t     #tag, IIIp
+SFX G   t   jam   [âçîo]t    #tag, Ipd
+SFX G   t   jat   [âçîo]t    #tag, IIpd
+SFX G   t   jiet  [âçîou]t   #pavele
+SFX G   t   iet   [bpm]t     #pavele
+SFX G   t   jot   [t]        #atst izt v. tag.
+SFX G   t   ðot   [t]        #atst izt v. nak.
+
+#tagadne, IIk, pavçle, atst. izt., refl. formas 
+#UZSKATÂMS PAR PABEIGTU
+SFX g Y 11
+SFX g   t   ties    [âçîoubpm]t   #refl nenoteiksme
+SFX g   t   jos     [âçîoubpm]t   #tag, Ip
+SFX g   t   jies    [âçîo]t       #tag, IIp
+SFX g   t   ies     [bpmu]t       #tag, IIp
+SFX g   t   jas     [âçîoubpm]t   #tag, IIIp
+SFX g   t   jamies  [âçîoubpm]t   #tag, Ipd
+SFX g   t   jaties  [âçîoubpm]t   #tag, IIpd
+SFX g   t   jieties [âçîou]t      #pavele
+SFX g   t   ieties  [bpm]t        #pavele
+SFX g   t   joties  [t]           #atst izt v. tag.
+SFX g   t   ðoties  [t]           #atst izt v. nak.
+
+#tagadne,  III konj.
+#UZSKATÂMS PAR PABEIGTU
+SFX C Y 21
+SFX C   ât  u     [â]t    #tag, Ip
+SFX C   ât  i     [â]t    #tag, Ip
+SFX C   ât  a     [â]t    #tag, Ip
+SFX C   ît  u     [î]t    #tag, Ip
+SFX C   ît  i     [î]t    #tag, Ip
+SFX C   ît  a     [î]t    #tag, Ip
+SFX C   çt  u     [ç]t    #tag, Ip
+SFX C   çt  i     [ç]t    #tag, Ip
+SFX C   çt  0     [ç]t    #tag, Ip
+SFX C   t   m     [â]t    #tag, Ip
+SFX C   ît  âm    [î]t    #tag, Ip
+SFX C   çt  am    [ç]t    #tag, Ip
+SFX C   ît  ât    [î]t    #tag, Ip
+SFX C   çt  at    [ç]t    #tag, Ip
+SFX C   ât  iet   [â]t    #pavele
+SFX C   ît  iet   [î]t    #
+SFX C   çt  iet   [ç]t    #
+SFX C   ât  ot    [â]t    #atst.izst.v.tag
+SFX C   ît  ot    [î]t    #
+SFX C   çt  ot    [ç]t    #
+SFX C   t   ðot   [âçî]t  #atst.izst.v.nak
+
+#tagadne, III konj pavçle, atst. izt., refl. formas 
+#UZSKATÂMS PAR PABEIGTU
+SFX c Y 22
+SFX c   0   ies   [âçî]t    #relf.nenoteiksme
+SFX c   ât  os    [â]t    #tag, Ip
+SFX c   ât  ies   [â]t    #tag, IIp
+SFX c   ât  âs    [â]t    #tag, IIIp
+SFX c   ît  os    [î]t    #tag, Ip
+SFX c   ît  ies   [î]t    #tag, Ip
+SFX c   ît  âs    [î]t    #tag, Ip
+SFX c   çt  os    [ç]t    #tag, Ip
+SFX c   çt  ies   [ç]t    #tag, Ip
+SFX c   çt  as    [ç]t    #tag, Ip
+SFX c   t   mies  [â]t    #tag, Ip
+SFX c   ît  âmies [î]t    #tag, Ip
+SFX c   çt  amies [ç]t    #tag, Ip
+SFX c   ît  âties [î]t    #tag, Ip
+SFX c   çt  aties [ç]t    #tag, Ip
+SFX c   ât  ieties [â]t    #pavele
+SFX c   ît  ieties [î]t    #
+SFX c   çt  ieties [ç]t    #
+SFX c   ât  oties  [â]t    #atst.izst.v.tag
+SFX c   ît  oties  [î]t    #
+SFX c   çt  oties  [ç]t    #
+SFX c   t   ðoties [âçî]t  #atst.izst.v.nak
+
+
+#tagadne, I konj V, IV(?) grupas
+SFX H Y 28
+SFX H   t   stu   [^sz]t   #tag, Ip
+SFX H   0   u     [s]t     #tag, Ip
+SFX H   zt  stu   [z]t     #tag, Ip
+SFX H   t   sti   [^sz]t   #tag, IIp
+SFX H   0   i     [s]t     #tag, IIp
+SFX H   zt  sti   [z]t     #tag, IIp
+SFX H   t   st    [^z]t    #tag, IIIp
+SFX H   zt  st    [z]t     #tag, IIIp
+SFX H   t   stam  [^sz]t   #tag, Ipd
+SFX H   0   am    [s]t     #tag, Ipd
+SFX H   zt  stam  [z]t     #tag, Ipd
+SFX H   t   stat  [^sz]t   #tag, IIpd
+SFX H   0   at    [s]t     #tag, IIpd
+SFX H   zt  stat  [z]t     #tag, IIpd
+SFX H   t   stiet [^sz]t   #pavele
+SFX H   0   iet   [s]t     #pavele
+SFX H   zt  stiet [z]t     #pavele
+SFX H   t   stot  [^sze]t   #atst izt v. tag.
+SFX H   0   ot    [s]t     #atst izt v. tag.
+SFX H   t   ot    [r]t     #atst izt v. tag.
+SFX H   lt  ïot   [l]t     #atst izt v. tag.
+SFX H   iet ejot  [i]et     #atst izt v. tag.
+SFX H   gt  dzot  [g]t     #atst izt v. tag.
+SFX H   t   jot   [âbmpul]t     #atst izt v. tag.
+SFX H   zt  þot   [z]t     #atst izt v. tag.
+SFX H   t   ðot   [^sz]t   #atst izt v. nak.
+SFX H   t   îðot  [^l][szl]t #atst izt v. nak.
+SFX H   st  dîðot [l]st     #atst izt v. nak.
+
+
+#
+#
+#
+#SFX h Y 28
+
+
+#I konjugâcija I-III grupas tagadnes, pavçles, 
+#atst. izt. vienk. tag. un nâk. formas
+#solis - 1 + pa 7 - 1
+SFX A Y 83
+SFX A   t     ðot    [^s]t   # atstâstîjuma izteiksme vienk. nâkotne (gandrîz visiem)
+SFX A   t     îðot   [^iu]st   # atstâstîjuma izteiksme vienk. nâkotne (gandrîz visiem)
+SFX A   st    tîðot  [iu]st   # atstâstîjuma izteiksme vienk. nâkotne (gandrîz visiem)
+SFX A   ikt   îku    [i]kt     #tagadne
+SFX A   ikt   îc     [i]kt     #tagadne
+SFX A   ikt   îk     [i]kt     #tagadne
+SFX A   ikt   îkam   [i]kt     #tagadne
+SFX A   ikt   îkat   [i]kt     #tagadne
+SFX A   ikt   îciet  [i]kt     #pavçle
+SFX A   ikt   îkot   [i]kt     #atst. izt. vienk. tag.
+SFX A   ipt   îpu    [i]pt     #tagadne
+SFX A   ipt   îpi    [i]pt
+SFX A   ipt   îp     [i]pt
+SFX A   ipt   îpam   [i]pt
+SFX A   ipt   îpat   [i]pt     #tagadne
+SFX A   ipt   îpiet  [i]pt     #pavele
+SFX A   ipt   îpot   [i]pt     #atst. izt. vienk. tag.
+SFX A   akt   oku    [a]kt     #tagadne
+SFX A   akt   oc     [a]kt
+SFX A   akt   ok     [a]kt
+SFX A   akt   okam   [a]kt
+SFX A   akt   okat   [a]kt     #tagadne
+SFX A   akt   ociet  [a]kt     #pavçle
+SFX A   akt   okot   [a]kt     #atst. izt. vienk. tag.
+SFX A   ukt   ûku    [u]kt     #tagadne
+SFX A   ukt   ûc     [u]kt
+SFX A   ukt   ûk     [u]kt
+SFX A   ukt   ûkam   [u]kt
+SFX A   ukt   ûkat   [u]kt     #tagadne
+SFX A   ukt   ûciet  [u]kt     #pavçle
+SFX A   ukt   ûkot   [u]kt     #atst. izt. vienk. tag.
+SFX A   upt   ûpu    [u]pt     #tagadne
+SFX A   upt   ûpi    [u]pt
+SFX A   upt   ûp     [u]pt
+SFX A   upt   ûpam   [u]pt
+SFX A   upt   ûpat   [u]pt     #tagadne
+SFX A   upt   ûpiet  [u]pt     #pavçle
+SFX A   upt   ûpot   [u]pt     #atst. izt. vienk. tag.
+SFX A   t     ju     [^u]pt     #tagadne
+SFX A   pt    p      [^u]pt
+SFX A   t     am     [^u]pt
+SFX A   t     at     [^u]pt     #tagadne
+SFX A   t     iet    [^u]pt     #pavçle
+SFX A   t     ot     [^u]pt     #atst. izt. vienk. tag.
+SFX A   ust   ûtu    [^z][u]st     #tagadne
+SFX A   ust   ûti    [^z][u]st
+SFX A   ust   ût     [^z][u]st
+SFX A   ust   ûtam   [^z][u]st
+SFX A   ust   ûtat   [^z][u]st     #tagadne
+SFX A   ust   ûtiet  [^z][u]st     #pavçle
+SFX A   ust   ûtot   [^z][u]st     #atst. izt. vienk. tag.
+SFX A   gt    gu     [^mntr][çiu]gt     #tagadne
+SFX A   gt    dz     [^mntr][çiu]gt
+SFX A   gt    g      [^mntr][çiu]gt
+SFX A   gt    gam    [^mntr][çiu]gt
+SFX A   gt    gat    [^mntr][çiu]gt     #tagadne
+SFX A   gt    dziet  [^mntr][çiu]gt     #pavçle
+SFX A   gt    got    [^mntr][çiu]gt     #atst. izt. vienk. tag.
+SFX A   igt   iegu   [mntr][i]gt     #tagadne
+SFX A   igt   iedz   [mntr][i]gt
+SFX A   igt   ieg    [mntr][i]gt
+SFX A   igt   iegam  [mntr][i]gt
+SFX A   igt   iegat  [mntr][i]gt     #tagadne
+SFX A   igt   iedziet [mntr][i]gt     #pavçle
+SFX A   igt   iegot  [mntr][i]gt     #atst. izt. vienk. tag.
+SFX A   kt    cu     [û]kt     #tagadne
+SFX A   kt    c      [û]kt
+SFX A   kt    cam    [û]kt
+SFX A   kt    cat    [û]kt     #tagadne
+SFX A   kt    ciet   [û]kt     #pavçle
+SFX A   kt    cot    [û]kt     #atst. izt. vienk. tag.
+SFX A   ît    inu    [î]t     #tagadne
+SFX A   ît    in     [î]t
+SFX A   ît    inam   [î]t
+SFX A   ît    inat   [î]t     #tagadne
+SFX A   ît    iniet  [î]t     #pavçle
+SFX A   ît    inot   [î]t     #atst. izt. vienk. tag.
+SFX A   iet   eju    [i]et     #tagadne
+SFX A   iet   ej     [i]et
+SFX A   iet   ejam   [i]et
+SFX A   iet   ejat   [i]et     #tagadne
+SFX A   iet   ejiet  [i]et     #pavçle
+SFX A   iet   ejot   [i]et     #atst. izt. vienk. tag.
+
+
+
+#tag veel izteiksme, kas visiem identiska
+#ðana, ðanâs, ko darina no darbîbas vârdiem
+SFX J Y 16
+SFX J   t   ðana    [^s]t
+SFX J   t   ðanas   [^s]t
+SFX J   t   ðanai   [^s]t
+SFX J   t   ðanu    [^s]t
+SFX J   t   ðanâ    [^s]t
+SFX J   t   ðanâs   [^s]t
+SFX J   t   ðanos   [^s]t
+SFX J   t   ðanâm   [^s]t
+SFX J   st   ðana    [s]t
+SFX J   st   ðanas   [s]t
+SFX J   st   ðanai   [s]t
+SFX J   st   ðanu    [s]t
+SFX J   st   ðanâ    [s]t
+SFX J   st   ðanâs   [s]t
+SFX J   st   ðanos   [s]t
+SFX J   st   ðanâm   [s]t
+
+
+#################################################################
+#                                                               #
+#                           Divdabji                            #
+#                        Cieðamâ kârta                          #
+#                                                               #
+#################################################################
+
+#cieshamaa kaarta ar lociijumiem un tag/ veel izt
+#divdabji -ts, -tais, -ta, -tâ
+SFX I Y 20
+SFX I   0   s     [t]
+SFX I   0   a     [t]
+SFX I   0   i     [t]
+SFX I   0   o     [t]
+SFX I   0   â     [t]
+SFX I   0   u     [t]
+SFX I   0   am    [t]
+SFX I   0   âm    [t]
+SFX I   0   as    [t]
+SFX I   0   ai    [t]
+SFX I   0   os    [t]
+SFX I   0   iem   [t]
+SFX I   0   ais   [t]
+SFX I   0   ajam  [t]
+SFX I   0   ajai  [t]
+SFX I   0   âs    [t]
+SFX I   0   ajiem [t]
+SFX I   0   ajâm  [t]
+SFX I   0   ajos  [t]
+SFX I   0   ajâs  [t]
+
+
+#divdabju sufiksi
+# oðs oðais ams amais
+# II konjugâcija
+SFX K Y 46
+SFX K   t   joðs      [t]
+SFX K   t   joða      [t]
+SFX K   t   joðais    [t]
+SFX K   t   joðâ      [t]
+SFX K   t   joði      [t]
+SFX K   t   joðas     [t]
+SFX K   t   joðie     [t]
+SFX K   t   joðâs     [t]
+SFX K   t   joðu      [t]
+SFX K   t   joðo      [t]
+SFX K   t   joðam     [t]
+SFX K   t   joðai     [t]
+SFX K   t   joðajam   [t]
+SFX K   t   joðajai   [t]
+SFX K   t   joðiem    [t]
+SFX K   t   joðâm     [t]
+SFX K   t   joðajiem  [t]
+SFX K   t   joðajâm   [t]
+SFX K   t   joðus     [t]
+SFX K   t   joðos     [t]
+SFX K   t   joðajâ    [t]
+SFX K   t   joðajos   [t]
+SFX K   t   joðajâs   [t]
+SFX K   t   jams      [t]
+SFX K   t   jama      [t]
+SFX K   t   jamais    [t]
+SFX K   t   jamâ      [t]
+SFX K   t   jami      [t]
+SFX K   t   jamas     [t]
+SFX K   t   jamie     [t]
+SFX K   t   jamâs     [t]
+SFX K   t   jamu      [t]
+SFX K   t   jamo      [t]
+SFX K   t   jamam     [t]
+SFX K   t   jamai     [t]
+SFX K   t   jamajam   [t]
+SFX K   t   jamajai   [t]
+SFX K   t   jamiem    [t]
+SFX K   t   jamâm     [t]
+SFX K   t   jamajiem  [t]
+SFX K   t   jamajâm   [t]
+SFX K   t   jamus     [t]
+SFX K   t   jamos     [t]
+SFX K   t   jamajâ    [t]
+SFX K   t   jamajos   [t]
+SFX K   t   jamajâs   [t]
+
+#divdabju sufiksi
+# oðs oðais ams amais
+# III konjugâcija
+SFX L Y 135
+SFX L   ât   oðs      [â]t
+SFX L   ât   oða      [â]t
+SFX L   ât   oðais    [â]t
+SFX L   ât   oðâ      [â]t
+SFX L   ât   oði      [â]t
+SFX L   ât   oðas     [â]t
+SFX L   ât   oðie     [â]t
+SFX L   ât   oðâs     [â]t
+SFX L   ât   oðu      [â]t
+SFX L   ât   oðo      [â]t
+SFX L   ât   oðam     [â]t
+SFX L   ât   oðai     [â]t
+SFX L   ât   oðajam   [â]t
+SFX L   ât   oðajai   [â]t
+SFX L   ât   oðiem    [â]t
+SFX L   ât   oðâm     [â]t
+SFX L   ât   oðajiem  [â]t
+SFX L   ât   oðajâm   [â]t
+SFX L   ât   oðos     [â]t
+SFX L   ât   oðajâ    [â]t
+SFX L   ât   oðajos   [â]t
+SFX L   ât   oðajâs   [â]t
+SFX L   çt   oðs      [ç]t
+SFX L   çt   oða      [ç]t
+SFX L   çt   oðais    [ç]t
+SFX L   çt   oðâ      [ç]t
+SFX L   çt   oði      [ç]t
+SFX L   çt   oðas     [ç]t
+SFX L   çt   oðie     [ç]t
+SFX L   çt   oðâs     [ç]t
+SFX L   çt   oðu      [ç]t
+SFX L   çt   oðo      [ç]t
+SFX L   çt   oðam     [ç]t
+SFX L   çt   oðai     [ç]t
+SFX L   çt   oðajam   [ç]t
+SFX L   çt   oðajai   [ç]t
+SFX L   çt   oðiem    [ç]t
+SFX L   çt   oðâm     [ç]t
+SFX L   çt   oðajiem  [ç]t
+SFX L   çt   oðajâm   [ç]t
+SFX L   çt   oðos     [ç]t
+SFX L   çt   oðajâ    [ç]t
+SFX L   çt   oðajos   [ç]t
+SFX L   çt   oðajâs   [ç]t
+SFX L   ît   oðs      [î]t
+SFX L   ît   oða      [î]t
+SFX L   ît   oðais    [î]t
+SFX L   ît   oðâ      [î]t
+SFX L   ît   oði      [î]t
+SFX L   ît   oðas     [î]t
+SFX L   ît   oðie     [î]t
+SFX L   ît   oðâs     [î]t
+SFX L   ît   oðu      [î]t
+SFX L   ît   oðo      [î]t
+SFX L   ît   oðam     [î]t
+SFX L   ît   oðai     [î]t
+SFX L   ît   oðajam   [î]t
+SFX L   ît   oðajai   [î]t
+SFX L   ît   oðiem    [î]t
+SFX L   ît   oðâm     [î]t
+SFX L   ît   oðajiem  [î]t
+SFX L   ît   oðajâm   [î]t
+SFX L   ît   oðos     [î]t
+SFX L   ît   oðajâ    [î]t
+SFX L   ît   oðajos   [î]t
+SFX L   ît   oðajâs   [î]t
+SFX L   ât   âms      [â]t
+SFX L   ât   âma      [â]t
+SFX L   ât   âmais    [â]t
+SFX L   ât   âmâ      [â]t
+SFX L   ât   âmi      [â]t
+SFX L   ât   âmas     [â]t
+SFX L   ât   âmie     [â]t
+SFX L   ât   âmâs     [â]t
+SFX L   ât   âmu      [â]t
+SFX L   ât   âmo      [â]t
+SFX L   ât   âmam     [â]t
+SFX L   ât   âmai     [â]t
+SFX L   ât   âmajam   [â]t
+SFX L   ât   âmajai   [â]t
+SFX L   ât   âmiem    [â]t
+SFX L   ât   âmâm     [â]t
+SFX L   ât   âmajiem  [â]t
+SFX L   ât   âmajâm   [â]t
+SFX L   ât   âmus     [â]t
+SFX L   ât   âmos     [â]t
+SFX L   ât   âmajâ    [â]t
+SFX L   ât   âmajos   [â]t
+SFX L   ât   âmajâs   [â]t
+SFX L   ît   âms      [î]t
+SFX L   ît   âma      [î]t
+SFX L   ît   âmais    [î]t
+SFX L   ît   âmâ      [î]t
+SFX L   ît   âmi      [î]t
+SFX L   ît   âmas     [î]t
+SFX L   ît   âmie     [î]t
+SFX L   ît   âmâs     [î]t
+SFX L   ît   âmu      [î]t
+SFX L   ît   âmo      [î]t
+SFX L   ît   âmam     [î]t
+SFX L   ît   âmai     [î]t
+SFX L   ît   âmajam   [î]t
+SFX L   ît   âmajai   [î]t
+SFX L   ît   âmiem    [î]t
+SFX L   ît   âmâm     [î]t
+SFX L   ît   âmajiem  [î]t
+SFX L   ît   âmajâm   [î]t
+SFX L   ît   âmus     [î]t
+SFX L   ît   âmos     [î]t
+SFX L   ît   âmajâ    [î]t
+SFX L   ît   âmajos   [î]t
+SFX L   ît   âmajâs   [î]t
+SFX L   çt   ams      [ç]t
+SFX L   çt   ama      [ç]t
+SFX L   çt   amais    [ç]t
+SFX L   çt   amâ      [ç]t
+SFX L   çt   ami      [ç]t
+SFX L   çt   amas     [ç]t
+SFX L   çt   amie     [ç]t
+SFX L   çt   amâs     [ç]t
+SFX L   çt   amu      [ç]t
+SFX L   çt   amo      [ç]t
+SFX L   çt   amam     [ç]t
+SFX L   çt   amai     [ç]t
+SFX L   çt   amajam   [ç]t
+SFX L   çt   amajai   [ç]t
+SFX L   çt   amiem    [ç]t
+SFX L   çt   amâm     [ç]t
+SFX L   çt   amajiem  [ç]t
+SFX L   çt   amajâm   [ç]t
+SFX L   çt   amus     [ç]t
+SFX L   çt   amos     [ç]t
+SFX L   çt   amajâ    [ç]t
+SFX L   çt   amajos   [ç]t
+SFX L   çt   amajâs   [ç]t
+
+#divdabju sufiksi
+# is dams damais
+# II un III konjugâcijas
+SFX M Y 29
+SFX M   t   jis       [t]
+SFX M   t   jusi      [t]
+SFX M   t   juðais    [t]
+SFX M   t   jusî      [t]
+SFX M   t   juði      [t]
+SFX M   t   juðas     [t]
+SFX M   t   juðie     [t]
+SFX M   t   juðâs     [t]
+SFX M   t   juða      [t]
+SFX M   t   juðâ      [t]
+SFX M   t   juðu      [t]
+SFX M   t   juðo      [t]
+SFX M   t   juðam     [t]
+SFX M   t   juðai     [t]
+SFX M   t   juðajam   [t]
+SFX M   t   juðajai   [t]
+SFX M   t   juðiem    [t]
+SFX M   t   juðâm     [t]
+SFX M   t   juðajiem  [t]
+SFX M   t   juðajâm   [t]
+SFX M   t   juðus     [t]
+SFX M   t   juðos     [t]
+SFX M   t   juðajâ    [t]
+SFX M   t   juðajos   [t]
+SFX M   t   juðajâs   [t]
+SFX M   t   dams      [t]
+SFX M   t   dama      [t]
+SFX M   t   damies    [t]
+SFX M   t   damâs     [t]
+
+
+##########################################################
+#
+#                       LIETVÂRDI
+#
+##########################################################
+
+#kaut kâ jâiemâna pamazinâmâs formas
+
+#lietvârdi I.deklinâcija - galds, vçjð
+#nouns, 1st declination, m.
+SFX O Y 18
+SFX O   s     us    [s]      #akuzativs
+SFX O   ð     us    [ð]
+SFX O   s     a     [s]      #ìenitivs vsk
+SFX O   ð     a     [ð]
+SFX O   s     am    [s]      #dativs vsk
+SFX O   ð     am    [ð]
+SFX O   s     u     [s]      #akuzativs un instrum., ari dsk gjen,
+SFX O   ð     u     [ð]
+SFX O   s     â     [s]      #lokativs vsk
+SFX O   ð     â     [ð]
+SFX O   s     i     [s]      #nominativs
+SFX O   ð     i     [ð]
+SFX O   s     iem   [s]      #dativs
+SFX O   ð     iem   [ð]
+SFX O   s     os    [s]      #lokativs
+SFX O   ð     os    [ð]
+SFX O   s     0    [s]      #vokativs
+SFX O   ð     0    [ð]
+
+#lietvârdi I.deklinâcija - galds, vçjð
+#nouns, 1st declination, m.
+#PAMAZINÂMÂS formas
+SFX t Y 18
+SFX t   s     iòð   [s]      #viensk. nom.
+SFX t   ð     iòð   [ð]      #viensk. nom.
+SFX t   s     iòi   [s]      #dsk. nom.
+SFX t   ð     iòi   [ð]      #dsk. nom.
+SFX t   s     iòa   [s]      #ìenitîvs, d. nom.
+SFX t   s     iòam  [s]      #dativs
+SFX t   s     iòu   [s]      #akuzativs, instr, d.gjen,
+SFX t   s     iòus  [s]      #dsk. akuzativs,.
+SFX t   s     iòâ   [s]      #lokativs
+SFX t   s     iòiem [s]      #dativs, instr
+SFX t   s     iòos  [s]      #lokativs
+SFX t   ð     iòa   [ð]      #ìenitîvs, d. nom.
+SFX t   ð     iòam  [ð]      #dativs
+SFX t   ð     iòu   [ð]      #akuzativs, instr, d.gjen,
+SFX t   ð     iòus  [ð]      #dsk. akuzativs
+SFX t   ð     iòâ   [ð]      #lokativs
+SFX t   ð     iòiem [ð]      #dativs, instr
+SFX t   ð     iòos  [ð]      #lokativs
+
+
+
+#lietvârdi II.deklinâcija - kurmis, akmens, suns
+#nouns, 2nd declination, m.
+#lîdzskaòu mijas:
+#
+#t - ð
+#d - þ
+#s - ð
+#z - þ
+#n - ò
+#l - ï
+#v - vj
+#sn - ðò
+#p - pj
+#b - bj
+#m - mj
+#c - è
+#dz - dþ
+#zn - þò
+#sl - ðï
+#zl - þï
+#ln - ïò
+SFX P Y 90
+SFX P   is    a      [^bpmvtcdzsnl]is      #gjen
+SFX P   is    ja     [bpmv]is      #gjen
+SFX P   tis   ða     [t]is      #gjen
+SFX P   cis   èa     [c]is      #gjen
+SFX P   dis   þa     [d]is      #gjen
+SFX P   zis   þa     [z]is      #gjen
+SFX P   sis   ða     [s]is      #gjen
+SFX P   nis   òa     [n]is      #gjen
+SFX P   lis   ïa     [l]is      #gjen
+SFX P   snis  ðòa    [s]nis     #gjen
+SFX P   znis  þòa    [z]nis      #gjen
+SFX P   slis  ðïa    [s]lis      #gjen
+SFX P   zlis  þïa    [z]lis      #gjen
+SFX P   lnis  ïòa    [l]nis      #gjen
+SFX P   ns    òa     [n]s      #gjen suns,
+SFX P   s     m      [i]s      #dat
+SFX P   s     im     [n]s      #dat suns
+SFX P   s     0      [i]s      #akk, instr vsk
+SFX P   s     i      [n]s      #akk, instr vsk suns
+SFX P   is    î      [i]s      #lok
+SFX P   s     î      [n]s      #lok
+SFX P   is    ji     [bpmv]is   #nom dsk
+SFX P   is    i      [ìrí]is      #nom dsk
+SFX P   tis   ði     [t]is      #nom dsk
+SFX P   cis   èi     [c]is      #nom dsk
+SFX P   dis   þi     [d]is      #nom dsk
+SFX P   zis   þi     [z]is      #nom dsk
+SFX P   sis   ði     [s]is      #nom dsk
+SFX P   nis   òi     [n]is      #nom dsk
+SFX P   lis   ïi     [l]is      #nom dsk
+SFX P   snis  ðòi    [s]nis     #nom dsk
+SFX P   znis  þòi    [z]nis     #nom dsk
+SFX P   slis  ðïi    [s]lis     #nom dsk
+SFX P   zlis  þïi    [z]lis     #nom dsk
+#KPS SFX P   lnis  ïòi    [p]is      #nom dsk
+SFX P   ns    òi     [n]s       #nom dsk suns
+SFX P   is    ju     [bpmv]is   #gjen dsk
+SFX P   is    u      [ìrí]is      #gjen dsk
+SFX P   tis   ðu     [t]is      #gjen dsk
+SFX P   cis   èu     [c]is      #gjen dsk
+SFX P   ns    òu     [n]s       #gjen dsk
+SFX P   dis   þu     [d]is      #gjen dsk
+SFX P   zis   þu     [z]is      #gjen dsk
+SFX P   sis   ðu     [s]is      #gjen dsk
+SFX P   nis   òu     [n]is      #gjen dsk
+SFX P   lis   ïu     [l]is      #gjen dsk
+SFX P   snis  ðòu    [s]nis     #gjen dsk
+SFX P   znis  þòu    [z]nis     #gjen dsk
+SFX P   slis  ðïu    [s]lis     #gjen dsk
+SFX P   zlis  þïu    [z]lis     #gjen dsk
+#KPS SFX P   lnis  ïòu    [p]is      #gjen dsk
+SFX P   is    jiem   [bpmv]is   #dat dsk, instr
+SFX P   s     em     [ìrí]is      #dat dsk
+SFX P   tis   ðiem     [t]is      #dat dsk
+SFX P   cis   èiem     [c]is      #nom dsk
+SFX P   dis   þiem     [d]is      #nom dsk
+SFX P   zis   þiem     [z]is      #nom dsk
+SFX P   sis   ðiem     [s]is      #nom dsk
+SFX P   nis   òiem     [n]is      #nom dsk
+SFX P   lis   ïiem     [l]is      #nom dsk
+SFX P   snis  ðòiem    [s]nis     #nom dsk
+SFX P   znis  þòiem    [z]nis     #nom dsk
+SFX P   slis  ðïiem    [s]lis     #nom dsk
+SFX P   zlis  þïiem    [z]lis     #nom dsk
+#KPS SFX P   lnis  ïòiem    [p]is      #nom dsk
+SFX P   ns    òiem    [n]s      #nom dsk
+SFX P   is    jus     [bpmv]is   #akk dsk
+SFX P   is    us      [ìrí]is      #nom dsk
+SFX P   tis   ðus     [t]is      #nom dsk
+SFX P   cis   èus     [c]is      #nom dsk
+SFX P   dis   þus     [d]is      #nom dsk
+SFX P   zis   þus     [z]is      #nom dsk
+SFX P   sis   ðus     [s]is      #nom dsk
+SFX P   nis   òus     [n]is      #nom dsk
+SFX P   lis   ïus     [l]is      #nom dsk
+SFX P   snis  ðòus    [s]nis     #nom dsk
+SFX P   znis  þòus    [z]nis     #nom dsk
+SFX P   slis  ðïus    [s]lis     #nom dsk
+SFX P   zlis  þïus    [z]lis     #nom dsk
+#KPS SFX P   lnis  ïòus    [p]is      #nom dsk
+#KPS SFX P   ns    òus     [n]is      #nom dsk
+SFX P   is    jos     [bpmv]is   #lok dsk
+SFX P   is    os      [ìrí]is      #lok dsk
+SFX P   tis   ðos     [t]is      #lok dsk
+SFX P   cis   èos     [c]is      #lok dsk
+SFX P   dis   þos     [d]is      #nom dsk
+SFX P   zis   þos     [z]is      #nom dsk
+SFX P   sis   ðos     [s]is      #nom dsk
+SFX P   nis   òos     [n]is      #nom dsk
+SFX P   lis   ïos     [l]is      #nom dsk
+SFX P   snis  ðòos    [s]nis     #nom dsk
+SFX P   znis  þòos    [z]nis     #nom dsk
+SFX P   slis  ðïos    [s]lis     #nom dsk
+SFX P   zlis  þïos    [z]lis     #nom dsk
+#KPS SFX P   lnis  ïòos    [p]is      #nom dsk
+SFX P   ns    òos     [n]s      #nom dsk
+
+#lietvârdi II.deklinâcija - kurmis, akmens, suns
+#nouns, 2nd declination, m.
+#PAMAZINÂMÂS formas
+#### JÂPÂRBAUDA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#### akmens. suns - iekïauti manuâli
+SFX u Y 10
+SFX u   is     îtis  [i]s      #viensk. nom.
+SFX u   is     îði   [i]s      #viensk. nom.
+SFX u   is     îða   [i]s      #v. ìenitîvs, d. nom.
+SFX u   is     îðu   [i]s      #d. ìenitîvs,
+SFX u   is     îtim  [i]s      #v. dativs
+SFX u   is     îðiem [i]s      #d. dativs, d. instr.
+SFX u   is     îti   [i]s      #v. akuzativs, instr,
+SFX u   is     îðus  [i]s      #d. akuzativs
+SFX u   is     îtî   [i]s      #v. lokativs
+SFX u   is     îðos  [i]s      #d. lokatîvs
+
+
+
+#lietvârdi III.deklinâcija - lietus
+#nouns, 3rd declination, m.
+#pamazinâmâs formas maina deklinâciju un to mazskaitlîguma dçï
+#afiksus taisît nemaz nav jçgas - att formas pievienotas manuâli
+SFX Q Y 2
+SFX Q   s     m     [u]s      #dativs
+SFX Q   s     0     [u]s      #akuzativs un instrum., ari dsk gjen,
+#KPS SFX Q   us    û     [s]      #lokativs
+#KPS SFX Q   us    i     [s]      #nominativs
+#KPS SFX Q   us    iem   [s]      #dativs
+#KPS SFX Q   us    os    [s]      #lokativs
+
+#lietvârdi IV.deklinâcija - sala
+#nouns, 4th declination, fem.
+SFX R Y 7
+SFX R   0     s     [a]      #ìenitîvs, d. nom.
+SFX R   0     i     [a]      #dativs
+SFX R   a     u     [a]      #akuzativs, instr, d.gjen, d. ak.
+SFX R   a     â     [a]      #lokativs
+SFX R   a     âm    [a]      #dativs, instr
+SFX R   a     u     [a]      #akuzativs, instr
+SFX R   a     âs    [a]      #lokativs
+
+#lietvârdi IV.deklinâcija - sala
+#nouns, 4th declination, fem.
+#PAMAZINÂMÂS formas
+SFX r Y 7
+SFX r   a     iòa   [a]      #viensk. nom.
+SFX r   a     iòas  [a]      #ìenitîvs, d. nom.
+SFX r   a     iòai  [a]      #dativs
+SFX r   a     iòu   [a]      #akuzativs, instr, d.gjen, d. ak.
+SFX r   a     iòâ   [a]      #lokativs
+SFX r   a     iòâm  [a]      #dativs, instr
+SFX r   a     iòâs  [a]      #lokativs
+
+
+#lietvârdi V.deklinâcija - sala
+#nouns, 5th declination, fem.
+#lîdzskaòu mija - dsk. ìen.
+# ir steriem izòçmumu, kuriem tâ nau
+#b - bj    : piekabe
+#c - è     : sliece
+#d - þ     : sliede
+#l - ï     : pîle
+#m - mj    : zeme
+#n - ò     : sçne
+#p - pj    : stepe
+#s - ð     : adrese
+#t - ð     : mâte - , palete
+#v - vj    : dzçrve
+#z - þ     : devîze
+#sn - ðò   : loksne
+#dz - dþ   : kaudze
+#zn - þò   : zvaigzne
+#kst - kð  : rîkste
+SFX S Y 23
+SFX S   0     s    e         #ìenitivs, arî dsk nom., akk !!!!!!!!!!
+SFX S   0     i    [e]       #dativs !!!!!!!!
+SFX S   e     i    [e]       #akuzativs un instrum., ari dsk gjen,
+SFX S   e     ç    [e]       #lokativs
+SFX S   e     u    [^bcdlmnpstvz]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     ju   [b]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   ce    èu   [c]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   de    þu   [d]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   le    ïu   [l]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     ju   [m]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   ne    òu   [n]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   sne   ðòu  [s]ne     #ìenitivs dsk, ka vinju 2, 9
+SFX S   zne   þòu  [z]ne     #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     ju   [p]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   se    ðu   [s]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   te    ðu   [t]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     ðu   [t]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   ste   ðu   [k]ste    #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     ju   [v]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   ze    þu   [z]e      #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     u    [e]       #ìenitivs dsk, ka vinju 2, 9
+SFX S   e     çm   [e]       #dativs, instrum
+SFX S   e     çs   [e]       #lokativs
+
+#lietvârdi V.deklinâcija - sala
+#nouns, 5th declination, fem.
+#PAMAZINÂMÂS formas
+SFX s Y 8
+SFX s   e     îte   [e]      #viensk. nom.
+SFX s   e     îtes  [e]      #ìenitîvs, d. nom.
+SFX s   e     îtei  [e]      #dativs
+SFX s   e     îti   [e]      #akuzativs, instr, d.gjen, d. ak.
+SFX s   e     îtç   [e]      #lokativs
+SFX s   e     îðu   [e]      #dativs, instr
+SFX s   e     îtçm  [e]      #akuzativs, instr
+SFX s   e     îtçs  [e]      #lokativs
+
+
+#lietvârdi VI.deklinâcija - sala
+#nouns, 6th declination, fem.
+#lîdzskaòu mija dsk. ìen.- lîdzîgi II dekl (biki mazâk)
+# ir steriem izòçmumu, kuriem tâ nau
+#t - ð : nakts - nakðu
+#d - þ : sirds - sirþu
+#s - ð : ilkss - ilkðu
+#z - þ : birzs - birþu
+#n - ò : uguns - uguòu
+#l - ï : pils - piïu
+#v - vj : zivs - zivju
+#sn - ðò : krâsns - krâðòu
+#st - ð : pâksts - pâkðu
+#kaa buut ar ass?
+#PAMZINÂMÂS formas maina deklinâciju, tâlab netiek aplûkotas
+
+SFX T Y 15
+SFX T   s     ij   [s]      #dativs !!!!!!!!
+SFX T   s     i    [s]      #akuzativs un instrum., ari dsk gjen,
+SFX T   s     î    [s]      #lokativs
+SFX T   s     is   [s]      #d. nom, akk
+SFX T   s     u    [^tdsznlv]s      #ìenitivs, ak, ïaunais...
+SFX T   ts    ðu   [t]s     #ìenitivs, ak, ïaunais...
+SFX T   sts   ðu   [s]ts
+SFX T   ds    þu   [d]s     #ìenitivs, ak, ïaunais...
+SFX T   ss    ðu   [s]s     #ìenitivs, ak, ïaunais...
+#KPS SFX T   ns    òu   [t]s     #ìenitivs, ak, ïaunais...
+SFX T   zs    þu   [z]s     #ìenitivs, ak, ïaunais...
+SFX T   sns   ðòu  [s]ns
+SFX T   ls    ïu   [l]s     #ìenitivs, ak, ïaunais...
+SFX T   s     ju   [v]s     #ìenitivs, ak, ïaunais...
+SFX T   s     îm   [s]      #dativs, instrum
+SFX T   s     îs   [s]      #lokativs
+
+#################################################################
+#								#
+#			Îpaðîbas vârdi				#
+#								#
+#################################################################
+#adjectives
+#îpaðîbas vârdi no darbîbas vârdiem
+# îgs, îga,
+# ens, ena, çns, çna
+#
+
+#UZSKATÂMS PAR PABEIGTU
+SFX o Y 45
+SFX o   s     a     [s]
+SFX o   s     â     [s]
+SFX o   s     i     [s]
+SFX o   s     o     [s]
+SFX o   s     u     [s]
+SFX o   s     ai    [s]
+SFX o   s     am    [s]
+SFX o   s     as    [s]
+SFX o   s     âs    [s]
+SFX o   s     âm    [s]
+SFX o   s     ie    [s]
+SFX o   s     os    [s]
+SFX o   s     us    [s]
+SFX o   s     ais   [s]
+SFX o   s     ajam  [s]
+SFX o   s     ajâ   [s]
+SFX o   s     ajai  [s]
+SFX o   s     iem   [s]
+SFX o   s     ajiem [s]
+SFX o   s     ajos  [s]
+SFX o   s     ajâm  [s]
+SFX o   s     ajâs  [s]
+SFX o   s     âks     [s]      # palielinâmâ pamatforma
+SFX o   s     âka     [s]
+SFX o   s     âkâ     [s]
+SFX o   s     âki     [s]
+SFX o   s     âko     [s]
+SFX o   s     âku     [s]
+SFX o   s     âkai    [s]
+SFX o   s     âkam    [s]
+SFX o   s     âkas    [s]
+SFX o   s     âkâs    [s]
+SFX o   s     âkâm    [s]
+SFX o   s     âkie    [s]
+SFX o   s     âkos    [s]
+SFX o   s     âkus    [s]
+SFX o   s     âkais   [s]
+SFX o   s     âkajam  [s]
+SFX o   s     âkajâ   [s]
+SFX o   s     âkajai  [s]
+SFX o   s     âkiem   [s]
+SFX o   s     âkajiem [s]
+SFX o   s     âkajos  [s]
+SFX o   s     âkajâm  [s]
+SFX o   s     âkajâs  [s]
+
+SFX p Y 45
+SFX p   ð     a     [ð]
+SFX p   ð     â     [ð]
+SFX p   ð     i     [ð]
+SFX p   ð     o     [ð]
+SFX p   ð     u     [ð]
+SFX p   ð     ai    [ð]
+SFX p   ð     am    [ð]
+SFX p   ð     as    [ð]
+SFX p   ð     âs    [ð]
+SFX p   ð     âm    [ð]
+SFX p   ð     ie    [ð]
+SFX p   ð     os    [ð]
+SFX p   ð     us    [ð]
+SFX p   ð     ais   [ð]
+SFX p   ð     ajam  [ð]
+SFX p   ð     ajâ   [ð]
+SFX p   ð     ajai  [ð]
+SFX p   ð     iem   [ð]
+SFX p   ð     ajiem [ð]
+SFX p   ð     ajos  [ð]
+SFX p   ð     ajâm  [ð]
+SFX p   ð     ajâs  [ð]
+SFX p   ð     âks     [ð]      # palielinâmâ pamatforma
+SFX p   ð     âka     [ð]
+SFX p   ð     âkâ     [ð]
+SFX p   ð     âki     [ð]
+SFX p   ð     âko     [ð]
+SFX p   ð     âku     [ð]
+SFX p   ð     âkai    [ð]
+SFX p   ð     âkam    [ð]
+SFX p   ð     âkas    [ð]
+SFX p   ð     âkâs    [ð]
+SFX p   ð     âkâm    [ð]
+SFX p   ð     âkie    [ð]
+SFX p   ð     âkos    [ð]
+SFX p   ð     âkus    [ð]
+SFX p   ð     âkais   [ð]
+SFX p   ð     âkajam  [ð]
+SFX p   ð     âkajâ   [ð]
+SFX p   ð     âkajai  [ð]
+SFX p   ð     âkiem   [ð]
+SFX p   ð     âkajiem [ð]
+SFX p   ð     âkajos  [ð]
+SFX p   ð     âkajâm  [ð]
+SFX p   ð     âkajâs  [ð]
+
+#################################################################
+#								#
+#			Skaitïa vârdi                           #
+#								#
+#################################################################
+#UZSKATÂMS PAR PABEIGTU
+
+SFX q Y 45
+SFX q   i       u     [i]        #skaitïa vardi, kas beidzas ar i
+SFX q   i       as    [i]
+SFX q   i       iem   [i]
+SFX q   i       âm    [i]
+SFX q   i       âs    [i]
+SFX q   i       os    [i]
+SFX q   i       us    [i]
+SFX q   ais     â     [a]is     #shii dalja apraksta pirmo 10 kârtas sk. vardu
+SFX q   ais     o     [a]is     #izdaribas
+SFX q   ais     âs    [a]is
+SFX q   ais     os    [a]is
+SFX q   ais     ie    [a]is
+SFX q   is      jam   [a]is
+SFX q   is      jâ    [a]is
+SFX q   is      jai   [a]is
+SFX q   is      jiem  [a]is
+SFX q   is      jos   [a]is
+SFX q   is      jâm   [a]is
+SFX q   is      jâs   [a]is
+SFX q   0       ais   [t]        #te s`âkas vienpadsmit un citi, kas beidzas ar t
+SFX q   0       â     [t]        
+SFX q   0       o     [t]
+SFX q   0       âs    [t]
+SFX q   0       os    [t]
+SFX q   0       ie    [t]
+SFX q   0       ajam  [t]
+SFX q   0       ajâ   [t]
+SFX q   0       ajai  [t]
+SFX q   0       ajiem [t]
+SFX q   0       ajos  [t]
+SFX q   0       ajâm  [t]
+SFX q   0       ajâs  [t]
+SFX q   ð       ðais   [ð]        #te s`âkas vienpadsmit un citi, kas beidzas ar sh
+SFX q   0       â     [ð]        
+SFX q   0       o     [ð]        #izdaribas
+SFX q   0       âs    [ð]
+SFX q   0       os    [ð]
+SFX q   0       ie    [ð]
+SFX q   0       ajam  [ð]
+SFX q   0       ajâ   [ð]
+SFX q   0       ajai  [ð]
+SFX q   0       ajiem [ð]
+SFX q   0       ajos  [ð]
+SFX q   0       ajâm  [ð]
+SFX q   0       ajâs  [ð]
+
+
+#################################################################
+#								#
+#		Îpaðîbas vârdi, beigas				#
+#								#
+#################################################################
+
+# COMPOUNDFLAG @
+
+# COMPOUNDMIN 2

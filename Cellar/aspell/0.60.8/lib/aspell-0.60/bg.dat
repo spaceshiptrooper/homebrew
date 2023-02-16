@@ -1,0 +1,9 @@
+# Bulgarian data file
+
+name	       bg
+charset	       cp1251
+soundslike     bg
+keyboard       bulgarian
+affix          bg
+affix-compress true
+special        ' -*-

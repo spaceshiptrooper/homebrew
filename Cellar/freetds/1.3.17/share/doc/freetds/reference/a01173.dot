@@ -1,0 +1,21 @@
+digraph "tds_column"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="tds_column",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Metadata about columns in regular and compute rows."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" char_conv" ,fontname="Helvetica"];
+  Node2 [label="tdsiconvinfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00983.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" suppress" ,fontname="Helvetica"];
+  Node3 [label="tds_errno_message_flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00975.html",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" from" ,fontname="Helvetica"];
+  Node4 [label="tdsiconvdir",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00979.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" charset" ,fontname="Helvetica"];
+  Node5 [label="tds_encoding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01163.html",tooltip="Information relevant to libiconv."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" column_name\ntable_column_name\ntable_name" ,fontname="Helvetica"];
+  Node6 [label="tds_dstr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01283.html",tooltip="Structure to hold a string."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" funcs" ,fontname="Helvetica"];
+  Node7 [label="tds_column_funcs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01171.html",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bcp_column_data" ,fontname="Helvetica"];
+  Node8 [label="tds_bcpcoldata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01167.html",tooltip=" "];
+}

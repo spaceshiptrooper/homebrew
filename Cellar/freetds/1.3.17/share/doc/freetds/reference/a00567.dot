@@ -1,0 +1,25 @@
+digraph "LibTDS API"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node8 [label="Network functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00564.html",tooltip="Functions for reading or writing from network."];
+  Node7 [label="Query",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00563.html",tooltip="Function to handle query."];
+  Node6 [label="Memory allocation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00562.html",tooltip="Allocate or free resources."];
+  Node2 [label="Authentication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00558.html",tooltip="Functions for handling authentication."];
+  Node10 [label="Dynamic string functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00566.html",tooltip="Handle dynamic string."];
+  Node4 [label="Conversion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00560.html",tooltip="Conversions between datatypes."];
+  Node9 [label="Results processing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00565.html",tooltip="Handle tokens in packets."];
+  Node3 [label="Configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00559.html",tooltip="Handle reading of configuration."];
+  Node5 [label="Charset conversion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00561.html",tooltip="Convert between different charsets."];
+  Node1 [label="LibTDS API",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Callable functions in libtds."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+}

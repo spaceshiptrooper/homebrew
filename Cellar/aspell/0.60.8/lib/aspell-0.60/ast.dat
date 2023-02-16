@@ -1,0 +1,7 @@
+name ast
+charset l-ast
+data-encoding utf-8
+special ' -*- - -*-
+affix ast
+affix-compress true
+

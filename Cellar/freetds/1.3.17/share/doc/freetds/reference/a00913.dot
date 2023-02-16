@@ -1,0 +1,16 @@
+digraph "DBPROC_ROWBUF"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="DBPROC_ROWBUF",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rows" ,fontname="Helvetica"];
+  Node2 [label="dblib_buffer_row",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00611.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" resinfo" ,fontname="Helvetica"];
+  Node3 [label="tds_result_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01183.html",tooltip="Hold information for any results."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" attached_to" ,fontname="Helvetica"];
+  Node4 [label="tds_socket",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01235.html",tooltip="Information for a server connection."];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" comp_info\ncurrent_results\nparam_info\nres_info" ,fontname="Helvetica"];
+  Node23 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" columns" ,fontname="Helvetica"];
+  Node23 [label="tds_column",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$a01175.html",tooltip="Metadata about columns in regular and compute rows."];
+}

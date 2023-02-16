@@ -1,0 +1,303 @@
+'\" t
+.\"     Title: CREATE SUBSCRIPTION
+.\"    Author: The PostgreSQL Global Development Group
+.\" Generator: DocBook XSL Stylesheets vsnapshot <http://docbook.sf.net/>
+.\"      Date: 2023
+.\"    Manual: PostgreSQL 15.2 Documentation
+.\"    Source: PostgreSQL 15.2
+.\"  Language: English
+.\"
+.TH "CREATE SUBSCRIPTION" "7" "2023" "PostgreSQL 15.2" "PostgreSQL 15.2 Documentation"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+CREATE_SUBSCRIPTION \- define a new subscription
+.SH "SYNOPSIS"
+.sp
+.nf
+CREATE SUBSCRIPTION \fIsubscription_name\fR
+    CONNECTION \*(Aq\fIconninfo\fR\*(Aq
+    PUBLICATION \fIpublication_name\fR [, \&.\&.\&.]
+    [ WITH ( \fIsubscription_parameter\fR [= \fIvalue\fR] [, \&.\&.\&. ] ) ]
+.fi
+.SH "DESCRIPTION"
+.PP
+\fBCREATE SUBSCRIPTION\fR
+adds a new logical\-replication subscription\&. The subscription name must be distinct from the name of any existing subscription in the current database\&.
+.PP
+A subscription represents a replication connection to the publisher\&. Hence, in addition to adding definitions in the local catalogs, this command normally creates a replication slot on the publisher\&.
+.PP
+A logical replication worker will be started to replicate data for the new subscription at the commit of the transaction where this command is run, unless the subscription is initially disabled\&.
+.PP
+Additional information about subscriptions and logical replication as a whole is available at
+Section\ \&31.2
+and
+Chapter\ \&31\&.
+.SH "PARAMETERS"
+.PP
+\fIsubscription_name\fR
+.RS 4
+The name of the new subscription\&.
+.RE
+.PP
+CONNECTION \*(Aq\fIconninfo\fR\*(Aq
+.RS 4
+The
+libpq
+connection string defining how to connect to the publisher database\&. For details see
+Section\ \&34.1.1\&.
+.RE
+.PP
+PUBLICATION \fIpublication_name\fR [, \&.\&.\&.]
+.RS 4
+Names of the publications on the publisher to subscribe to\&.
+.RE
+.PP
+WITH ( \fIsubscription_parameter\fR [= \fIvalue\fR] [, \&.\&.\&. ] )
+.RS 4
+This clause specifies optional parameters for a subscription\&.
+.sp
+The following parameters control what happens during subscription creation:
+.PP
+connect (boolean)
+.RS 4
+Specifies whether the
+\fBCREATE SUBSCRIPTION\fR
+command should connect to the publisher at all\&. The default is
+true\&. Setting this to
+false
+will force the values of
+create_slot,
+enabled
+and
+copy_data
+to
+false\&. (You cannot combine setting
+connect
+to
+false
+with setting
+create_slot,
+enabled, or
+copy_data
+to
+true\&.)
+.sp
+Since no connection is made when this option is
+false, no tables are subscribed, and so after you enable the subscription nothing will be replicated\&. You will need to then run
+ALTER SUBSCRIPTION \&.\&.\&. REFRESH PUBLICATION
+for tables to be subscribed\&.
+.RE
+.PP
+create_slot (boolean)
+.RS 4
+Specifies whether the command should create the replication slot on the publisher\&. The default is
+true\&. If set to
+false, you are responsible for creating the publisher\*(Aqs slot in some other way\&.
+.RE
+.PP
+enabled (boolean)
+.RS 4
+Specifies whether the subscription should be actively replicating or whether it should just be set up but not started yet\&. The default is
+true\&.
+.RE
+.PP
+slot_name (string)
+.RS 4
+Name of the publisher\*(Aqs replication slot to use\&. The default is to use the name of the subscription for the slot name\&.
+.sp
+Setting
+slot_name
+to
+NONE
+means there will be no replication slot associated with the subscription\&. Use this when you will be creating the replication slot later manually\&. Such subscriptions must also have both
+enabled
+and
+create_slot
+set to
+false\&.
+.RE
+.sp
+The following parameters control the subscription\*(Aqs replication behavior after it has been created:
+.PP
+binary (boolean)
+.RS 4
+Specifies whether the subscription will request the publisher to send the data in binary format (as opposed to text)\&. The default is
+false\&. Even when this option is enabled, only data types having binary send and receive functions will be transferred in binary\&.
+.sp
+When doing cross\-version replication, it could be that the publisher has a binary send function for some data type, but the subscriber lacks a binary receive function for that type\&. In such a case, data transfer will fail, and the
+binary
+option cannot be used\&.
+.RE
+.PP
+copy_data (boolean)
+.RS 4
+Specifies whether to copy pre\-existing data in the publications that are being subscribed to when the replication starts\&. The default is
+true\&.
+.sp
+If the publications contain
+WHERE
+clauses, it will affect what data is copied\&. Refer to the
+Notes
+for details\&.
+.RE
+.PP
+streaming (boolean)
+.RS 4
+Specifies whether to enable streaming of in\-progress transactions for this subscription\&. By default, all transactions are fully decoded on the publisher and only then sent to the subscriber as a whole\&.
+.RE
+.PP
+synchronous_commit (enum)
+.RS 4
+The value of this parameter overrides the
+synchronous_commit
+setting within this subscription\*(Aqs apply worker processes\&. The default value is
+off\&.
+.sp
+It is safe to use
+off
+for logical replication: If the subscriber loses transactions because of missing synchronization, the data will be sent again from the publisher\&.
+.sp
+A different setting might be appropriate when doing synchronous logical replication\&. The logical replication workers report the positions of writes and flushes to the publisher, and when using synchronous replication, the publisher will wait for the actual flush\&. This means that setting
+synchronous_commit
+for the subscriber to
+off
+when the subscription is used for synchronous replication might increase the latency for
+\fBCOMMIT\fR
+on the publisher\&. In this scenario, it can be advantageous to set
+synchronous_commit
+to
+local
+or higher\&.
+.RE
+.PP
+two_phase (boolean)
+.RS 4
+Specifies whether two\-phase commit is enabled for this subscription\&. The default is
+false\&.
+.sp
+When two\-phase commit is enabled, prepared transactions are sent to the subscriber at the time of
+\fBPREPARE TRANSACTION\fR, and are processed as two\-phase transactions on the subscriber too\&. Otherwise, prepared transactions are sent to the subscriber only when committed, and are then processed immediately by the subscriber\&.
+.sp
+The implementation of two\-phase commit requires that replication has successfully finished the initial table synchronization phase\&. So even when
+two_phase
+is enabled for a subscription, the internal two\-phase state remains temporarily
+\(lqpending\(rq
+until the initialization phase completes\&. See column
+subtwophasestate
+of
+pg_subscription
+to know the actual two\-phase state\&.
+.RE
+.PP
+disable_on_error (boolean)
+.RS 4
+Specifies whether the subscription should be automatically disabled if any errors are detected by subscription workers during data replication from the publisher\&. The default is
+false\&.
+.RE
+.RE
+.SH "NOTES"
+.PP
+See
+Section\ \&31.9
+for details on how to configure access control between the subscription and the publication instance\&.
+.PP
+When creating a replication slot (the default behavior),
+\fBCREATE SUBSCRIPTION\fR
+cannot be executed inside a transaction block\&.
+.PP
+Creating a subscription that connects to the same database cluster (for example, to replicate between databases in the same cluster or to replicate within the same database) will only succeed if the replication slot is not created as part of the same command\&. Otherwise, the
+\fBCREATE SUBSCRIPTION\fR
+call will hang\&. To make this work, create the replication slot separately (using the function
+\fBpg_create_logical_replication_slot\fR
+with the plugin name
+pgoutput) and create the subscription using the parameter
+create_slot = false\&. This is an implementation restriction that might be lifted in a future release\&.
+.PP
+If any table in the publication has a
+WHERE
+clause, rows for which the
+\fIexpression\fR
+evaluates to false or null will not be published\&. If the subscription has several publications in which the same table has been published with different
+WHERE
+clauses, a row will be published if any of the expressions (referring to that publish operation) are satisfied\&. In the case of different
+WHERE
+clauses, if one of the publications has no
+WHERE
+clause (referring to that publish operation) or the publication is declared as
+FOR ALL TABLES
+or
+FOR TABLES IN SCHEMA, rows are always published regardless of the definition of the other expressions\&. If the subscriber is a
+PostgreSQL
+version before 15, then any row filtering is ignored during the initial data synchronization phase\&. For this case, the user might want to consider deleting any initially copied data that would be incompatible with subsequent filtering\&. Because initial data synchronization does not take into account the publication
+publish
+parameter when copying existing table data, some rows may be copied that would not be replicated using DML\&. See
+Section\ \&31.2.2
+for examples\&.
+.PP
+Subscriptions having several publications in which the same table has been published with different column lists are not supported\&.
+.PP
+We allow non\-existent publications to be specified so that users can add those later\&. This means
+pg_subscription
+can have non\-existent publications\&.
+.SH "EXAMPLES"
+.PP
+Create a subscription to a remote server that replicates tables in the publications
+mypublication
+and
+insert_only
+and starts replicating immediately on commit:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+CREATE SUBSCRIPTION mysub
+         CONNECTION \*(Aqhost=192\&.168\&.1\&.50 port=5432 user=foo dbname=foodb\*(Aq
+        PUBLICATION mypublication, insert_only;
+.fi
+.if n \{\
+.RE
+.\}
+.PP
+Create a subscription to a remote server that replicates tables in the
+insert_only
+publication and does not start replicating until enabled at a later time\&.
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+CREATE SUBSCRIPTION mysub
+         CONNECTION \*(Aqhost=192\&.168\&.1\&.50 port=5432 user=foo dbname=foodb\*(Aq
+        PUBLICATION insert_only
+               WITH (enabled = false);
+.fi
+.if n \{\
+.RE
+.\}
+.SH "COMPATIBILITY"
+.PP
+\fBCREATE SUBSCRIPTION\fR
+is a
+PostgreSQL
+extension\&.
+.SH "SEE ALSO"
+ALTER SUBSCRIPTION (\fBALTER_SUBSCRIPTION\fR(7)), DROP SUBSCRIPTION (\fBDROP_SUBSCRIPTION\fR(7)), CREATE PUBLICATION (\fBCREATE_PUBLICATION\fR(7)), ALTER PUBLICATION (\fBALTER_PUBLICATION\fR(7))

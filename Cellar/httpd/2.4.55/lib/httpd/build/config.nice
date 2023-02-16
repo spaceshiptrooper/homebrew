@@ -1,0 +1,36 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="clang"; export CC
+"./configure" \
+"--enable-layout=Slackware-FHS" \
+"--prefix=/usr/local/opt/httpd" \
+"--sbindir=/usr/local/opt/httpd/bin" \
+"--mandir=/usr/local/opt/httpd/share/man" \
+"--sysconfdir=/usr/local/etc/httpd" \
+"--datadir=/usr/local/var/www" \
+"--localstatedir=/usr/local/var" \
+"--enable-mpms-shared=all" \
+"--enable-mods-shared=all" \
+"--enable-authnz-fcgi" \
+"--enable-cgi" \
+"--enable-pie" \
+"--enable-suexec" \
+"--with-suexec-bin=/usr/local/opt/httpd/bin/suexec" \
+"--with-suexec-caller=_www" \
+"--with-port=8080" \
+"--with-sslport=8443" \
+"--with-apr=/usr/local/opt/apr" \
+"--with-apr-util=/usr/local/opt/apr-util" \
+"--with-brotli=/usr/local/opt/brotli" \
+"--with-libxml2=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr" \
+"--with-mpm=prefork" \
+"--with-nghttp2=/usr/local/opt/libnghttp2" \
+"--with-ssl=/usr/local/opt/openssl@1.1" \
+"--with-pcre=/usr/local/opt/pcre2/bin/pcre2-config" \
+"--with-z=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr" \
+"--disable-lua" \
+"--disable-luajit" \
+"CC=clang" \
+"$@"

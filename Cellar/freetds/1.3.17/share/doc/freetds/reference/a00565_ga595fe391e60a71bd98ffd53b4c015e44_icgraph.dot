@@ -1,0 +1,10 @@
+digraph "tds_lookup_dynamic"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="tds_lookup_dynamic",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Finds a dynamic given string id."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tds_alloc_dynamic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00562.html#ga69559de43b47f4a9e2eecc7a56527444",tooltip="Allocate a dynamic statement."];
+}

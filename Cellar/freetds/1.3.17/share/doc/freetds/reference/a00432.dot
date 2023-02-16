@@ -1,0 +1,13 @@
+digraph "include/freetds/replacements/poll.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/freetds/replacements\l/poll.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Provide poll call where missing."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="config.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00359_source.html",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="freetds/pushvis.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00428_source.html",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="freetds/popvis.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00422_source.html",tooltip=" "];
+}

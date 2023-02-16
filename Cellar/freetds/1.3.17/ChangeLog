@@ -1,0 +1,154 @@
+Author: tintinn <tin-tin.nguyen@nih.gov>
+Date:   Tue Jan 17 10:47:30 2023 -0500
+
+    Update dblib.c - _get_printable_size
+
+    Added more types to _get_printable_size based on /misc/types.csv.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Thu Dec 8 07:20:01 2022 +0000
+
+    tds: Fix use-after-free in TLS code
+
+    tds_close_socket and tds_connection_close could have been called
+    while reading/writing TLS sockets so calling tds_ssl_deinit
+    cause some used structure to be released while used.
+
+    Reported-by: Jonas Bülow
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Mon Nov 21 11:05:07 2022 +0000
+
+    odbc: Fix some issues with SQLCopyDesc
+
+    Release a mutex. This should affect only applications not using
+    a Driver Manager.
+    Do not change sql_desc_alloc_type copying descriptors.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Sun Nov 6 12:44:08 2022 +0000
+
+    odbc: Return size from SQLGetDescField for integers
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Tue Aug 16 09:05:03 2022 +0100
+
+    Parse and fix correctly IPv6 addresses in parse_server_name_for_port
+
+    This fixes https://github.com/FreeTDS/freetds/issues/470.
+
+    If [] quoting was used for IPv6 literal addresses the name was
+    not correctly unquoted causing failure resolving the name.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Sat Jun 11 07:53:44 2022 +0100
+
+    Fix static compile with readline library
+
+    In static compiling order is more important, library depending
+    on others should came first, not after.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Tue May 31 07:40:41 2022 +0100
+
+    tds: Fix for change in OpenSSL 1.1.1l
+
+    Some strings in OpenSSL 1.1.1l are not NUL terminated as in 1.1.1k.
+    This was causing a wrong check for hostname causing failure connecting
+    to database.
+    Terminate always extracted hostname string to avoid this issue.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Fri Apr 15 09:46:50 2022 +0100
+
+    Use unaligned access in replacement iconv
+
+    System iconv does not enforce aligned access.
+    Also this could happen reading/writing directly to TDS packets.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Thu Feb 10 09:40:09 2022 +0000
+
+    Do not install odbcss.h if already in the system
+
+    The provided include is supposed to export some defines that
+    should be already be defined by windows headers.
+    If they are available they should be used instead.
+    This fixed conflict with systems like Windows and possibly MingW.
+
+Author: Marc-André Lureau <marcandre.lureau@redhat.com>
+Date:   Mon Feb 7 15:39:21 2022 +0400
+
+    build-sys: fix out-of-tree mingw compilation
+
+    x86_64-w64-mingw32-windres -i ../../../src/odbc/setup.rc --input-format=rc -o setup.res -O coff
+    ../../../src/odbc/setup.rc:19:10: fatal error: version.rc: No such file or directory
+       19 | #include "version.rc"
+          |          ^~~~~~~~~~~~
+
+Author: Aaron M. Ucko <ucko@ncbi.nlm.nih.gov>
+Date:   Wed Jan 19 11:33:01 2022 -0500
+
+    tds/convert.c: Fix floating-point -> integer bounds.
+
+    - Use distinct macros for integer and FP source types as needed.
+    - Use power-of-two upper bounds with < when FP source types are a
+      consideration, to account for pre-conversion truncation or possible
+      precision loss as appropriate.
+    - Account for pre-conversion truncation (NOT floor computation) of
+      negative FP values and for possible limited precision around the
+      lower bounds of 32- and 64-bit signed integer types.
+    - Per Freddy, don't bother with explicit l suffixes; 16-bit systems
+      are not relevant to FreeTDS.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Sun Dec 26 20:20:05 2021 +0000
+
+    Check for system function using header
+
+    It seems that function is available to link but disable by iOS headers
+    so check it using code instead of defining it and linking (as
+    AC_CHECK_FUNCS does).
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Fri Dec 24 10:32:50 2021 +0000
+
+    apps: Check for system function presence
+
+    fisql execute system commands using system function which is
+    not currently available on iOS. Avoid to use it and disable the
+    specific fisql feature.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Sun Dec 12 19:46:14 2021 +0000
+
+    defncopy: Supports varchar(max)/varbinary(max)
+
+    If length is -1 it means varchar(max) or varbinary(max) types.
+
+    This fixes https://github.com/FreeTDS/freetds/issues/432.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Mon Aug 30 09:22:14 2021 +0100
+
+    Fix compatibility issue with some TLS implementations
+
+    Not found using directly a SQL Server database but with some
+    proxy program using different TLS settings.
+    The TLS inside TDS packet was not ending with the handshake
+    but had some additional bytes containing no data.
+    Strip this tail.
+
+Author: Frediano Ziglio <freddy77@gmail.com>
+Date:   Tue Aug 24 19:00:13 2021 +0100
+
+    tds: Avoid unaligned access using replacement iconv
+
+    Test string for checking iconv should be memory aligned.
+    Extra checks are used to check the alignment explicitly in
+    system able to do unaligned access.
+
+Author: Jan umgarten <marsupilami79@gmx.de>
+Date:   Mon Aug 16 15:07:58 2021 +0200
+
+    Keep make from failing if the source path contains spaces.
